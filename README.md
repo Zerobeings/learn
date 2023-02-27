@@ -9,8 +9,9 @@
 2. **Mobile Devices:** How to use Market gm as a progressive web application.
 2. **Quickstart:** How to create & cancel listings, create & close auctions, create an offer.
 3. **Proposed Metadata Structures:** Additional meta data feature for rendinging non-image filetypes.
-4. **Maretplace Source Code:** Overview of the marketplace source code.
-5. **More Info:** FAQs and links.
+4. **Goerli**: Overview of the testnet.
+5. **Maretplace Source Code:** Overview of the marketplace source code.
+6. **More Info:** FAQs and links.
 
 
 # Overview
