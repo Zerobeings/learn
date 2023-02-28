@@ -28,14 +28,20 @@ Wallet authorization is accomplished with [PrivateParty](https://privateparty.de
 
 > Private Party is a dead simple blockchain auth framework created by [skogard](https://twitter.com/skogard)
 
-![Private Party alt ><](privateparty.png)
+<div style="text-align: center" markdown="1">
+    ![Private Party](privateparty.png)
+</div>
 
 To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login.
 
-![login alt ><](login.png)
+![login](login.png)
 
 After logging into Zerb gm ☕️, open the menu on the left, and click on goerli-market or Market gm ☕️.
 goerli-marketgm will load the goerli marketplace for testing collection launches and rendering various filetypes.
 
 > Filetypes currently supported are as follows: .png, .svg, .jpg, .jpeg, .gif, .wav, .mp3, .ogg, .mp4, .webm, .doc, .docx, .pdf, and .txt.
 
+![]
+
+
+## Market gm view
