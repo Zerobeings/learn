@@ -36,9 +36,11 @@ To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeing
 
 ![login](login.png)
 
-After logging into Zerb gm ☕️, open the menu on the left, and click on goerli-market or Market gm ☕️.
+After logging into Zerb gm ☕️, open the menu on the left.
 
 ![menu](menubutton.png)
+
+Click on goerli-market or Market gm ☕️.
 
 ![selectmarket](selectmarket.png)
 
