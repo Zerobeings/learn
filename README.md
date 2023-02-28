@@ -29,7 +29,7 @@ Wallet authorization is accomplished with [PrivateParty](https://privateparty.de
 > Private Party is a dead simple blockchain auth framework created by [skogard](https://twitter.com/skogard)
 
 <p align="center" width="100%">
-    <img width="100%" src="privateparty.png">
+    <img width="50%" src="privateparty.png">
 </p>
 
 To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login.
@@ -57,3 +57,6 @@ After clicking on the preferred market (goerli or mainnet) the market view will 
 Continue to scroll down the page and three panels will render: the collection info, any available listings for that specific collection, and the NFTs minted for the searched collection.
 
 ![collection view](collectionview.png)
+
+### Collection Info
+
