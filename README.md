@@ -28,9 +28,9 @@ Wallet authorization is accomplished with [PrivateParty](https://privateparty.de
 
 > Private Party is a dead simple blockchain auth framework created by [skogard](https://twitter.com/skogard)
 
-<div style="text-align: center" markdown="1">
-    ![Private Party](privateparty.png)
-</div>
+<p align="center" width="100%">
+    <img width="100%" src="privateparty.png">
+</p>
 
 To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login.
 
