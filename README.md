@@ -1,4 +1,6 @@
-![Zero Beings alt ><](zerobeings_logo_m.png)
+<p align="center" width="100%">
+    <img width="80%" src="zerobeings_logo_m.png">
+</p>
 
 🚧 Under construction 🚧
 ## Market gm ☕️ - An NFT marketplace 
@@ -34,7 +36,9 @@ Wallet authorization is accomplished with [PrivateParty](https://privateparty.de
 
 To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login.
 
-![login](login.png)
+<p align="center" width="100%">
+    <img width="33%" src="login.png">
+</p>
 
 After logging into Zerb gm ☕️, open the menu on the left.
 
