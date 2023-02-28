@@ -48,8 +48,12 @@ goerli-marketgm will load the goerli marketplace for testing collection launches
 
 > Filetypes currently supported are as follows: .png, .svg, .jpg, .jpeg, .gif, .wav, .mp3, .ogg, .mp4, .webm, .doc, .docx, .pdf, and .txt.
 
-After clicking on the preferred market (goerli or mainnet) the market view will display the following.
+After clicking on the preferred market (goerli or mainnet) the market view will display the following. The market is automatically rendered with the Zero Beings NFT collection.
 
 ## Market gm view - mainnet
 
 ![mainnet view](searchview.png)
+
+Continue to scroll down the page and three panels will render: the collection info, any available listings for that specific collection, and the NFTs minted for the searched collection.
+
+![collection view](collectionview.png)
