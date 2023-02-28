@@ -52,3 +52,4 @@ After clicking on the preferred market (goerli or mainnet) the market view will 
 
 ## Market gm view - mainnet
 
+![mainnet view](searchview.png)
