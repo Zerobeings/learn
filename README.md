@@ -37,11 +37,16 @@ To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeing
 ![login](login.png)
 
 After logging into Zerb gm ☕️, open the menu on the left, and click on goerli-market or Market gm ☕️.
+
+![menu](menubutton.png)
+
+![selectmarket](selectmarket.png)
+
 goerli-marketgm will load the goerli marketplace for testing collection launches and rendering various filetypes.
 
 > Filetypes currently supported are as follows: .png, .svg, .jpg, .jpeg, .gif, .wav, .mp3, .ogg, .mp4, .webm, .doc, .docx, .pdf, and .txt.
 
-![]
+After clicking on the preferred market (goerli or mainnet) the market view will display the following.
 
+## Market gm view - mainnet
 
-## Market gm view
