@@ -80,7 +80,7 @@ The Collection Info panel contains a combination of imformation rendered from th
     <img width="33%" src="collectioninfo.png">
 </p>
 
-## Available Listings
+### Available Listings
 
 The Available Listings displays all direct and auction listings for the collection being viewed. The number of total listings is labeled on the right hand side of the panel.
 
