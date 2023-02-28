@@ -42,11 +42,15 @@ To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeing
 
 After logging into Zerb gm ☕️, open the menu on the left.
 
-![menu](menubutton.png)
+<p align="center" width="100%">
+    <img width="80%" src="menubutton.png">
+</p>
 
 Click on goerli-market or Market gm ☕️.
 
-![selectmarket](selectmarket.png)
+<p align="center" width="100%">
+    <img width="80%" src="selectmarket.png">
+</p>
 
 goerli-marketgm will load the goerli marketplace for testing collection launches and rendering various filetypes.
 
@@ -56,11 +60,20 @@ After clicking on the preferred market (goerli or mainnet) the market view will 
 
 ## Market gm view - mainnet
 
-![mainnet view](searchview.png)
+<p align="center" width="100%">
+    <img width="80%" src="searchview.png">
+</p>
 
 Continue to scroll down the page and three panels will render: the collection info, any available listings for that specific collection, and the NFTs minted for the searched collection.
 
-![collection view](collectionview.png)
+<p align="center" width="100%">
+    <img width="80%" src="collectionview.png">
+</p>
 
 ### Collection Info
 
+The collection info contains a combination of imformation rendered from the NFT collection metadata, the collections opensea profile, and both opensea & looksrare floor prices if applicable.
+
+<p align="center" width="100%">
+    <img width="33%" src="collectioninfo.png">
+</p>
