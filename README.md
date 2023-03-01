@@ -156,3 +156,11 @@ After selecting which listing option is preferred. The respective listing form w
 <p align="center" width="100%">
     <img width="33%" src="createauctionlisting.png">
 </p>
+
+### My Listings Panel
+
+The my listings panel contains a view of all the NFTs listed by the connect wallet.
+
+<p align="center" width="100%">
+    <img width="100%" src="mylistingspanel.png">
+</p>
