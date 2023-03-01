@@ -98,22 +98,29 @@ If there are listings available the view will look like this:
 
 If the NFT or the Buy/Offer button is clicked, a detailed view of the listing of interest will be displayed.
 
-## Market Listing Detail View
+#### Market Listing Detail View
 
-If the wallet address holds the NFT listed, a list of the offers will be displayed. If the wallet is the owner of the NFT, the title of the section heading above the offers is "Offers". If the wallet connected is not the owner, the title will be rendered as "i want that!."
+If the wallet address holds the NFT listed, a list of the offers will be displayed. If the wallet is the owner of the NFT, the title of the section heading above the offers is "Offers".
 
 <p align="center" width="100%">
-    <img width="100%" src="detailedview.png">
+    <img width="100%" src="marketlistingdetails.png">
+</p>
+
+If the wallet connected is not the owner, the title will be rendered as "i want that!."
+
+<p align="center" width="100%">
+    <img width="100%" src="iwantthat.png">
 </p>
 
 
-## Detailed NFT View
+## Collection View
 When the cursor hovers over an NFT in the collection a grey box will outline the NFT of interest. Each in dividual NFT will display the following information: The name, token ID, collection address (link to etherscan), a link to the NFT on looksrare and opensea.
 
 <p align="center" width="100%">
     <img width="33%" src="individualcollectionview.png">
 </p>
 
+### Detailed NFT View
 If the the NFT is clicked, a detailed view will be displayed for the NFT of interest. The detailed view contains the following information: name, image/file, and NFT attributes.
 
 <p align="center" width="100%">
