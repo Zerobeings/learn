@@ -10,9 +10,9 @@
 
 1. **Overview:** A tour of the marketplace.
 2. **Mobile Devices:** How to use Market gm as a progressive web application.
-2. **Quickstart:** How to create & cancel listings, create & close auctions, create an offer.
+2. **Guide:** How to create & cancel listings, create & close auctions, create an offer and Buy.
 3. **Proposed Metadata Structures:** Additional meta data feature for rendinging non-image filetypes.
-4. **goerli-marketgm**: Overview of the goerli-marketgm.
+4. **goerli-market**: Overview of the goerli-market.
 5. **Maretplace Source Code:** Overview of the marketplace source code.
 6. **More Info:** FAQs, APIs, and links.
 
@@ -52,7 +52,7 @@ Click on goerli-market or Market gm ☕️.
     <img width="100%" src="selectmarket.png">
 </p>
 
-goerli-marketgm will load the goerli marketplace for testing collection launches and rendering various filetypes.
+goerli-market will load the goerli marketplace for testing collection launches and rendering various filetypes.
 
 > Filetypes currently supported are as follows: .png, .svg, .jpg, .jpeg, .gif, .wav, .mp3, .ogg, .mp4, .webm, .doc, .docx, .pdf, and .txt.
 
@@ -100,13 +100,13 @@ If the NFT or the Buy/Offer button is clicked, a detailed view of the listing of
 
 #### Market Listing Detail View
 
-If the wallet address holds the NFT listed, a list of the offers will be displayed. If the wallet is the owner of the NFT, the title of the section heading above the offers is "Offers".
+If the wallet connected holds the NFT listed, a list of the offers will be displayed. If the wallet is the owner of the NFT, the title of the section heading above the offers is "Offers".
 
 <p align="center" width="100%">
     <img width="100%" src="marketlistingdetails.png">
 </p>
 
-If the wallet connected is not the owner, the title will be rendered as "i want that!."
+If the wallet connected is not the owner, the title will be rendered as "i want that!" above the list of competing offers.
 
 <p align="center" width="100%">
     <img width="100%" src="iwantthat.png">
@@ -114,7 +114,7 @@ If the wallet connected is not the owner, the title will be rendered as "i want 
 
 
 ### Collection View
-When the cursor hovers over an NFT in the collection a grey box will outline the NFT of interest. Each in dividual NFT will display the following information: The name, token ID, collection address (link to etherscan), a link to the NFT on looksrare and opensea.
+When the cursor hovers over an NFT in the collection a grey box will outline the NFT of interest. Each individual NFT will display the following information: The name, token ID, collection address (link to etherscan), a link to the NFT on looksrare and opensea.
 
 <p align="center" width="100%">
     <img width="33%" src="individualcollectionview.png">
@@ -159,7 +159,7 @@ After selecting which listing option is preferred. The respective listing form w
 
 ### My Listings Panel
 
-The my listings panel contains a view of all the NFTs listed by the connect wallet.
+The my listings panel contains a view of all the NFTs listed by the connected wallet.
 
 <p align="center" width="100%">
     <img width="100%" src="mylistingspanel.png">
