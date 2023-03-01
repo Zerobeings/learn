@@ -135,7 +135,7 @@ The My Listings page displays the following three panels: create listings, your 
     <img width="100%" src="listingsoverview.png">
 </p>
 
-### Create Listing
+### Create Listing Panel
 
 By clicking connect the wallet of choice will connect to the marketplace and will be ready to interact with the marketplace smart contract. The Create Listing will display two options: direct or auction.
 
