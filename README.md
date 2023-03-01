@@ -19,11 +19,11 @@
 
 # Overview
 
-> 
+>   
 > "Speak fren and enter." - Gandalf 🧙🏼‍♂️
->
+>   
 > Mint a Zero Being here [mint.zerobeings.xyz](https://mint.zerobeings.xyz)
-> 
+>   
 
 Market gm is an NFT gated marketplace. The connecting wallet must have a balance of at least one Zero Being NFT.
 Wallet authorization is accomplished with [PrivateParty](https://privateparty.dev).
@@ -58,7 +58,7 @@ goerli-marketgm will load the goerli marketplace for testing collection launches
 
 After clicking on the preferred market (goerli or mainnet) the market view will display the following. The market is automatically rendered with the Zero Beings NFT collection.
 
-> factoria is a simple cost effective tool to launch your NFT collection created by [skogard](https://twitter.com/skogard)
+> [factoria](https://docs.factoria.app/#/),  created by [skogard](https://twitter.com/skogard),is a simple cost effective tool to launch your NFT collection.
 
 ## Market gm view - mainnet
 
