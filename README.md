@@ -154,5 +154,5 @@ After selecting which listing option is preferred. The respective listing form w
 #### Create Auction Listing Form
 
 <p align="center" width="100%">
-    <img width="33%" src="createautionlisting.png">
+    <img width="33%" src="createauctionlisting.png">
 </p>
