@@ -113,14 +113,14 @@ If the wallet connected is not the owner, the title will be rendered as "i want 
 </p>
 
 
-## Collection View
+### Collection View
 When the cursor hovers over an NFT in the collection a grey box will outline the NFT of interest. Each in dividual NFT will display the following information: The name, token ID, collection address (link to etherscan), a link to the NFT on looksrare and opensea.
 
 <p align="center" width="100%">
     <img width="33%" src="individualcollectionview.png">
 </p>
 
-### Detailed NFT View
+#### Detailed NFT View
 If the the NFT is clicked, a detailed view will be displayed for the NFT of interest. The detailed view contains the following information: name, image/file, and NFT attributes.
 
 <p align="center" width="100%">
