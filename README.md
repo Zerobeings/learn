@@ -58,7 +58,7 @@ goerli-marketgm will load the goerli marketplace for testing collection launches
 
 After clicking on the preferred market (goerli or mainnet) the market view will display the following. The market is automatically rendered with the Zero Beings NFT collection.
 
-> [factoria](https://docs.factoria.app/#/),  created by [skogard](https://twitter.com/skogard),is a simple cost effective tool to launch your NFT collection.
+> [factoria](https://docs.factoria.app/#/),  created by [skogard](https://twitter.com/skogard), is a simple cost effective tool to launch your NFT collection.
 
 ## Market gm view - mainnet
 
