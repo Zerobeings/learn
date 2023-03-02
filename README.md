@@ -230,7 +230,7 @@ To create the webapp link on phone's home screen go to [gm.zerobeings.xyz](https
 </p>
 
 ## User Experience
-Now the webapp will have a link from the phone home screen. This gives a similar experience to a native application. 
+Now the webapp will have a link from the phone home screen. This gives a similar experience to a native application. Users can log in with there preferred mobile wallet.
 
 <p align="center" width="100%">
     <img width="75%" src="images/afterA2HS.png">
