@@ -164,3 +164,25 @@ The my listings panel contains a view of all the NFTs listed by the connected wa
 <p align="center" width="100%">
     <img width="100%" src="mylistingspanel.png">
 </p>
+
+#### Individual Listings
+
+Each individual listing displays the following: name, price & currency, a cancel listing button, a link to an auto-generated IPFS website, and the iframe embed code.
+
+<p align="center" width="100%">
+    <img width="33%" src="individualmylisting.png">
+</p>
+
+> The auto-generated IPFS website is a feature of the [thirdweb](https://thirdweb.com/?utm_source=embed) marketplace prebuilt smart contract
+
+If the globe is clicked, the user will be lead to the respective NFT listing website.
+
+<p align="center" width="100%">
+    <img width="33%" src="ipfswebsite.png">
+</p>
+
+If the embed icon is clicked, the iframe embed code will be copied to the users clipboard. below is an example of what the code will look like:
+
+```<iframe src="https://gateway.ipfscdn.io/ipfs/Qmcine1gpZUbQ73nk7ZGCcjKBVFYXrEtqrhujXk3HDQ6Nn/marketplace.html?contract=0xE6342Bf304Bac1064b96E71E5343A90FEf332Dd0&amp;chainId=5&amp;listingId=21&amp;theme=dark&amp;primaryColor=blue&amp;secondaryColor=red" width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>```
+
+
