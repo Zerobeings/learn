@@ -173,7 +173,7 @@ Each individual listing displays the following: name, price & currency, a cancel
     <img width="60%" src="individualmylisting.png">
 </p>
 
-> The auto-generated IPFS website is a feature of the [thirdweb](https://thirdweb.com/?utm_source=embed) marketplace prebuilt smart contract
+> The auto-generated IPFS website is a feature of the [thirdweb](https://thirdweb.com/?utm_source=embed) marketplace prebuilt smart contract.
 
 If the globe is clicked, the user will be lead to the respective NFT listing website.
 
