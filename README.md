@@ -225,10 +225,10 @@ The manifest.webmanifest is deployed as shown below. Adjust these parameters whe
 
 To create the webapp link on phone's home screen go to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) or your custom domain using the phone's native browser application.
 
-<p align="center" width="100%">
+<p align="center" width="90%">
     <img width="100%" src="images/pwaA2HS.png">
 </p>
 
-<p align="center" width="100%">
+<p align="center" width="60%">
     <img width="100%" src="images/afterA2HS.png">
 </p>
