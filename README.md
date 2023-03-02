@@ -173,7 +173,10 @@ Each individual listing displays the following: name, price & currency, a cancel
     <img width="60%" src="individualmylisting.png">
 </p>
 
+>   
 > The auto-generated IPFS website is a feature of the [thirdweb](https://thirdweb.com/?utm_source=embed) prebuilt marketplace smart contract.
+>   
+
 
 If the globe is clicked, the user will be lead to the respective NFT listing website.
 
@@ -186,5 +189,12 @@ If the embed icon is clicked, the iframe embed code will be copied to the users 
 ```html
 <iframe src="https://gateway.ipfscdn.io/ipfs/Qmcine1gpZUbQ73nk7ZGCcjKBVFYXrEtqrhujXk3HDQ6Nn/marketplace.html?contract=<marketplacecontract>&amp;chainId=5&amp;listingId=21&amp;theme=dark&amp;primaryColor=blue&amp;secondaryColor=red" width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>
 ```
+### My Portfolio Panel
 
+The my portfolio panel displays all the NFTs owned by the connected wallet. Each NFT will display the following information: name, image, token ID, collection address, link to looksrare & opensea, and list button. If the NFT is currently listed the list button will be deactivated, greyed out, and non-active.
 
+<p align="center" width="100%">
+    <img width="100%" src="myportfoliopanel.png">
+</p>
+
+If the NFT is clicked on a detailed view of the NFT will be displayed, similar to the detailed view from the collection view on the home page.
