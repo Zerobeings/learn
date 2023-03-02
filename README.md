@@ -222,13 +222,14 @@ The manifest.webmanifest is deployed as shown below. Adjust these parameters whe
     "start_url": "/login"
   }
 ```
-
+## A2HS
 To create the webapp link on phone's home screen go to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) or your custom domain using the phone's native browser application.
 
 <p align="center" width="100%">
     <img width="100%" src="images/pwaA2HS.png">
 </p>
 
+## User Experience
 Now the webapp will have a link from the phone home screen. This gives a similar experience to a native application. 
 
 <p align="center" width="100%">
