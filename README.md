@@ -203,7 +203,7 @@ If the NFT is clicked on a detailed view of the NFT will be displayed, similar t
 
 > Zerb gm ☕️ is set up to function as a progressive web application. 
 
-The manifest.webmanifest is deployed as shown below. Adjust these parameters when customizing the marketplace with your NFT collection branding and colorsheme.
+The manifest.webmanifest is deployed as shown below. Adjust these parameters when customizing the marketplace with your NFT collection branding and colorsheme. This configuration will allow the webapp to be full screen when launched from the phone icon link giving the user a phone app like experience.
 
 ```html
 {
