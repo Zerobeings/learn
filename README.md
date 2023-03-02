@@ -201,7 +201,7 @@ If the NFT is clicked on a detailed view of the NFT will be displayed, similar t
 
 # Mobile Devices
 
-> Zerb gm ☕️ is set up to function as a progressive web application. 
+> Zerb gm ☕️ is set up to function as a progressive web application (A2HS). 
 
 The manifest.webmanifest is deployed as shown below. Adjust these parameters when customizing the marketplace with your NFT collection branding and colorsheme. This configuration will allow the webapp to be full screen when launched from the phone icon link giving the user a phone app like experience.
 
@@ -222,3 +222,13 @@ The manifest.webmanifest is deployed as shown below. Adjust these parameters whe
     "start_url": "/login"
   }
 ```
+
+To create the webapp link on phone's home screen go to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) or your custom domain using the phone's native browser application.
+
+<p align="center" width="100%">
+    <img width="100%" src="images/pwaA2HS.png">
+</p>
+
+<p align="center" width="100%">
+    <img width="100%" src="images/afterA2HS.png">
+</p>
