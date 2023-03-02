@@ -197,4 +197,4 @@ The my portfolio panel displays all the NFTs owned by the connected wallet. Each
     <img width="100%" src="myportfoliopanel.png">
 </p>
 
-If the NFT is clicked on a detailed view of the NFT will be displayed, similar to the detailed view from the [Detailed NFT View](https://learn.zerobeings.xyz/#/?id=detailed-nft-view).
+If the NFT is clicked on a detailed view of the NFT will be displayed, similar to the detailed view from the Detailed NFT View.
