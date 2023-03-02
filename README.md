@@ -237,7 +237,7 @@ Now the webapp will have a link from the phone home screen. This gives a similar
 </p>
 
 # Guide
-The guide will demonstrate all the functions utilized through the Zero Beings user interface. There are additional functions that can be explored by reviewing the smart contract [0x0000](). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function.
+The guide will demonstrate all the functions utilized through the Zero Beings user interface. There are additional functions that can be explored by reviewing the smart contract [0x0000](). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function. The details are outlined in their respective sections.
 
 ## Create Listing
 
