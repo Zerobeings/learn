@@ -34,7 +34,7 @@ Wallet authorization is accomplished with [PrivateParty](https://privateparty.de
     <img width="50%" src="images/privateparty.png">
 </p>
 
-To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login.
+To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login with your preferred wallet.
 
 <p align="center" width="100%">
     <img width="33%" src="images/login.png">
