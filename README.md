@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="80%" src="zerobeings_logo_m.png">
+    <img width="80%" src="images/zerobeings_logo_m.png">
 </p>
 
 🚧 Under construction 🚧
@@ -31,25 +31,25 @@ Wallet authorization is accomplished with [PrivateParty](https://privateparty.de
 > Private Party is a dead simple blockchain auth framework created by [skogard](https://twitter.com/skogard)
 
 <p align="center" width="100%">
-    <img width="50%" src="privateparty.png">
+    <img width="50%" src="images/privateparty.png">
 </p>
 
 To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login.
 
 <p align="center" width="100%">
-    <img width="33%" src="login.png">
+    <img width="33%" src="images/login.png">
 </p>
 
 After logging into Zerb gm ☕️, open the menu on the left.
 
 <p align="center" width="100%">
-    <img width="100%" src="menubutton.png">
+    <img width="100%" src="images/menubutton.png">
 </p>
 
 Click on goerli-market or Market gm ☕️.
 
 <p align="center" width="100%">
-    <img width="100%" src="selectmarket.png">
+    <img width="100%" src="images/selectmarket.png">
 </p>
 
 goerli-market will load the goerli marketplace for testing collection launches and rendering various filetypes.
@@ -63,13 +63,13 @@ After clicking on the preferred market (goerli or mainnet) the market view will 
 ## Market gm view - mainnet
 
 <p align="center" width="100%">
-    <img width="100%" src="searchview.png">
+    <img width="100%" src="images/searchview.png">
 </p>
 
 Continue to scroll down the page and three panels will render: the collection info, any available listings for that specific collection, and the NFTs minted for the searched collection.
 
 <p align="center" width="100%">
-    <img width="100%" src="collectionview.png">
+    <img width="100%" src="images/collectionview.png">
 </p>
 
 ### Collection Info
@@ -77,7 +77,7 @@ Continue to scroll down the page and three panels will render: the collection in
 The Collection Info panel contains a combination of imformation rendered from the NFT collection metadata, the collections opensea profile, and both opensea & looksrare floor prices if applicable. The roaltiy information is fetched from the smart contract with the rarible api.
 
 <p align="center" width="100%">
-    <img width="33%" src="collectioninfo.png">
+    <img width="33%" src="images/collectioninfo.png">
 </p>
 
 ### Available Listings
@@ -87,13 +87,13 @@ The Available Listings displays all direct and auction listings for the collecti
 If there are no listings the view will look like this:
 
 <p align="center" width="100%">
-    <img width="100%" src="nolistings.png">
+    <img width="100%" src="images/nolistings.png">
 </p>
 
 If there are listings available the view will look like this:
 
 <p align="center" width="100%">
-    <img width="100%" src="listingsavailable.png">
+    <img width="100%" src="images/listingsavailable.png">
 </p>
 
 If the NFT or the Buy/Offer button is clicked, a detailed view of the listing of interest will be displayed.
@@ -103,13 +103,13 @@ If the NFT or the Buy/Offer button is clicked, a detailed view of the listing of
 If the wallet connected holds the NFT listed, a list of the offers will be displayed. If the wallet is the owner of the NFT, the title of the section heading above the offers is "Offers".
 
 <p align="center" width="100%">
-    <img width="100%" src="marketlistingdetails.png">
+    <img width="100%" src="images/marketlistingdetails.png">
 </p>
 
 If the wallet connected is not the owner, the title will be rendered as "i want that!" above the list of competing offers.
 
 <p align="center" width="100%">
-    <img width="100%" src="iwantthat.png">
+    <img width="100%" src="images/iwantthat.png">
 </p>
 
 
@@ -117,14 +117,14 @@ If the wallet connected is not the owner, the title will be rendered as "i want 
 When the cursor hovers over an NFT in the collection a grey box will outline the NFT of interest. Each individual NFT will display the following information: The name, token ID, collection address (link to etherscan), a link to the NFT on looksrare and opensea.
 
 <p align="center" width="100%">
-    <img width="33%" src="individualcollectionview.png">
+    <img width="33%" src="images/individualcollectionview.png">
 </p>
 
 #### Detailed NFT View
 If the the NFT is clicked, a detailed view will be displayed for the NFT of interest. The detailed view contains the following information: name, image/file, and NFT attributes.
 
 <p align="center" width="100%">
-    <img width="100%" src="detailedview.png">
+    <img width="100%" src="images/detailedview.png">
 </p>
 
 ## My Listings
@@ -132,7 +132,7 @@ If the the NFT is clicked, a detailed view will be displayed for the NFT of inte
 The My Listings page displays the following three panels: create listings, your listings, and your portfolio.
 
 <p align="center" width="100%">
-    <img width="100%" src="listingsoverview.png">
+    <img width="100%" src="images/listingsoverview.png">
 </p>
 
 ### Create Listing Panel
@@ -140,7 +140,7 @@ The My Listings page displays the following three panels: create listings, your 
 By clicking connect the wallet of choice will connect to the marketplace and will be ready to interact with the marketplace smart contract. The Create Listing will display two options: direct or auction.
 
 <p align="center" width="100%">
-    <img width="33%" src="createlistingoptions.png">
+    <img width="33%" src="images/createlistingoptions.png">
 </p>
 
 After selecting which listing option is preferred. The respective listing form will be displayed.
@@ -148,13 +148,13 @@ After selecting which listing option is preferred. The respective listing form w
 #### Create Direct Listing Form
 
 <p align="center" width="100%">
-    <img width="33%" src="createdirectlisting.png">
+    <img width="33%" src="images/createdirectlisting.png">
 </p>
 
 #### Create Auction Listing Form
 
 <p align="center" width="100%">
-    <img width="33%" src="createauctionlisting.png">
+    <img width="33%" src="images/createauctionlisting.png">
 </p>
 
 ### My Listings Panel
@@ -162,7 +162,7 @@ After selecting which listing option is preferred. The respective listing form w
 The my listings panel contains a view of all the NFTs listed by the connected wallet.
 
 <p align="center" width="100%">
-    <img width="100%" src="mylistingspanel.png">
+    <img width="100%" src="images/mylistingspanel.png">
 </p>
 
 #### Individual Listings
@@ -170,7 +170,7 @@ The my listings panel contains a view of all the NFTs listed by the connected wa
 Each individual listing displays the following: name, price & currency, a cancel listing button, a link to an auto-generated IPFS website, and the iframe embed code.
 
 <p align="center" width="100%">
-    <img width="60%" src="individualmylisting.png">
+    <img width="60%" src="images/individualmylisting.png">
 </p>
 
 >   
@@ -181,7 +181,7 @@ Each individual listing displays the following: name, price & currency, a cancel
 If the globe is clicked, the user will be lead to the respective NFT listing website.
 
 <p align="center" width="100%">
-    <img width="33%" src="ipfswebsite.png">
+    <img width="33%" src="images/ipfswebsite.png">
 </p>
 
 If the embed icon is clicked, the iframe embed code will be copied to the users clipboard. below is an example of what the code will look like:
@@ -194,7 +194,7 @@ If the embed icon is clicked, the iframe embed code will be copied to the users 
 The my portfolio panel displays all the NFTs owned by the connected wallet. Each NFT will display the following information: name, image, token ID, collection address, link to looksrare & opensea, and list button. If the NFT is currently listed the list button will be deactivated, greyed out, and non-active.
 
 <p align="center" width="100%">
-    <img width="100%" src="myportfoliopanel.png">
+    <img width="100%" src="images/myportfoliopanel.png">
 </p>
 
 If the NFT is clicked on a detailed view of the NFT will be displayed, similar to the detailed view from the Detailed NFT View.
