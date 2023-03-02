@@ -198,3 +198,27 @@ The my portfolio panel displays all the NFTs owned by the connected wallet. Each
 </p>
 
 If the NFT is clicked on a detailed view of the NFT will be displayed, similar to the detailed view from the Detailed NFT View.
+
+# Mobile Devices
+
+> Zerb gm ☕️ is set up to function as a progressive web application. 
+
+The manifest.webmanifest is deployed as shown below. Adjust these parameters when customizing the marketplace with your NFT collection branding and colorsheme.
+
+```html
+{
+    "background_color": "black",
+    "description": "Zerb gm ☕️",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "icon/zero-icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "Zerb gm ☕️",
+    "short_name": "Zerb gm ☕️",
+    "start_url": "/login"
+  }
+```
