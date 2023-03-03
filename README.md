@@ -287,6 +287,8 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 >* At the end of the auction, no more bids can be placed.
 >* At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller.
 
+⚠️ Take caution when creating an auction as the buyer and seller must close the auction. As a seller, it would be prudent to save the address of the winning bid to attempt reaching out to wallet owner.
+
 To initiate an auction two transactions must occur. The first transaction transfers the NFT being put for auction to escrow in the marketplace contract. The second transaction passes the NFT to be auctioned and the auction parameters. The auction form requires the NFT collection address, NFT token ID, the Sale Price in ETH (buyout price), and the reserve price (minimum initial bid).
 
 <p align="center" width="100%">
@@ -296,7 +298,6 @@ To initiate an auction two transactions must occur. The first transaction transf
 ## Close Auction
 > At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 
-⚠️ Take caution when creating an auction as the buyer and seller must close the auction. As a seller, it would be prudent to save the address of the winning bid to attempt reaching out to wallet owner.
 
 ### Seller
 
