@@ -241,6 +241,7 @@ The guide will demonstrate all the functions utilized through the Market gm â˜•ï
 
 ## Create Direct Listing
 > Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
+>
 >Direct listings are low commitment, high-frequency listings; people constantly list and de-list their NFTs based on market trends. So, the listed NFTs and offer amounts are not escrowed in the Marketplace to keep the seller's NFTs and the buyer's currency liquid.
 >
 >This allows users to list NFTs for sale just by signing an approval; giving them the freedom to list the same NFT in multiple marketplaces, e.g. this Marketplace contract, OpenSea, etc. at the same time.
