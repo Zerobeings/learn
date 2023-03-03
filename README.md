@@ -240,9 +240,22 @@ Now the webapp will have a link from the phone home screen. This gives a similar
 The guide will demonstrate all the functions utilized through the Market gm ☕️ user interface. There are additional functions that can be explored by reviewing the smart contract [0x0000](). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function. The details are outlined in their respective sections.
 
 ## Create Direct Listing
+> Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
+>Direct listings are low commitment, high-frequency listings; people constantly list and de-list their NFTs based on market trends. So, the listed NFTs and offer amounts are not escrowed in the Marketplace to keep the seller's NFTs and the buyer's currency liquid.
+>
+>This allows users to list NFTs for sale just by signing an approval; giving them the freedom to list the same NFT in multiple marketplaces, e.g. this Marketplace contract, OpenSea, etc. at the same time.
+>
+>Key elements of a direct listing:
+>
+> * Sellers list their NFT for direct sale with the price users can buy it for.
+> * The NFT remains in your wallet, but you provide permission for the marketplace contract to move the NFT.
+> * If a user pays the asking price, the NFT will be transferred to them, and the seller will receive the funds.
+> * Users can make offers below the asking price, and the listing can have multiple offers. The seller can choose to accept an offer at any time.
+> * Users can cancel their bids at any time.
+
 To create a listing two transactions must occur. The first transaction gives permission to the marketplace contract to transfer your NFT upon sale. The first transaction is an approval function on the collection smart contract. The second transaction approves creation of the listing on the marketplace contract at the listing price specified in the listing form. All direct listings are for a duration of 7 days.
 
-> Connect, select "Direct", approve access to and transfer of your NFT to be listed, and approve listing of the NFT.
+Connect, select "Direct", approve access to and transfer of your NFT to be listed, and approve listing of the NFT.
 
 <p align="center" width="100%">
     <img width="80%" src="images/createlisting.gif">
@@ -258,6 +271,7 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 </p>
 
 ## Create Auction
+To create a direct listing two transaction must occur
 
 ## Close Auction
 
