@@ -296,6 +296,8 @@ To initiate an auction two transactions must occur. The first transaction transf
 ## Close Auction
 > At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 
+⚠️ Take caution when creating an auction as the buyer and seller must close the auction. As a seller, it would be prudent to save the address of the winning bid to attempt reaching out to wallet owner.
+
 ### Seller
 
 ### Buyer
