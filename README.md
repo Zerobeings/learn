@@ -272,7 +272,22 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 </p>
 
 ## Create Auction
-To create a direct listing two transaction must occur
+> Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
+>
+>Auction listings are high commitment, low-frequency listings. The seller and bidders respect the auction window, and recognize that their NFTs / bid amounts will be illiquid for the auction duration, and expect a guaranteed payout at auction closing — the auctioned items for the bidder, and the winning bid amount for the seller.
+>
+>Both the NFTs that are listed for sale in an auction and the highest bid at any given moment are escrowed in the market.
+>
+>Key elements of an auction listing:
+>
+>* Sellers list their NFT for auction with a minimum asking price.
+>* The NFT is transferred to escrow in the marketplace contract until the auction is canceled or finished.
+>* Other users can place bids until the auction is closed.
+>* Users can only make a bid if it is higher than the current highest bid (or asking price if there are no bids). Once made, bids cannot be withdrawn, and the auction contract holds the funds in escrow.
+>* At the end of the auction, no more bids can be placed.
+>* At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller.
+
+To initiate an auction 
 
 ## Close Auction
 
