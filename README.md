@@ -201,7 +201,7 @@ If the NFT is clicked on a detailed view of the NFT will be displayed, similar t
 
 # Mobile Devices
 
-> Zerb gm ☕️ is set up to function as a progressive web application (A2HS). 
+> Zerb gm ☕️ is set up to function as a progressive web application (A2HS). Zerb gm ☕️ is the gateway to Market gm ☕️. 
 
 The manifest.webmanifest is deployed as shown below. Adjust these parameters when customizing the marketplace with your NFT collection branding and colorsheme. This configuration will allow the webapp to be full screen when launched from the phone icon link giving the user a phone app like experience.
 
@@ -237,11 +237,18 @@ Now the webapp will have a link from the phone home screen. This gives a similar
 </p>
 
 # Guide
-The guide will demonstrate all the functions utilized through the Zero Beings user interface. There are additional functions that can be explored by reviewing the smart contract [0x0000](). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function. The details are outlined in their respective sections.
+The guide will demonstrate all the functions utilized through the Market gm ☕️ user interface. There are additional functions that can be explored by reviewing the smart contract [0x0000](). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function. The details are outlined in their respective sections.
 
-## Create Listing
+## Create Direct Listing
+To create a listing two transactions must occur. The first transaction gives permission to the marketplace contract to transfer your NFT upon sale. The first transaction is an approval function on the collection smart contract. The second transaction approves creation of the listing on the marketplace contract at the listing price specified in the listing form.
 
-## Cancel Listing
+> Connect, select "Direct", approve the transfer of your NFT, and approve sale of the NFT.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/createlisting.gif">
+</p>
+
+## Cancel Direct Listing
 
 ## Create Auction
 
