@@ -11,7 +11,7 @@
 1. **Overview:** A tour of the marketplace.
 2. **Mobile Devices:** How to use Market gm as a progressive web application.
 2. **Guide:** How to create & cancel listings, create & close auctions, create an offer and Buy.
-3. **Proposed Metadata Structures:** Additional meta data feature for rendinging non-image filetypes.
+3. **Proposed Metadata Structure:** Additional meta data feature for rendinging non-image filetypes.
 4. **goerli-market**: Overview of the goerli-market.
 5. **Maretplace Source Code:** Overview of the marketplace source code.
 6. **More Info:** FAQs, APIs, and links.
@@ -307,3 +307,4 @@ To initiate an auction two transactions must occur. The first transaction transf
 
 ## Buy at full price or buyout auction
 
+# Proposed Metadata Structure
