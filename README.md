@@ -249,6 +249,13 @@ To create a listing two transactions must occur. The first transaction gives per
 </p>
 
 ## Cancel Direct Listing
+To cancel a direct listing first a wallet must be connect and secondly a cancel transaction must be approved. Only listings created by the wallet address that owns the NFT will be displayed.
+
+> Click "cancel" on the NFT listing you would like to cancel. Connect wallet & approve cancel transaction.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/cancelisting.gif">
+</p>
 
 ## Create Auction
 
