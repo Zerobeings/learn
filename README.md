@@ -271,6 +271,9 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
     <img width="80%" src="images/cancelisting.gif">
 </p>
 
+## Submit an Offer on Direct Listing 
+Submit an offer in WETH 
+
 ## Create Auction
 > Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 >
@@ -300,6 +303,10 @@ To bid on an auction NFT click on the NFT beings auctioned from the Available Li
 
 > Reminder, if you are the winning bid you must close the auction at the end of the sale duration to complete the transaction and transfer of the NFT into you wallet.
 
+<p align="center" width="100%">
+    <img width="80%" src="images/submittingbid.gif">
+</p>
+
 ## Close Auction
 > At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 
@@ -308,7 +315,7 @@ To bid on an auction NFT click on the NFT beings auctioned from the Available Li
 
 ### Buyer
 
-## Submit an Offer
+
 
 ## Buy at full price or buyout auction
 
