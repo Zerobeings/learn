@@ -305,6 +305,8 @@ After bids are received for an auction the listing details page will display the
 </p>
 
 ## Bid on Auctioned NFT
+> Winning bid can be placed within 60 seconds of the auction closing.
+
 To bid on an auction NFT click on the NFT beings auctioned from the Available Listings panel on the Market gm ☕️ home page. You will be directed to a detail view of the listing page. Review the listing details. Near the bottom of the listing detail panel there is a section titled "i want that". Click the connect button to connect to the marketplace contract and reveal two purchasing options. The first option is to buyout the NFT. The buyout price is in the listing destils. The second option is to place a bid on the NFT. If you are the first person to bid, your bid price must meet the reserve price (minimum bid amount). If there are other bids, they will be listed under the "i want that" title and your bid must be 5% higher than the highest bid. The bid duration is equal to the time left until auction has ended.
 
 > Reminder, if you are the winning bid you must close the auction at the end of the sale duration to complete the transaction and transfer of the NFT into you wallet.
@@ -325,7 +327,7 @@ When the seller is ready to close the auction, the seller wallet address must na
     <img width="33%" src="images/closeauctionimg.png">
 </p>
 
-> It is recomended to take note of the highest bidders address prior to closing the auction.
+> It is recomended to take record of the highest bidders address prior to closing the auction.
 
 Once the close auction function is initiated. You will be asked to connect your wallet and then submit the transaction to close the auction. After the auction is closed the NFT will no longer be available on your listings panel. 
 
