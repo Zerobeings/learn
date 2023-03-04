@@ -308,3 +308,17 @@ To initiate an auction two transactions must occur. The first transaction transf
 ## Buy at full price or buyout auction
 
 # Proposed Metadata Structure
+
+
+
+
+
+
+
+
+
+# More Info
+
+
+## Reference Documents
+* Thirdweb marketplace contract technical [documents](https://portal.thirdweb.com/contracts/design/Marketplace#currency-transfers)
