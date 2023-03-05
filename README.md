@@ -315,13 +315,19 @@ To bid on an auction NFT click on the NFT beings auctioned from the Available Li
     <img width="80%" src="images/submittingbid.gif">
 </p>
 
+After you have placed a bid on an NFT a My Bids panel will be generated on the My Listings page. If you place multiple bids on a single NFT, all bids will be displayed.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/myBidspanel.png">
+</p>
+
 ## Close Auction
 When an auction is created the default auction duraction is 7 days. Any bid submitted will expire at the end of the auction.
 
 > At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 
 ### Seller
-When the seller is ready to close the auction, the seller wallet address must navigate to the My Listings page. Navigate to NFT being auction and click "Close Auction" located under the NFT.
+When the seller is ready to close the auction, the seller wallet address must navigate to the My Listings page. Navigate to NFT being auctioned under the My Listings panel and click "Close Auction" located under the NFT.
 
 <p align="center" width="100%">
     <img width="33%" src="images/closeauctionimg.png">
@@ -332,8 +338,11 @@ When the seller is ready to close the auction, the seller wallet address must na
 Once the close auction function is initiated. You will be asked to connect your wallet and then submit the transaction to close the auction. After the auction is closed the NFT will no longer be available on your listings panel. 
 
 ### Buyer
+At the close of the auction a Close Auction button will appear below you bids. If you held the winning bid, you click the Close Auction button under the winning bid in the My Bids Panel.
 
-
+<p align="center" width="100%">
+    <img width="80%" src="images/myBidspanelCloseAuction.png">
+</p>
 
 ## Buy at full price or buyout auction
 
