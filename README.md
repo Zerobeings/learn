@@ -275,6 +275,9 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 Submit an offer in WETH 
 
 ## Buy at Listed Price
+If you would like to purchase the NFT at the listed price, click the "Buy" button and approve the buy transaction.
+
+
 
 
 ## Create Auction
@@ -341,7 +344,7 @@ When the seller is ready to close the auction, the seller wallet address must na
 Once the close auction function is initiated. You will be asked to connect your wallet and then submit the transaction to close the auction. After the auction is closed the NFT will no longer be available on your listings panel. 
 
 ### Buyer
-At the close of the auction a Close Auction button will appear below you bids. If you held the winning bid, you click the Close Auction button under the winning bid in the My Bids Panel.
+At the close of the auction a Close Auction button will appear below you bids. If you held the winning bid, you click the Close Auction button under the winning bid in the My Bids Panel. All bids will be displayed in the My Bids panel. If you are in a bidding war for an NFT, all bids placed for that NFT will be listed here.
 
 <p align="center" width="100%">
     <img width="80%" src="images/myBidspanelCloseAuction.png">
@@ -354,6 +357,8 @@ In this example, you will click on the Close Auction button below the bid for 0.
 </p>
 
 ## Buyout auction
+If you would prefer to buyout the auction, you can do so by clicking the "Buyout" button. First search the NFT collection of interest, locate the NFT that is available for auction. Click on the "Place Bid" button. You will be navigated to the listings detail page. Review the details of the NFT and the buyout price displayed in the detail view. Navigate to the "i want that" section, then connect your wallet. Click "Buyout" to initiate the buy fuction to buyout the auction.
+
 
 
 # Proposed Metadata Structure
