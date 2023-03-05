@@ -352,3 +352,4 @@ Once the close auction function is initiated. You will be asked to connect your 
 
 ## Reference Documents
 * Thirdweb marketplace contract technical [documents](https://portal.thirdweb.com/contracts/design/Marketplace#currency-transfers)
+* Thirdweb javascript/typscript documentation [javascript](https://portal.thirdweb.com/typescript/sdk.thirdwebsdk.getmarketplace) 
