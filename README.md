@@ -274,6 +274,9 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 ## Submit an Offer on Direct Listing 
 Submit an offer in WETH 
 
+## Buy at Listed Price
+
+
 ## Create Auction
 > Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 >
@@ -327,10 +330,10 @@ When an auction is created the default auction duration is 7 days. Any bid submi
 > At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 
 ### Seller
-When the seller is ready to close the auction, the seller wallet address must navigate to the My Listings page. Navigate to NFT being auctioned under the My Listings panel and click "Close Auction" located under the NFT.
+When the seller is ready to close the auction, the seller wallet address must navigate to the My Listings page. Navigate to NFT being auctioned under the My Listings panel and click "Close Auction" located under the NFT being auctioned.
 
 <p align="center" width="100%">
-    <img width="33%" src="images/closeauctionimg.png">
+    <img width="80%" src="images/sellercloseauction.png">
 </p>
 
 > It is recomended to take record of the highest bidders address prior to closing the auction.
@@ -350,7 +353,8 @@ In this example, you will click on the Close Auction button below the bid for 0.
     <img width="33%" src="images/closeauctionimg.png">
 </p>
 
-## Buy at full price or buyout auction
+## Buyout auction
+
 
 # Proposed Metadata Structure
 
