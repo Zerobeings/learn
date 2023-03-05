@@ -322,7 +322,7 @@ After you have placed a bid on an NFT a My Bids panel will be generated on the M
 </p>
 
 ## Close Auction
-When an auction is created the default auction duraction is 7 days. Any bid submitted will expire at the end of the auction.
+When an auction is created the default auction duration is 7 days. Any bid submitted will expire at the end of the auction.
 
 > At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 
@@ -342,6 +342,12 @@ At the close of the auction a Close Auction button will appear below you bids. I
 
 <p align="center" width="100%">
     <img width="80%" src="images/myBidspanelCloseAuction.png">
+</p>
+
+In this example, you will click on the Close Auction button below the bid for 0.003 GOR.
+
+<p align="center" width="100%">
+    <img width="33%" src="images/closeauctionimg.png">
 </p>
 
 ## Buy at full price or buyout auction
