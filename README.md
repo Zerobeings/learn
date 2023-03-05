@@ -370,5 +370,12 @@ In this example, you will click on the Close Auction button below the bid for 0.
 
 
 ## Reference Documents
+* Skogard Productions [PrivateParty](https://privateparty.dev)
+* Skogard Productions [factoria](https://docs.factoria.app/#/)
 * Thirdweb marketplace contract technical [documents](https://portal.thirdweb.com/contracts/design/Marketplace#currency-transfers)
-* Thirdweb javascript/typscript documentation [javascript](https://portal.thirdweb.com/typescript/sdk.thirdwebsdk.getmarketplace) 
+* Thirdweb javascript/typscript documentation [javascript](https://portal.thirdweb.com/typescript/sdk.thirdwebsdk.getmarketplace)
+* Thirdweb dashboard for the Zero Beings goerli contract
+
+## Additional Resources
+* Skogard Productions [Cell](https://cell.computer/#/?id=introduction)
+* Skogard Productions [Moneypipe](https://moneypipe.xyz/)
