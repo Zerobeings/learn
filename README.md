@@ -262,7 +262,16 @@ Connect, select "Direct", approve access to and transfer of your NFT to be liste
     <img width="80%" src="images/createlisting.gif">
 </p>
 
-## Cancel Direct Listing
+## Seller
+
+### Accept a Direct Listing Offer
+If you would like to accept an offer for a directlistings. Navigate to the My Listings page and then to the My Listings Panel. Select the NFT you would like to accept an offer on. Connect your wallet and an "accept" button will appear. Click "accept" to accept the offer from the offering wallet address.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/acceptanoffer.gif">
+</p>
+
+### Cancel Direct Listing
 To cancel a direct listing first a wallet must be connect and secondly a cancel transaction must be approved. Only listings created by the wallet address that owns the NFT will be displayed.
 
 > Click "cancel" on the NFT listing you would like to cancel. Connect wallet & approve cancel transaction.
@@ -271,14 +280,20 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
     <img width="80%" src="images/cancelisting.gif">
 </p>
 
-## Submit an Offer on Direct Listing 
+## Buyer
+### Submit an Offer on Direct Listing 
 If you would like to offer a price lower than the listed price, input the desired offer amount and click "Make Offer". You will need to approve two transactions. The frist transaction will be to approve the WETH spending limit. This limit matches the amount of the proposed offer. Once the spend limit is approved, the offer transaction must be approved to complete the offer. All offers will be be populated in the "Offers"/"i want that" section of the NFT details panel.
 
 <p align="center" width="100%">
     <img width="80%" src="images/offerdirectlistings.gif">
 </p>
 
-## Buy at Listed Price
+### Cancel an Offer on Direct Listing
+If you would like to cancel an offer you made on a direct listing.
+
+
+
+### Buy at Listed Price
 If you would like to purchase the NFT at the listed price, click the "Buy" button and approve the buy transaction.
 
 <p align="center" width="100%">
