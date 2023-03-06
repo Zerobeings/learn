@@ -252,7 +252,7 @@ The guide will demonstrate all the functions utilized through the Market gm â˜•ï
 > * The NFT remains in your wallet, but you provide permission for the marketplace contract to move the NFT.
 > * If a user pays the asking price, the NFT will be transferred to them, and the seller will receive the funds.
 > * Users can make offers below the asking price, and the listing can have multiple offers. The seller can choose to accept an offer at any time.
-> * Users can cancel their bids at any time.
+> * Users can cancel their [offer] at any time.
 
 To create a listing two transactions must occur. The first transaction gives permission to the marketplace contract to transfer your NFT upon sale. The first transaction is an approval function on the collection smart contract. The second transaction approves creation of the listing on the marketplace contract at the listing price specified in the listing form. All direct listings are for a duration of 7 days.
 
