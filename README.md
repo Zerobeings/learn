@@ -272,13 +272,18 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 </p>
 
 ## Submit an Offer on Direct Listing 
-Submit an offer in WETH 
+If you would like to offer a price lower than the listed price, input the desired offer amount and click "Make Offer". You will need to approve two transactions. The frist transaction will be to approve the WETH spending limit. This limit matches the amount of the proposed offer. Once the spend limit is approved, the offer transaction must be approved to complete the offer. All offers will be be populated in the "Offers"/"i want that" section of the NFT details panel.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/offerdirectlistings.gif">
+</p>
 
 ## Buy at Listed Price
 If you would like to purchase the NFT at the listed price, click the "Buy" button and approve the buy transaction.
 
-
-
+<p align="center" width="100%">
+    <img width="80%" src="images/buydirectlisting.gif">
+</p>
 
 ## Create Auction
 > Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
