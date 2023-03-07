@@ -382,7 +382,57 @@ If you would prefer to buyout the auction, you can do so by clicking the "Buyout
 
 # Metadata Structure
 
-
+```json
+{
+    "name": "Zero Beings #1",
+    "description": "2022 Zero Beings",
+    "image": "ipfs://bafybeihvhk34lgwoh42qjkvz6obyeyls3236s5gojjukw3sq6ommg2eaye/00001.png",
+    "file": "ipfs://bafybeihvhk34lgwoh42qjkvz6obyeyls3236s5gojjukw3sq6ommg2eaye/00001.png",
+    "filetype": "png",
+    "attributes": [
+        {
+            "trait_type": "The Underground",
+            "value": "Blue"
+        },
+        {
+            "trait_type": "Background Space",
+            "value": "Stars"
+        },
+        {
+            "trait_type": "Hair",
+            "value": "Hair Buns"
+        },
+        {
+            "trait_type": "Zero Being",
+            "value": "Bright Blue"
+        },
+        {
+            "trait_type": "Eyes",
+            "value": "Laser Eyes"
+        },
+        {
+            "trait_type": "Home Planet",
+            "value": "Luyten b"
+        },
+        {
+            "trait_type": "House",
+            "value": "Atomic"
+        },
+        {
+            "trait_type": "Rocket Type",
+            "value": "One"
+        },
+        {
+            "trait_type": "Mode",
+            "value": "Space"
+        },
+        {
+            "trait_type": "Catchphrase",
+            "value": "Water Buffalo"
+        }
+    ]
+}
+```
 
 
 
