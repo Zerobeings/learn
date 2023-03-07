@@ -438,7 +438,10 @@ Follow the guide below to get started on your own NFT marketplace today!
 3. Deploy your own thirdweb mainnet marketplace [contract](https://thirdweb.com/dashboard/contracts).
 4. Update the marketplace contract address.
 
-#### Change teh NFT Gate
+#### Change the NFT Gate
+
+> A complete guide can be found at Skograd's [PrivateParty](https://privateparty.dev)
+
 You will first need to update the private part authorization. Below is the current server authorization with a user `'zerb'`, contract name `zerb`, a contract address `'0x8FbA3ebe77D3371406a77EEaf40c89C1Ed55364a'`, and a balance call function `let balance = await contracts.zerb.methods.balanceOf(account).call()`. 
 
 ```javascript
