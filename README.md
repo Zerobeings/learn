@@ -13,7 +13,7 @@
 2. **Guide:** How to create & cancel listings, create & close auctions, create an offer and Buy.
 3. **Metadata Structure:** Additional meta data feature for rendering non-image filetypes.
 4. **goerli-market**: Overview of the goerli-market.
-5. **Maretplace Source Code:** Overview of the marketplace source code.
+5. **Maretplace Repo:** Overview of the marketplace source code.
 6. **More Info:** FAQs, APIs, and links.
 
 
@@ -191,7 +191,7 @@ If the embed icon is clicked, the iframe embed code will be copied to the users 
 ```
 ### My Portfolio Panel
 
-The my portfolio panel displays all the NFTs owned by the connected wallet. Each NFT will display the following information: name, image, token ID, collection address, link to looksrare & opensea, and list button. If the NFT is currently listed the list button will be deactivated, greyed out, and non-active.
+The my portfolio panel displays all the NFTs owned by the connected wallet. Each NFT will display the following information: name, image, token ID, collection address, link to looksrare & opensea, and list button.
 
 <p align="center" width="100%">
     <img width="100%" src="images/myportfoliopanel.png">
@@ -237,7 +237,7 @@ Now the webapp will have a link from the phone home screen. This gives a similar
 </p>
 
 # Guide
-The guide will demonstrate all the functions utilized through the Market gm ☕️ user interface. There are additional functions that can be explored by reviewing the smart contract [0x0000](). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function. The details are outlined in their respective sections.
+The guide will demonstrate all the functions utilized through the Market gm ☕️ user interface. There are additional functions that can be explored by reviewing the smart contract [0xe6342bf304bac1064b96e71e5343a90fef332dd0](https://goerli.etherscan.io/address/0xe6342bf304bac1064b96e71e5343a90fef332dd0#code). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function. The details are outlined in their respective sections.
 
 ## Create Direct Listing
 > Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
@@ -252,7 +252,6 @@ The guide will demonstrate all the functions utilized through the Market gm ☕�
 > * The NFT remains in your wallet, but you provide permission for the marketplace contract to move the NFT.
 > * If a user pays the asking price, the NFT will be transferred to them, and the seller will receive the funds.
 > * Users can make offers below the asking price, and the listing can have multiple offers. The seller can choose to accept an offer at any time.
-> * Users can cancel their [offer] at any time.
 
 To create a listing two transactions must occur. The first transaction gives permission to the marketplace contract to transfer your NFT upon sale. The first transaction is an approval function on the collection smart contract. The second transaction approves creation of the listing on the marketplace contract at the listing price specified in the listing form. All direct listings are for a duration of 7 days.
 
@@ -282,16 +281,14 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 
 ## Buyer
 ### Submit an Offer on Direct Listing 
+
+> ⚠️ Once an offer is made, it can not be cancelled.
+
 If you would like to offer a price lower than the listed price, input the desired offer amount and click "Make Offer". You will need to approve two transactions. The frist transaction will be to approve the WETH spending limit. This limit matches the amount of the proposed offer. Once the spend limit is approved, the offer transaction must be approved to complete the offer. All offers will be be populated in the "Offers"/"i want that" section of the NFT details panel.
 
 <p align="center" width="100%">
     <img width="80%" src="images/offerdirectlistings.gif">
 </p>
-
-### Cancel an Offer on Direct Listing
-If you would like to cancel an offer you made on a direct listing.
-
-
 
 ### Buy at Listed Price
 If you would like to purchase the NFT at the listed price, click the "Buy" button and approve the buy transaction.
@@ -394,14 +391,13 @@ If you would prefer to buyout the auction, you can do so by clicking the "Buyout
 
 
 # More Info
-
+If you would like to take a deep dive into the tools used to build this marketplace, review the reference documents. The additional resources section is a list of tools to help you launch and manage your NFT collections. Enjoy!
 
 ## Reference Documents
 * Skogard Productions [PrivateParty](https://privateparty.dev)
 * Skogard Productions [factoria](https://docs.factoria.app/#/)
 * Thirdweb marketplace contract technical [documents](https://portal.thirdweb.com/contracts/design/Marketplace#currency-transfers)
-* Thirdweb javascript/typscript documentation [javascript](https://portal.thirdweb.com/typescript/sdk.thirdwebsdk.getmarketplace)
-* Thirdweb dashboard for the Zero Beings goerli contract
+* Thirdweb typescript documentation [typescript](https://portal.thirdweb.com/typescript/sdk.marketplace)
 
 ## Additional Resources
 * Skogard Productions [Cell](https://cell.computer/#/?id=introduction)
