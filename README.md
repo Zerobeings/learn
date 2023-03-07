@@ -412,6 +412,8 @@ The limitations are commented in server.js and are as follows:
 * Alchemy API does not currently support `getFloorPrice` on the goerli testnet api.
 * Alchemy API does not currently support `reingestContract` on the goerli testnet api.
 
+These limitations also prevent a total supply for a collection from beings retrived. If the collection exceeds 100, the collection items will be displayed as `+100` in the "Collection View" panel on the home page and enough pages will be calculated for a collectin of 10,000 NFTs.
+
 # Marketplace Repo
 This marketplace repository can be found at the Zero Beings github page. 
 
