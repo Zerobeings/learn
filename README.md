@@ -414,7 +414,7 @@ Follow the guide below to get started on your own NFT marketplace today!
 * [NodeJs](https://nodejs.org/en/download/)
 
 ### Installation
-> 🚨 [Wallet Connect](https://github.com/WalletConnect/web3modal-vanilla-js-example). recommends only running the modal on https. HTTPS setup instructions can be found on the Wallet Connect github repo.
+> 🚨 [Wallet Connect](https://github.com/WalletConnect/web3modal-vanilla-js-example) recommends only running the modal on https. HTTPS setup instructions can be found on the Wallet Connect github repo. Additionally the modal that is beings used was recently archived. Next step is to upgrade the wallet connect modal.
 
 1. Fork the project.
 2. Clone the project.
