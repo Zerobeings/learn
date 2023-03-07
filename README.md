@@ -474,7 +474,15 @@ party.add('user', {
 ```
 
 #### Using Your Own Marketplace Contracts
+There are total seven locations in which the goerli & mainnet contracts are explicitly used.
 
+1. server.js
+2. mbox.json
+3. gbox.json
+4. listingsCard.ejs (IPFS Link)
+5. mybids.ejs (IPFS Link)
+6. goerli-listingsCard.ejs (IPFS Link)
+7. goerli-mybids.ejs (IPFS Link)
 
 # More Info
 If you would like to take a deep dive into the tools used to build this marketplace, review the reference documents. The additional resources section is a list of tools to help you launch and manage your NFT collections. Enjoy!
