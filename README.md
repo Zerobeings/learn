@@ -2,7 +2,7 @@
     <img width="80%" src="images/zerobeings_logo_m.png">
 </p>
 
-🚧 Under construction 🚧
+# 🚧 Market gm ☕️ is currently in testing phase 🚧
 ## Market gm ☕️ - An NFT marketplace 
 
 > 0.5% platform fee & [EIP-2981](https://eips.ethereum.org/EIPS/eip-2981) royalties honored, filetype flexibility, auto-generated IPFS site, and fully customizable.
