@@ -447,7 +447,7 @@ Follow the guide below to get started on your own NFT marketplace today!
 You will first need to update the private party authorization. Below is the current server authorization with a user `'zerb'`, contract name `zerb`, a contract address `'0x8FbA3ebe77D3371406a77EEaf40c89C1Ed55364a'`, and a balance call function
 
 ```javascript
-let balance = await contracts.zerb.methods.balanceOf(account).call()`
+let balance = await contracts.zerb.methods.balanceOf(account).call()
 ```
 
 ```javascript
