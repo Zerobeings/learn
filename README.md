@@ -282,7 +282,7 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 ## Buyer
 ### Submit an Offer on Direct Listing 
 
-> ⚠️ Once an offer is made, it can not be cancelled.
+> ⚠️ Once an offer is made it can not be cancelled.
 
 If you would like to offer a price lower than the listed price, input the desired offer amount and click "Make Offer". You will need to approve two transactions. The frist transaction will be to approve the WETH spending limit. This limit matches the amount of the proposed offer. Once the spend limit is approved, the offer transaction must be approved to complete the offer. All offers will be be populated in the "Offers"/"i want that" section of the NFT details panel.
 
