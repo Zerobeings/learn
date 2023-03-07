@@ -481,16 +481,13 @@ If you would like to take a deep dive into the tools used to build this marketpl
 
 ## FAQs
 * Can any collection be listed on the marketplace?
-
-Yes, the marketplace contract is setup to allow sale of any NFT collection.
+    Yes, the marketplace contract is setup to allow sale of any NFT collection.
 
 * Can any wallet address list an NFT on the marketplace?
-
-Yes, any wallet can create a listing on the NFT marketplace
+    Yes, any wallet can create a listing on the NFT marketplace
 
 * What is the platform fee for a sale on the marketplace?
-
-We charge a platform fee of 0.5% for each sale.
+    We charge a platform fee of 0.5% for each sale.
 
 ## Reference Documents
 * Skogard Productions [PrivateParty](https://privateparty.dev)
