@@ -10,11 +10,11 @@
 
 1. **Overview:** A tour of the marketplace.
 2. **Mobile Devices:** How to use Market gm as a progressive web application.
-2. **Guide:** How to create & cancel listings, create & close auctions, create an offer and Buy.
-3. **Metadata Structure:** Additional meta data feature for rendering non-image filetypes.
-4. **goerli-market**: Overview of the goerli-market.
-5. **Maretplace Repo:** Overview of the marketplace source code.
-6. **More Info:** FAQs and source documentation.
+3. **Guide:** How to create & cancel listings, create & close auctions, create an offer and Buy.
+4. **Metadata Structure:** Additional meta data feature for rendering non-image filetypes.
+5. **goerli-market**: Overview of the goerli-market.
+6. **Maretplace Repo:** Overview of the marketplace source code.
+7. **More Info:** FAQs and source documentation.
 
 
 # Overview
@@ -404,6 +404,14 @@ It is recommended to follow the metadata structure standard developed by [opense
     ]
 }
 ```
+# goerli-market
+The goerli-market aspect of the website has some limitations as compared to the mainnet pages.
+The limitations are commented in server.js and are as follows:
+
+* Alchemy API does not currently support `summarizeNFTAttributes` on the goerli testnet api.
+* Alchemy API does not currently support `getFloorPrice` on the goerli testnet api.
+* Alchemy API does not currently support `reingestContract` on the goerli testnet api.
+
 # Marketplace Repo
 This marketplace repository can be found at the Zero Beings github page. 
 
@@ -414,7 +422,9 @@ Follow the guide below to get started on your own NFT marketplace today!
 * [NodeJs](https://nodejs.org/en/download/)
 
 ### Installation
-> 🚨 [Wallet Connect](https://github.com/WalletConnect/web3modal-vanilla-js-example) recommends only running the modal on https. HTTPS setup instructions can be found on the Wallet Connect github repo. Additionally the modal that is beings used was recently archived. Next step is to upgrade the wallet connect modal.
+> 🚨 [Wallet Connect](https://github.com/WalletConnect/web3modal-vanilla-js-example) recommends only running the modal on https. HTTPS setup instructions can be found on the Wallet Connect github repo.
+
+> 🚨 Wallet Connect recently depreciated v1.0. Next step is to upgrade the connect functionality for Market gm .
 
 1. Fork the project.
 2. Clone the project.
@@ -500,6 +510,7 @@ If you would like to take a deep dive into the tools used to build this marketpl
 ## Reference Documents
 * Skogard Productions [PrivateParty](https://privateparty.dev)
 * Skogard Productions [factoria](https://docs.factoria.app/#/)
+* [Alchemy API](https://docs.alchemy.com/reference/nft-api-quickstart) 
 * Thirdweb marketplace contract technical [documents](https://portal.thirdweb.com/contracts/design/Marketplace#currency-transfers)
 * Thirdweb typescript documentation [typescript](https://portal.thirdweb.com/typescript/sdk.marketplace)
 
