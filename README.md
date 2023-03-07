@@ -14,7 +14,7 @@
 3. **Metadata Structure:** Additional meta data feature for rendering non-image filetypes.
 4. **goerli-market**: Overview of the goerli-market.
 5. **Maretplace Repo:** Overview of the marketplace source code.
-6. **More Info:** FAQs, APIs, and links.
+6. **More Info:** FAQs and source documentation.
 
 
 # Overview
@@ -381,7 +381,7 @@ If you would prefer to buyout the auction, you can do so by clicking the "Buyout
 </p>
 
 # Metadata Structure
-It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards) with two additional items: file and filetype. This will simplify the marketplace sort function when listing non-image based NFTs.
+It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards) with two additional items: file and filetype. This will simplify the marketplace sort function when listing non-image based NFTs. It enables to the ability for future file type rendering as well.
 
 ```json
 {
@@ -404,10 +404,93 @@ It is recommended to follow the metadata structure standard developed by [opense
     ]
 }
 ```
+# Marketplace Repo
+This marketplace repository can be found at the Zero Beings github page. 
+
+## Repo Quickstart
+Follow the guide below to get started on your own NFT marketplace today!
+
+### Prerequisites
+* [NodeJs](https://nodejs.org/en/download/)
+
+### Installation
+> 🚨 [Wallet Connect](https://github.com/WalletConnect/web3modal-vanilla-js-example). recommends only running the modal on https. HTTPS setup instructions can be found on the Wallet Connect github repo.
+
+1. Fork the project.
+2. Clone the project.
+3. Navigate to the project directory `cd zerb-nft-marketplace`.
+4. Install dependencies with `npm install`.
+5. Run `node server` (🚨 not recommended by Wallet Connect).
+
+### Making it your Own
+1. Change the NFT gating contract and user name.
+2. Deploy your own thirdweb goerli marketplace [contract](https://thirdweb.com/dashboard/contracts). 
+3. Deploy your own thirdweb mainnet marketplace [contract](https://thirdweb.com/dashboard/contracts).
+4. Update the marketplace contract address.
+
+#### Change teh NFT Gate
+You will first need to update the private part authorization. Below is the current server authorization with a user `'zerb'`, contract name `zerb`, a contract address `'0x8FbA3ebe77D3371406a77EEaf40c89C1Ed55364a'`, and a balance call function `let balance = await contracts.zerb.methods.balanceOf(account).call()`. 
+
+```javascript
+party.add('zerb', {
+  contracts: {
+    zerb: {
+      address: '0x8FbA3ebe77D3371406a77EEaf40c89C1Ed55364a', //for zero beings 
+      rpc: process.env.RPC,
+      abi: party.abi.erc721,
+    },
+  },
+  authorize: async (req, account, contracts) => {
+    let balance = await contracts.zerb.methods.balanceOf(account).call();
+    if (balance > 0) return { balance: balance };
+    else
+      throw new Error(
+        "You must own at least one 'Zero Being' mint at https://mint.zerobeings.xyz"
+      );
+  },
+});
+```
+
+For example, let say you would like to change the user and the NFT gate, the changes would look something like this:
+
+```javascript
+party.add('user', {
+  contracts: {
+    mycontract: {
+      address: '0x0........', //your collection address
+      rpc: process.env.RPC,
+      abi: party.abi.erc721,
+    },
+  },
+  authorize: async (req, account, contracts) => {
+    let balance = await contracts.mycontract.methods.balanceOf(account).call();
+    if (balance > 0) return { balance: balance };
+    else
+      throw new Error(
+        "You must own at least one 'Your NFT' mint at https://yourdomain.com"
+      );
+  },
+});
+```
+
+#### Using Your Own Marketplace Contracts
 
 
 # More Info
 If you would like to take a deep dive into the tools used to build this marketplace, review the reference documents. The additional resources section is a list of tools to help you launch and manage your NFT collections. Enjoy!
+
+## FAQs
+* Can any collection be listed on the marketplace?
+
+Yes, the marketplace contract is setup to allow sale of any NFT collection.
+
+* Can any wallet address list an NFT on the marketplace?
+
+Yes, any wallet can create a listing on the NFT marketplace
+
+* What is the platform fee for a sale on the marketplace?
+
+We charge a platform fee of 0.5% for each sale.
 
 ## Reference Documents
 * Skogard Productions [PrivateParty](https://privateparty.dev)
