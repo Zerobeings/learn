@@ -381,63 +381,29 @@ If you would prefer to buyout the auction, you can do so by clicking the "Buyout
 </p>
 
 # Metadata Structure
+It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards) with two additional items: file and filetype. This will simplify the marketplace sort function when listing non-image based NFTs.
 
 ```json
 {
-    "name": "Zero Beings #1",
-    "description": "2022 Zero Beings",
-    "image": "ipfs://bafybeihvhk34lgwoh42qjkvz6obyeyls3236s5gojjukw3sq6ommg2eaye/00001.png",
-    "file": "ipfs://bafybeihvhk34lgwoh42qjkvz6obyeyls3236s5gojjukw3sq6ommg2eaye/00001.png",
+    "id": "1",
+    "name": "Example NFT #1",
+    "description": "2023 Test NFT",
+    "image": "ipfs://qwe.../00001.png",
+    "external_url": "https://yourdomain.com/1",
+    "file": "ipfs://qwe.../00001.png",
     "filetype": "png",
     "attributes": [
         {
-            "trait_type": "The Underground",
+            "trait_type": "T-Shirt",
             "value": "Blue"
         },
         {
-            "trait_type": "Background Space",
+            "trait_type": "Background",
             "value": "Stars"
-        },
-        {
-            "trait_type": "Hair",
-            "value": "Hair Buns"
-        },
-        {
-            "trait_type": "Zero Being",
-            "value": "Bright Blue"
-        },
-        {
-            "trait_type": "Eyes",
-            "value": "Laser Eyes"
-        },
-        {
-            "trait_type": "Home Planet",
-            "value": "Luyten b"
-        },
-        {
-            "trait_type": "House",
-            "value": "Atomic"
-        },
-        {
-            "trait_type": "Rocket Type",
-            "value": "One"
-        },
-        {
-            "trait_type": "Mode",
-            "value": "Space"
-        },
-        {
-            "trait_type": "Catchphrase",
-            "value": "Water Buffalo"
         }
     ]
 }
 ```
-
-
-
-
-
 
 
 # More Info
