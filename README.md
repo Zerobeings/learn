@@ -519,9 +519,10 @@ If you would like to take a deep dive into the tools used to build this marketpl
 ## Reference Documents
 * Skogard Productions [PrivateParty](https://privateparty.dev)
 * Skogard Productions [factoria](https://docs.factoria.app/#/)
-* [Alchemy API](https://docs.alchemy.com/reference/nft-api-quickstart) 
+* Alchemy NFT [API](https://docs.alchemy.com/reference/nft-api-quickstart) 
 * Thirdweb marketplace contract technical [documents](https://portal.thirdweb.com/contracts/design/Marketplace#currency-transfers)
 * Thirdweb typescript documentation [typescript](https://portal.thirdweb.com/typescript/sdk.marketplace)
+* Rarible [API](https://multichain-api.rarible.org/v0.1/tag/item-controller#operation/getItemRoyaltiesById)
 
 ## Additional Resources
 * Skogard Productions [Cell](https://cell.computer/#/?id=introduction)
