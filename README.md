@@ -427,10 +427,10 @@ These limitations also prevent a total supply for a collection from beings retri
 
 
 # Marketplace Repo
-This marketplace repository can be found at the Zero Beings github page. 
+This marketplace repository can be found at the Zero Beings github page. Link coming soon...
 
 ## Repo Quickstart
-Follow the guide below to get started on your own NFT marketplace today!
+Follow the guide below to get started on your own NFT marketplace today! Otherwise you can [mint](mint.zerobeings.xyz) a Zero Being and start using [Market gm ☕️](gm.zerobeings.xyz) today!
 
 ### Prerequisites
 * [NodeJs](https://nodejs.org/en/download/)
@@ -458,6 +458,7 @@ If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ether
 2. Deploy your own thirdweb goerli marketplace [contract](https://thirdweb.com/dashboard/contracts). 
 3. Deploy your own thirdweb mainnet marketplace [contract](https://thirdweb.com/dashboard/contracts).
 4. Update the marketplace contract address.
+5. Update the mbox.json and gbox.json files.
 
 #### Change the NFT Gate
 
@@ -512,7 +513,7 @@ party.add('user', {
 ```
 
 #### Using Your Own Marketplace Contracts
-There are total seven locations in which the goerli & mainnet contracts are explicitly used.
+There are total seven locations in which the goerli & mainnet contract addresses are explicitly used.
 
 1. server.js
 2. mbox.json
@@ -521,6 +522,20 @@ There are total seven locations in which the goerli & mainnet contracts are expl
 5. mybids.ejs (IPFS Link)
 6. goerli-listingsCard.ejs (IPFS Link)
 7. goerli-mybids.ejs (IPFS Link)
+
+#### Updating mbox.json and gbox.json files
+You will need to add your contract address and projectId to the mbox.json and gbox.json files to establish a wallet connection.
+
+The mbox.json file supports the connection to the mainnet.
+```json
+{"contract":"<MarketContract>","network":"goerli","projectId":"<projectID from WalletConnect Cloud>"}
+```
+
+The gbox.json file supports the connection to the goerli-network.
+
+```json
+{"contract":"<MarketContract>","network":"goerli","projectId":"<projectID from WalletConnect Cloud>"}
+```
 
 # More Info
 If you would like to take a deep dive into the tools used to build this marketplace, review the reference documents. The additional resources section is a list of tools to help you launch and manage your NFT collections. Enjoy!
