@@ -463,6 +463,7 @@ If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ether
 3. Deploy your own thirdweb mainnet marketplace [contract](https://thirdweb.com/dashboard/contracts).
 4. Update the marketplace contract address.
 5. Update the mbox.json and gbox.json files.
+6. Update `session.zerb.account` to new user reference throughout repository.
 
 #### Change the NFT Gate
 
