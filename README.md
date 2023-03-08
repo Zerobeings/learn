@@ -381,7 +381,11 @@ If you would prefer to buyout the auction, you can do so by clicking the "Buyout
 </p>
 
 # Metadata Structure
-It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards) with two additional items: file and filetype. This will simplify the marketplace sort function when listing non-image based NFTs. It enables to the ability for future file type rendering as well.
+It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards) with three additional items: file, filetype, and liscense url.
+
+The file and filetype will simplify the marketplace sort function when listing non-image based NFTs. It enables to the ability for future file type rendering as well.
+
+The liscense url is designed to take a step in supporting the proposed [Ricardian Royalty Satandard](https://ricardian.factoria.app/#/)
 
 ```json
 {
@@ -392,6 +396,7 @@ It is recommended to follow the metadata structure standard developed by [opense
     "external_url": "https://yourdomain.com/1",
     "file": "ipfs://qwe.../00001.png",
     "filetype": "png",
+    "license_url": "ipfs://qwe.../00001.txt",
     "attributes": [
         {
             "trait_type": "T-Shirt",
@@ -414,6 +419,13 @@ The limitations are commented in server.js and are as follows:
 
 These limitations also prevent a total supply for a collection from beings retrived. If the collection exceeds 100, the collection items will be displayed as `+100` in the "Collection View" panel on the home page and enough pages will be calculated for a collectin of 10,000 NFTs.
 
+## goerli Test Collections
+> More test collections will be created to test various rendering scenarios.
+
+* Image based Collection Test_Warp
+** Mint a Test_Warp [here](https://open.factoria.app/mint/#0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e)
+
+
 # Marketplace Repo
 This marketplace repository can be found at the Zero Beings github page. 
 
@@ -424,15 +436,22 @@ Follow the guide below to get started on your own NFT marketplace today!
 * [NodeJs](https://nodejs.org/en/download/)
 
 ### Installation
-> 🚨 [Wallet Connect](https://github.com/WalletConnect/web3modal-vanilla-js-example) recommends only running the modal on https. HTTPS setup instructions can be found on the Wallet Connect github repo.
+> 🚨 Wallet Connect recommends only running the modal on https. Tools like [localtunnel](https://theboroer.github.io/localtunnel-www/) can be used to accomplish this.
+>
+> Recently Wallet Connect began the process of sunsetting the Web3Modal V1.0. However, you can still use this modal by upgrading the WalletConnect ethereum-provider to v2.0. This was done for Market gm.
 
-> 🚨 Wallet Connect recently depreciated v1.0. Next step is to upgrade the connect functionality for Market gm .
+```
+For Web3Modal v1.0 integrations
+We recommend that you replace your existing integration with the latest version of Web3Modal, for which you can find more docs here.
+
+If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ethereum-provider to v2.0 then you can update to the latest version available on NPM which you can find here.
+```
 
 1. Fork the project.
 2. Clone the project.
 3. Navigate to the project directory `cd zerb-nft-marketplace`.
 4. Install dependencies with `npm install`.
-5. Run `node server` (🚨 not recommended by Wallet Connect).
+5. Run `node server` (🚨 not recommended by Wallet Connect) or set up a [localtunnel](https://theboroer.github.io/localtunnel-www/) (recommended).
 
 ### Making it your Own
 1. Change the NFT gating contract and user name.
