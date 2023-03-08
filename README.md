@@ -385,7 +385,7 @@ It is recommended to follow the metadata structure standard developed by [opense
 
 The file and filetype will simplify the marketplace sort function when listing non-image based NFTs. It enables to the ability for future file type rendering as well.
 
-The liscense url is designed to take a step in supporting the proposed [Ricardian Royalty Satandard](https://ricardian.factoria.app/#/)
+The liscense url is designed to take a step in supporting the proposed [Ricardian Royalty Standard](https://ricardian.factoria.app/#/)
 
 ```json
 {
@@ -428,9 +428,7 @@ These limitations also prevent a total supply for a collection from beings retri
 ## goerli Test Collections
 > More test collections will be created to test various rendering scenarios.
 
-* Image based Collection Test_Warp
-** Mint a Test_Warp [here](https://open.factoria.app/mint/#0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e)
-
+* Image based Collection Test_Warp. Mint a Test_Warp [here](https://open.factoria.app/mint/#0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e)
 
 # Marketplace Repo
 This marketplace repository can be found at the Zero Beings github page. Link coming soon...
