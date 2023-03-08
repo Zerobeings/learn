@@ -409,6 +409,12 @@ The liscense url is designed to take a step in supporting the proposed [Ricardia
     ]
 }
 ```
+
+If your metadata contains these elements, the NFTs in your collection will contain two additional icons. These icons are links to the file or the license_url.
+<p align="center" width="100%">
+    <img width="60%" src="images/file_license.png">
+</p>
+
 # goerli-market
 The goerli-market aspect of the website has some limitations as compared to the mainnet pages.
 The limitations are commented in server.js and are as follows:
