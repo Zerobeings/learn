@@ -394,9 +394,9 @@ The liscense url is designed to take a step in supporting the proposed [Ricardia
     "description": "2023 Test NFT",
     "image": "ipfs://qwe.../00001.png",
     "external_url": "https://yourdomain.com/1",
-    "file": "ipfs://qwe.../00001.png",
+    "file": "https://<CID>.ipfs.nftstorage.link/04321.doc",
     "filetype": "png",
-    "license_url": "ipfs://qwe.../00001.txt",
+    "license_url": "https://<CID>.ipfs.nftstorage.link/04321.txt",
     "attributes": [
         {
             "trait_type": "T-Shirt",
