@@ -237,7 +237,7 @@ Now the webapp will have a link from the phone home screen. This gives a similar
 </p>
 
 # Guide
-The guide will demonstrate all the functions utilized through the Market gm ☕️ user interface. There are additional functions that can be explored by reviewing the smart contract [0xe6342bf304bac1064b96e71e5343a90fef332dd0](https://goerli.etherscan.io/address/0xe6342bf304bac1064b96e71e5343a90fef332dd0#code). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function. The details are outlined in their respective sections.
+The guide will demonstrate all the functions utilized through the Market gm ☕️ user interface. There are additional functions that can be explored by reviewing the testnet smart [contract](https://goerli.etherscan.io/address/0xC65CE759f006928451343874538A328dFcbAD325#code). In the case of creating a listing and submitting an offer multiple smart contract interactions will occur. These two scenarios require two transactions to complete the function. The details are outlined in their respective sections.
 
 ## Create Direct Listing
 > Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
