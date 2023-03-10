@@ -532,7 +532,7 @@ You will need to add your contract address and projectId to the mbox.json and gb
 
 The mbox.json file supports the connection to the mainnet.
 ```json
-{"contract":"<MarketContract>","network":"goerli","projectId":"<projectID from WalletConnect Cloud>"}
+{"contract":"<MarketContract>","network":"main","projectId":"<projectID from WalletConnect Cloud>"}
 ```
 
 The gbox.json file supports the connection to the goerli-network.
