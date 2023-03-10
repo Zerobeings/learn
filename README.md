@@ -486,6 +486,15 @@ If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ether
 4. Update the marketplace contract address.
 5. Update the mbox.json and gbox.json files.
 6. Update `session.zerb.account` to new user reference throughout repository.
+7. Update the walletconnect parameter on the login page:
+
+```javascript
+const party = new Privateparty({
+    walletconnect: "<infura api key>" //for mobile
+    })
+```
+
+8. Customize!
 
 #### Change the NFT Gate
 
