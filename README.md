@@ -456,6 +456,9 @@ Follow the guide below to get started on your own NFT marketplace today! Otherwi
 
 ### Prerequisites
 * [NodeJs](https://nodejs.org/en/download/)
+* Alchemy API Key & RPC
+* Wallet Connect Project ID
+* Infura API Key
 
 ### Installation
 > 🚨 Wallet Connect recommends only running the modal on https. Tools like [localtunnel](https://theboroer.github.io/localtunnel-www/) can be used to accomplish this.
