@@ -303,6 +303,10 @@ If you would like to offer a price lower than the listed price, input the desire
 
 If you have previously approved a spend limit greater than or equal to the offer amount for the marget bm contract, then only one transaction is required to make the offer.
 
+<p align="center" width="100%">
+    <img width="80%" src="images/spendapprovedoffer.gif">
+</p>
+
 ### Buy at Listed Price
 If you would like to purchase the NFT at the listed price, click the "Buy" button and approve the buy transaction.
 
