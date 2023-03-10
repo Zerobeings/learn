@@ -583,7 +583,7 @@ The gbox.json file supports the connection to the goerli-network.
 ```
 
 #### Update the listingCard partials
-The listingCard partials contain a copy iframe button. Navigate to your thirdbed dashboard and copy the iframe code and paste it into this section. The default configuration is with written with a listing ID of `0`. This must be updated to `<%=listings.id%>` to autolink the correct IPFS website.
+The listingCard partials contain a copy iframe button. Navigate to your thirdWed dashboard and copy the iframe code and paste it into this section. The default configuration is with written with a listing ID of `0`. This must be updated to `<%=listings.id%>` to autolink the correct IPFS website.
 
 Below is the example for the Market gm configuration.
 
