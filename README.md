@@ -267,7 +267,9 @@ A check is performed to determine if permission to NFT collection has been given
 
 Connect, select "Direct", approve listing of the NFT.
 
-
+<p align="center" width="100%">
+    <img width="80%" src="images/approvedcreatelisting.gif">
+</p>
 
 ## Seller
 
