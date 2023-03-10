@@ -439,7 +439,8 @@ These limitations also prevent a total supply for a collection from beings retri
 ## goerli Test Collections
 > More test collections will be created to test various rendering scenarios.
 
-* Image based Collection Test_Warp. Mint a Test_Warp [here](https://open.factoria.app/mint/#0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e)
+* Image based Collection (goerli) Test_Warp. Mint a Test_Warp [here](https://open.factoria.app/mint/#0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e)
+* Video based Collection (goerli) Joffee Coffee. Mint a Joffee Coffee [here](https://open.factoria.app/mint/#0xbf152f707666CFEF93fCE022753b1995A5955c5C)
 
 # Marketplace Repo
 This marketplace repository can be found at the Zero Beings github page. Link coming soon...
