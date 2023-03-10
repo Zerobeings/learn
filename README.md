@@ -298,7 +298,7 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 If you would like to offer a price lower than the listed price, input the desired offer amount and click "Make Offer". You will need to approve two transactions. The frist transaction will approve the WETH spending limit. This limit matches the amount of the proposed offer. Once the spend limit is approved, the offer transaction must be approved to complete the offer. All offers will be be populated in the "Offers" or "i want that" section of the NFT details panel.
 
 <p align="center" width="100%">
-    <img width="80%" src="images/offerdirectlistings.gif">
+    <img width="80%" src="images/firsttimeoffer.gif">
 </p>
 
 If you have previously approved a spend limit greater than or equal to the offer amount for the marget bm contract, then only one transaction is required to make the offer.
