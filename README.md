@@ -84,13 +84,13 @@ The Collection Info panel contains a combination of imformation rendered from th
 
 The Available Listings displays all direct and auction listings for the collection being viewed. The number of total listings is labeled on the right hand side of the panel.
 
-If there are no listings the view will look like this:
+If there are no listings, then the view will look like this:
 
 <p align="center" width="100%">
     <img width="100%" src="images/nolistings.png">
 </p>
 
-If there are listings available the view will look like this:
+If there are listings available, then the view will look like this:
 
 <p align="center" width="100%">
     <img width="100%" src="images/listingsavailable.png">
@@ -178,7 +178,7 @@ Each individual listing displays the following: name, price & currency, a cancel
 >   
 
 
-If the globe is clicked, the user will be lead to the respective NFT listing website.
+If the globe is clicked, the user will be lead to the respective NFT listing website. This allows sales outside of Market gm. Meaning, wallets do not require access to Market gm purchase the NFT.
 
 <p align="center" width="100%">
     <img width="33%" src="images/ipfswebsite.png">
@@ -253,13 +253,21 @@ The guide will demonstrate all the functions utilized through the Market gm â˜•ï
 > * If a user pays the asking price, the NFT will be transferred to them, and the seller will receive the funds.
 > * Users can make offers below the asking price, and the listing can have multiple offers. The seller can choose to accept an offer at any time.
 
-To create a listing two transactions must occur. The first transaction gives permission to the marketplace contract to transfer your NFT upon sale. The first transaction is an approval function on the collection smart contract. The second transaction approves creation of the listing on the marketplace contract at the listing price specified in the listing form. All direct listings are for a duration of 7 days.
+### First Time Listing for Collection
+To create a listing for a collection for the first time two transactions must occur. The first transaction gives permission to the marketplace contract to transfer your NFT upon sale. The first transaction is an approval function on the collection smart contract. The second transaction approves creation of the listing on the marketplace contract at the listing price specified in the listing form. All direct listings are for a duration of 7 days.
 
 Connect, select "Direct", approve access to and transfer of your NFT to be listed, and approve listing of the NFT.
 
 <p align="center" width="100%">
     <img width="80%" src="images/createlisting.gif">
 </p>
+
+### Subsequent Listings for Collection
+A check is performed to determine if permission to NFT collection has been given for your wallet address. If this check returns true, then only one transaction is required to create the listing. This transaction approves creation of the listing on the marketplace contract at the listing price specified in the listing form. All direct listings are for a duration of 7 days.
+
+Connect, select "Direct", approve listing of the NFT.
+
+
 
 ## Seller
 
@@ -539,7 +547,7 @@ const mainnetMarketContract = '<your mainnet contract address>'; //ETH mainnet m
 ```
 
 #### Updating mbox.json and gbox.json files
-You will need to add your contract address and projectId to the mbox.json and gbox.json files to establish a wallet connection.
+You will need to add your contract address and [projectId](https://cloud.walletconnect.com/sign-up) to the mbox.json and gbox.json files to establish a wallet connection.
 
 The mbox.json file supports the connection to the mainnet.
 ```json
