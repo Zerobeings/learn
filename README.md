@@ -230,7 +230,7 @@ To create the webapp link on phone's home screen go to [gm.zerobeings.xyz](https
 </p>
 
 ## User Experience
-Now the webapp will have a link from the phone home screen. This gives a similar experience to a native application. Users can log in with there preferred mobile wallet.
+Now the webapp will have a link from the phone home screen. This gives a similar experience to a native application. Users can log in with there preferred mobile wallet. This is essentially a read-only experience. If you would like a mobile read and write experience, please use the web3 browser located in your preferred wallet application.
 
 <p align="center" width="100%">
     <img width="75%" src="images/afterA2HS.png">
@@ -283,6 +283,7 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 ### Submit an Offer on Direct Listing 
 
 > ⚠️ Once an offer is made it can not be cancelled.
+> All offers are for the entire sales period of the NFT. For example, if there are 6 days left on sale, then offer duraction will be 6 days.
 
 If you would like to offer a price lower than the listed price, input the desired offer amount and click "Make Offer". You will need to approve two transactions. The frist transaction will be to approve the WETH spending limit. This limit matches the amount of the proposed offer. Once the spend limit is approved, the offer transaction must be approved to complete the offer. All offers will be be populated in the "Offers"/"i want that" section of the NFT details panel.
 
@@ -524,9 +525,7 @@ There are total seven locations in which the goerli & mainnet contract addresses
 2. mbox.json
 3. gbox.json
 4. listingsCard.ejs (IPFS Link)
-5. mybids.ejs (IPFS Link)
-6. goerli-listingsCard.ejs (IPFS Link)
-7. goerli-mybids.ejs (IPFS Link)
+5. goerli-listingsCard.ejs (IPFS Link)
 
 #### Updating mbox.json and gbox.json files
 You will need to add your contract address and projectId to the mbox.json and gbox.json files to establish a wallet connection.
