@@ -527,6 +527,17 @@ There are total seven locations in which the goerli & mainnet contract addresses
 4. listingsCard.ejs (IPFS Link)
 5. goerli-listingsCard.ejs (IPFS Link)
 
+#### Update server.js
+
+```javascript
+// Marketplace contracts
+// contracts are referenced in three locations in mbox.json for mainnet and gbox.json for goerli,
+// the listingsCard and mybids for mainnet and goerli-listingsCard & goerli-mybids in the IPFS site link,
+// in the const listed below, and finally the marketfooter files.
+const gMarkectContract = '<your goerli contract address>'; //goerli marketplace contract. Deploy from thirdweb dashboard.
+const mainnetMarketContract = '<your mainnet contract address>'; //ETH mainnet marketplace contract. Deploy from thirdweb dashboard
+```
+
 #### Updating mbox.json and gbox.json files
 You will need to add your contract address and projectId to the mbox.json and gbox.json files to establish a wallet connection.
 
@@ -539,6 +550,19 @@ The gbox.json file supports the connection to the goerli-network.
 
 ```json
 {"contract":"<MarketContract>","network":"goerli","projectId":"<projectID from WalletConnect Cloud>"}
+```
+
+#### Update the listingCard partials
+The listingCard partials contain a copy iframe button. Navigate to your thirdbed dashboard and copy the iframe code and paste it into this section. The default configuration is with written with a listing ID of `0`. This must be updated to `<%=listings.id%>` to autolink the correct IPFS website.
+
+Below is the example for the Market gm configuration.
+
+```html
+<iframe src="https://gateway.ipfscdn.io/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/marketplace.html?contract=0x8F6502Aeae32D3B708236F8cB1eB2aa45429cE34&chain=%7B%22name%22%3A%22Ethereum+Mainnet%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fethereum.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22eth%22%2C%22chainId%22%3A1%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22ethereum%22%7D&listingId=<%=listings.id%>&theme=dark&primaryColor=blue&secondaryColor=blue"
+width="600px"
+height="600px"
+style="max-width:100%;"
+frameborder="0"></iframe>
 ```
 
 # More Info
