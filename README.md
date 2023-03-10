@@ -449,7 +449,7 @@ These limitations also prevent a total supply for a collection from beings retri
 * Video based Collection (goerli) Joffee Coffee. Mint a Joffee Coffee [here](https://open.factoria.app/mint/#0xbf152f707666CFEF93fCE022753b1995A5955c5C)
 
 # Marketplace Repo
-This marketplace repository can be found at the Zero Beings github page. Link coming soon...
+This marketplace repository can be found at the Zero Beings [github](https://github.com/Zerobeings/zerb-nft-marketplace).
 
 ## Repo Quickstart
 Follow the guide below to get started on your own NFT marketplace today! Otherwise you can [mint](mint.zerobeings.xyz) a Zero Being and start using [Market gm ☕️](gm.zerobeings.xyz) today!
@@ -818,7 +818,7 @@ Direct Listing Data Structure
 ```
 
 Auction Data Structure
-```json
+```
 [
   {
     assetContractAddress: '0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e',
@@ -1038,14 +1038,14 @@ Token Addresses
 ### Rarible
 
 ```
-// Rarible API https://multichain-api.rarible.org/testnet/tag/item-controller#operation/getItemRoyaltiesById
-// {
-//   royalties: [
-//     {
-//       account: 'ETHEREUM:0xbcdbe666a43437333ccc375c1e33461e260b57e6',
-//       value: 500
-//     }
-//   ]
-// }
+Rarible API https://multichain-api.rarible.org/testnet/tag/item-controller#operation/getItemRoyaltiesById
+{
+  royalties: [
+    {
+      account: 'ETHEREUM:0xbcdbe666a43437333ccc375c1e33461e260b57e6',
+      value: 500
+    }
+  ]
+}
 
 ```
