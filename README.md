@@ -473,7 +473,8 @@ If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ether
 2. Clone the project.
 3. Navigate to the project directory `cd zerb-nft-marketplace`.
 4. Install dependencies with `npm install`.
-5. Run `node server` (🚨 not recommended by Wallet Connect) or set up a [localtunnel](https://theboroer.github.io/localtunnel-www/) (recommended).
+5. Change `.env.example` to `.env` and add your environment variables.
+6. Run `node server` (🚨 not recommended by Wallet Connect) or set up a [localtunnel](https://theboroer.github.io/localtunnel-www/) (recommended).
 
 ### Making it your Own
 1. Change the NFT gating contract and user name.
@@ -606,3 +607,433 @@ If you would like to take a deep dive into the tools used to build this marketpl
 ## Additional Resources
 * Skogard Productions [Cell](https://cell.computer/#/?id=introduction)
 * Skogard Productions [Moneypipe](https://moneypipe.xyz/)
+
+## Data Structures
+Below is a summary of the data structures fetched to build market gm.
+
+### Alchemy 
+nfts Data Structure
+
+```
+
+nfts:{
+  contract: { address: '0x8fba3ebe77d3371406a77eeaf40c89c1ed55364a' },
+  id: {
+    tokenId: '0x00000000000000000000000000000000000000000000000000000000000000e2',
+    tokenMetadata: [Object]
+  },
+  balance: '1',
+  title: 'Zero Beings #226',
+  description: '2022 Zero Beings',
+  tokenUri: {
+    raw: 'ipfs://bafybeidc4mw5k3iyzfz6msc37emanpdocar2dbfwkqmz5xrh7ctcs2htyi/226.json',
+    gateway: 'https://ipfs.io/ipfs/bafybeidc4mw5k3iyzfz6msc37emanpdocar2dbfwkqmz5xrh7ctcs2htyi/226.json'
+  },
+  media: [{
+    bytes: 220522,
+    format: "png",
+    gateway: "https://res.cloudinary.com/alchemyapi/image/upload/mainnet/3e61df4989b790d9957e7095cb643cc1.png",
+    raw: "ipfs://bafybeihvhk34lgwoh42qjkvz6obyeyls3236s5gojjukw3sq6ommg2eaye/00103.png",
+    thumbnail: "https://res.cloudinary.com/alchemyapi/image/upload/w_256,h_256/mainnet/3e61df4989b790d9957e7095cb643cc1.png",
+  }],
+  metadata: {
+    name: 'Zero Beings #226',
+    description: '2022 Zero Beings',
+    image: 'ipfs://bafybeidb57yyynti3qad3zcp2h4i4xj7ycabbvn4wnmsxwor7nxmagthna/00226.png',
+    attributes: [Array]
+  },
+  timeLastUpdated: '2022-08-19T17:10:35.128Z',
+  contractMetadata: { name: 'Zero Beings', symbol: 'ZERB', tokenType: 'ERC721' }
+  },
+```
+
+Collection Data Structure
+
+```json
+{
+  "contract": {
+    "address": "0x8fba3ebe77d3371406a77eeaf40c89c1ed55364a"
+  },
+  "id": {
+    "tokenId": "0x0000000000000000000000000000000000000000000000000000000000000003",
+    "tokenMetadata": {
+      "tokenType": "ERC721"
+    }
+  },
+  "title": "Zero Beings #3",
+  "description": "2022 Zero Beings",
+  "tokenUri": {
+    "raw": "ipfs://bafybeidp7mzzgvcnedwqjw3vw3fljdk3zyjtfwvln3gmzahucytcx4wgme/3.json",
+    "gateway": "https://alchemy.mypinata.cloud/ipfs/bafybeidp7mzzgvcnedwqjw3vw3fljdk3zyjtfwvln3gmzahucytcx4wgme/3.json"
+  },
+  "media": [
+    {
+      "raw": "ipfs://bafybeihvhk34lgwoh42qjkvz6obyeyls3236s5gojjukw3sq6ommg2eaye/00003.png",
+      "gateway": "https://nft-cdn.alchemy.com/eth-mainnet/d4b09a580a837a5332c9cc56c5648a7c",
+      "thumbnail": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnail/eth-mainnet/d4b09a580a837a5332c9cc56c5648a7c",
+      "format": "png",
+      "bytes": 501379
+    }
+  ],
+  "metadata": {
+    "name": "Zero Beings #3",
+    "description": "2022 Zero Beings",
+    "image": "ipfs://bafybeihvhk34lgwoh42qjkvz6obyeyls3236s5gojjukw3sq6ommg2eaye/00003.png",
+    "attributes": [
+      {
+        "value": "Rainbow",
+        "trait_type": "The Underground"
+      },
+      {
+        "value": "Black",
+        "trait_type": "Background Space"
+      },
+      {
+        "value": "Orange",
+        "trait_type": "Zero Being"
+      },
+      {
+        "value": "Purple",
+        "trait_type": "Goggles"
+      },
+      {
+        "value": "Kepler-1229b",
+        "trait_type": "Home Planet"
+      },
+      {
+        "value": "Atomic",
+        "trait_type": "House"
+      },
+      {
+        "value": "Two",
+        "trait_type": "Rocket Type"
+      },
+      {
+        "value": "Ludicrous",
+        "trait_type": "Mode"
+      },
+      {
+        "value": "Rolly Polly Ace",
+        "trait_type": "Catchphrase"
+      }
+    ]
+  },
+  "timeLastUpdated": "2022-12-31T19:45:44.361Z",
+  "contractMetadata": {
+    "name": "Zero Beings",
+    "symbol": "ZERB",
+    "tokenType": "ERC721",
+    "openSea": {
+      "floorPrice": 0.009,
+      "collectionName": "Zero Beings",
+      "safelistRequestStatus": "not_requested",
+      "imageUrl": "https://i.seadn.io/gcs/files/e223850b2d8848137a1ac957563d8cf2.gif?w=500&auto=format",
+      "description": "Phase 2 :: Series 2 (2022) | cc0 NFT collection | The Zero Beings are coming! Zero Beings work hard at having fun, doing good research, bringing utility, and public good to their community. Which being are you?",
+      "externalUrl": "https://www.zerobeings.xyz/",
+      "twitterUsername": "Zero_beings",
+      "discordUrl": "https://discord.gg/dWm4mw9Wkx",
+      "lastIngestedAt": "2022-12-28T11:38:46.000Z"
+    }
+  }
+},
+
+```
+
+Individual nft Data
+
+```
+{
+  contract: { address: '0x9870da00643aea2be9df89d87efed0a2fdb5479e' },
+  id: { tokenId: '12', tokenMetadata: { tokenType: 'ERC721' } },
+  title: '',
+  description: '',
+  tokenUri: {
+    raw: 'ipfs://bafkreibdk5xsank2j7lzzds7ga57ncvthbadncmzuayaphievinu6bk3i4',
+    gateway: 'https://alchemy.mypinata.cloud/ipfs/bafkreibdk5xsank2j7lzzds7ga57ncvthbadncmzuayaphievinu6bk3i4'
+  },
+  media: [
+    {
+      raw: 'ipfs://bafybeifq7rj3ekf3obkocj2n55pjrfoe3i276cycmasfwvsyrvw544kgra',
+      gateway: 'https://nft-cdn.alchemy.com/eth-goerli/db1e8bbd8b6875d72134906ede1bbd98',
+      thumbnail: 'https://res.cloudinary.com/alchemyapi/image/upload/thumbnail/eth-goerli/db1e8bbd8b6875d72134906ede1bbd98',
+      format: 'png',
+      bytes: 381104
+    }
+  ],
+  metadata: {
+    image: 'ipfs://bafybeifq7rj3ekf3obkocj2n55pjrfoe3i276cycmasfwvsyrvw544kgra'
+  },
+  timeLastUpdated: '2023-01-16T18:56:08.048Z',
+  contractMetadata: {
+    name: 'Test_Warp',
+    symbol: 'Twarp',
+    tokenType: 'ERC721',
+    openSea: { lastIngestedAt: '2023-01-21T14:37:29.000Z' }
+  }
+}
+```
+
+### Thirdweb
+Direct Listing Data Structure
+```
+[
+{
+  assetContractAddress: '0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e',
+  buyoutPrice: BigNumber { _hex: '0x2386f26fc10000', _isBigNumber: true },
+  currencyContractAddress: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
+  buyoutCurrencyValuePerToken: {
+    name: 'Görli Ether',
+    symbol: 'GOR',
+    decimals: 18,
+    value: [BigNumber],
+    displayValue: '0.01'
+  },
+  id: '3',
+  tokenId: BigNumber { _hex: '0x0c', _isBigNumber: true },
+  quantity: BigNumber { _hex: '0x01', _isBigNumber: true },
+  startTimeInSeconds: BigNumber { _hex: '0x63a76964', _isBigNumber: true },
+  asset: {
+    image: 'https://gateway.ipfscdn.io/ipfs/bafybeifq7rj3ekf3obkocj2n55pjrfoe3i276cycmasfwvsyrvw544kgra',
+    id: '12',
+    uri: 'ipfs://bafkreibdk5xsank2j7lzzds7ga57ncvthbadncmzuayaphievinu6bk3i4'
+  },
+  secondsUntilEnd: BigNumber { _hex: '0x63b0a3e4', _isBigNumber: true },
+  sellerAddress: '0xbCdbe666a43437333CcC375C1E33461E260B57E6',
+  type: 0 // this represents the listing type 0=direct and 1=auction
+},
+]
+
+```
+
+Auction Data Structure
+```json
+[
+  {
+    assetContractAddress: '0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e',
+    buyoutPrice: BigNumber { _hex: '0x6a94d74f430000', _isBigNumber: true },
+    currencyContractAddress: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
+    buyoutCurrencyValuePerToken: {
+      name: 'Görli Ether',
+      symbol: 'GOR',
+      decimals: 18,
+      value: [BigNumber],
+      displayValue: '0.03'
+    },
+    id: '8',
+    tokenId: BigNumber { _hex: '0x01', _isBigNumber: true },
+    quantity: BigNumber { _hex: '0x01', _isBigNumber: true },
+    startTimeInEpochSeconds: BigNumber { _hex: '0x63b9e530', _isBigNumber: true },
+    asset: {
+      image: 'https://gateway.ipfscdn.io/ipfs/bafybeifq7rj3ekf3obkocj2n55pjrfoe3i276cycmasfwvsyrvw544kgra',
+      id: '1',
+      uri: 'ipfs://bafkreibdk5xsank2j7lzzds7ga57ncvthbadncmzuayaphievinu6bk3i4'
+    },
+    reservePriceCurrencyValuePerToken: {
+      name: 'Görli Ether',
+      symbol: 'GOR',
+      decimals: 18,
+      value: [BigNumber],
+      displayValue: '0.0'
+    },
+    reservePrice: BigNumber { _hex: '0x00', _isBigNumber: true },
+    endTimeInEpochSeconds: BigNumber { _hex: '0x63c31fb0', _isBigNumber: true },
+    sellerAddress: '0xbCdbe666a43437333CcC375C1E33461E260B57E6',
+    type: 1
+  }
+]
+
+
+```
+
+Offers
+```
+[
+  {
+    quantity: undefined,
+    pricePerToken: BigNumber { _hex: '0x038d7ea4c68000', _isBigNumber: true },
+    currencyContractAddress: '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
+    buyerAddress: '0xbCdbe666a43437333CcC375C1E33461E260B57E6',
+    quantityDesired: BigNumber { _hex: '0x01', _isBigNumber: true },
+    currencyValue: {
+      name: 'Wrapped Ether',
+      symbol: 'WETH',
+      decimals: 18,
+      value: [BigNumber],
+      displayValue: '0.001'
+    },
+    listingId: BigNumber { _hex: '0x05', _isBigNumber: true }
+  }
+]
+```
+
+Token Addresses
+
+```
+{
+  '1': {
+    name: 'Ether',
+    symbol: 'ETH',
+    decimals: 18,
+    wrapped: {
+      address: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+      name: 'Wrapped Ether',
+      symbol: 'WETH'
+    }
+  },
+  '5': {
+    name: 'Görli Ether',
+    symbol: 'GOR',
+    decimals: 18,
+    wrapped: {
+      address: '0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6',
+      name: 'Wrapped Ether',
+      symbol: 'WETH'
+    }
+  },
+  '10': {
+    name: 'Ether',
+    symbol: 'ETH',
+    decimals: 18,
+    wrapped: {
+      address: '0x4200000000000000000000000000000000000006',
+      name: 'Wrapped Ether',
+      symbol: 'WETH'
+    }
+  },
+  '56': {
+    name: 'Binance Chain Native Token',
+    symbol: 'BNB',
+    decimals: 18,
+    wrapped: {
+      address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+      name: 'Wrapped Binance Chain Token',
+      symbol: 'WBNB'
+    }
+  },
+  '97': {
+    name: 'Binance Chain Native Token',
+    symbol: 'TBNB',
+    decimals: 18,
+    wrapped: {
+      address: '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
+      name: 'Wrapped Binance Chain Testnet Token',
+      symbol: 'WBNB'
+    }
+  },
+  '137': {
+    name: 'Matic',
+    symbol: 'MATIC',
+    decimals: 18,
+    wrapped: {
+      address: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+      name: 'Wrapped Matic',
+      symbol: 'WMATIC'
+    }
+  },
+  '250': {
+    name: 'Fantom',
+    symbol: 'FTM',
+    decimals: 18,
+    wrapped: {
+      address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+      name: 'Wrapped Fantom',
+      symbol: 'WFTM'
+    }
+  },
+  '420': {
+    name: 'Goerli Ether',
+    symbol: 'ETH',
+    decimals: 18,
+    wrapped: {
+      address: '0x4200000000000000000000000000000000000006',
+      name: 'Wrapped Ether',
+      symbol: 'WETH'
+    }
+  },
+  '4002': {
+    name: 'Fantom',
+    symbol: 'FTM',
+    decimals: 18,
+    wrapped: {
+      address: '0xf1277d1Ed8AD466beddF92ef448A132661956621',
+      name: 'Wrapped Fantom',
+      symbol: 'WFTM'
+    }
+  },
+  '31337': {
+    name: 'Ether',
+    symbol: 'ETH',
+    decimals: 18,
+    wrapped: {
+      address: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
+      name: 'Wrapped Ether',
+      symbol: 'WETH'
+    }
+  },
+  '42161': {
+    name: 'Ether',
+    symbol: 'ETH',
+    decimals: 18,
+    wrapped: {
+      address: '0x82af49447d8a07e3bd95bd0d56f35241523fbab1',
+      name: 'Wrapped Ether',
+      symbol: 'WETH'
+    }
+  },
+  '43113': {
+    name: 'Avalanche',
+    symbol: 'AVAX',
+    decimals: 18,
+    wrapped: {
+      address: '0xd00ae08403B9bbb9124bB305C09058E32C39A48c',
+      name: 'Wrapped AVAX',
+      symbol: 'WAVAX'
+    }
+  },
+  '43114': {
+    name: 'Avalanche',
+    symbol: 'AVAX',
+    decimals: 18,
+    wrapped: {
+      address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+      name: 'Wrapped AVAX',
+      symbol: 'WAVAX'
+    }
+  },
+  '80001': {
+    name: 'Matic',
+    symbol: 'MATIC',
+    decimals: 18,
+    wrapped: {
+      address: '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
+      name: 'Wrapped Matic',
+      symbol: 'WMATIC'
+    }
+  },
+  '421613': {
+    name: 'Arbitrum Goerli Ether',
+    symbol: 'AGOR',
+    decimals: 18,
+    wrapped: {
+      address: '0xe39Ab88f8A4777030A534146A9Ca3B52bd5D43A3',
+      name: 'Wrapped Ether',
+      symbol: 'WETH'
+    }
+  }
+}
+```
+
+### Rarible
+
+```
+// Rarible API https://multichain-api.rarible.org/testnet/tag/item-controller#operation/getItemRoyaltiesById
+// {
+//   royalties: [
+//     {
+//       account: 'ETHEREUM:0xbcdbe666a43437333ccc375c1e33461e260b57e6',
+//       value: 500
+//     }
+//   ]
+// }
+
+```
