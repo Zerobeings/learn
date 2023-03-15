@@ -402,7 +402,7 @@ If you would prefer to buyout the auction, you can do so by clicking the "Buyout
 # Metadata Structure
 It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards).
 
-## Optional Metatadata
+## Optional Metadata
 File, filetype, MIME type, and license url.
 
 * The file, filetype, and [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) will simplify the marketplace sort function when listing non-image based NFTs. It enables the ability for future file type rendering as well.
