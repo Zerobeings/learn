@@ -8,13 +8,13 @@
 > 0.5% platform fee & [EIP-2981](https://eips.ethereum.org/EIPS/eip-2981) royalties honored, filetype flexibility, auto-generated IPFS site, and fully customizable.
 
 
-1. **Overview:** A tour of the marketplace.
-2. **Mobile Devices:** How to use Market gm as a progressive web application.
-3. **Guide:** How to create & cancel listings, create & close auctions, create an offer and Buy.
-4. **Metadata Structure:** Additional meta data feature for rendering non-image filetypes.
-5. **goerli-market**: Overview of the goerli-market.
-6. **Maretplace Repo:** Overview of the marketplace source code.
-7. **More Info:** FAQs and source documentation.
+1. **[Overview](#overview):** A tour of the marketplace.
+2. **[Mobile Devices](#mobile-devices):** How to use Market gm as a progressive web application.
+3. **[Guide](#guide):** How to create & cancel listings, create & close auctions, create an offer and Buy.
+4. **[Metadata Structure](#metadata-structure):** Additional meta data feature for rendering non-image filetypes.
+5. **[goerli-market](#goerli-market)**: Overview of the goerli-market.
+6. **[Marketplace Repo](#marketplace-repo):** Overview of the marketplace source code.
+7. **[More Info](#more-info):** FAQs and source documentation.
 
 
 # Overview
@@ -74,7 +74,7 @@ Continue to scroll down the page and three panels will render: the collection in
 
 ### Collection Info
 
-The Collection Info panel contains a combination of imformation rendered from the NFT collection metadata, the collections opensea profile, and both opensea & looksrare floor prices if applicable. The roaltiy information is fetched from the smart contract with the rarible api.
+The Collection Info panel contains a combination of information rendered from the NFT collection metadata, the collections opensea profile, and both opensea & looksrare floor prices if applicable. The royalty information is fetched from the smart contract with the rarible api.
 
 <p align="center" width="100%">
     <img width="33%" src="images/collectioninfo.png">
@@ -82,7 +82,7 @@ The Collection Info panel contains a combination of imformation rendered from th
 
 ### Available Listings
 
-The Available Listings displays all direct and auction listings for the collection being viewed. The number of total listings is labeled on the right hand side of the panel.
+The Available Listings displays all direct and auction listings for the collection being viewed. The number of total listings is labeled on the right-hand side of the panel.
 
 If there are no listings, then the view will look like this:
 
@@ -121,7 +121,7 @@ When the cursor hovers over an NFT in the collection a grey box will outline the
 </p>
 
 #### Detailed NFT View
-If the the NFT is clicked, a detailed view will be displayed for the NFT of interest. The detailed view contains the following information: name, image/file, and NFT attributes.
+If the NFT is clicked, a detailed view will be displayed for the NFT of interest. The detailed view contains the following information: name, image/file, and NFT attributes.
 
 <p align="center" width="100%">
     <img width="100%" src="images/detailedview.png">
@@ -159,7 +159,7 @@ After selecting which listing option is preferred. The respective listing form w
 
 ### My Listings Panel
 
-The my listings panel contains a view of all the NFTs listed by the connected wallet.
+The My Listings panel contains a view of all the NFTs listed by the connected wallet.
 
 <p align="center" width="100%">
     <img width="100%" src="images/mylistingspanel.png">
@@ -191,7 +191,7 @@ If the embed icon is clicked, the iframe embed code will be copied to the users 
 ```
 ### My Portfolio Panel
 
-The my portfolio panel displays all the NFTs owned by the connected wallet. Each NFT will display the following information: name, image, token ID, collection address, link to looksrare & opensea, and list button.
+The My Portfolio panel displays all the NFTs owned by the connected wallet. Each NFT will display the following information: name, image, token ID, collection address, link to looksrare & opensea, and list button.
 
 <p align="center" width="100%">
     <img width="100%" src="images/myportfoliopanel.png">
@@ -203,7 +203,7 @@ If the NFT is clicked on a detailed view of the NFT will be displayed, similar t
 
 > Zerb gm ☕️ is set up to function as a progressive web application (A2HS). Zerb gm ☕️ is the gateway to Market gm ☕️. 
 
-The manifest.webmanifest is deployed as shown below. Adjust these parameters when customizing the marketplace with your NFT collection branding and colorsheme. This configuration will allow the webapp to be full screen when launched from the phone icon link giving the user a phone app like experience.
+The manifest.webmanifest is deployed as shown below. Adjust these parameters when customizing the marketplace with your NFT collection branding and color scheme. This configuration will allow the webapp to be full screen when launched from the phone icon link giving the user a phone app like experience.
 
 ```html
 {
@@ -230,7 +230,7 @@ To create the webapp link on phone's home screen go to [gm.zerobeings.xyz](https
 </p>
 
 ## User Experience
-Now the webapp will have a link from the phone home screen. This gives a similar experience to a native application. Users can log in with there preferred mobile wallet. This is essentially a read-only experience. If you would like a mobile read and write experience, please use the web3 browser located in your preferred wallet application.
+Now the webapp will have a link from the phone home screen. This gives a similar experience to a native application. Users can log in with their preferred mobile wallet. This is essentially a read-only experience. If you would like a mobile read and write experience, please use the web3 browser located in your preferred wallet application.
 
 <p align="center" width="100%">
     <img width="75%" src="images/afterA2HS.png">
@@ -274,14 +274,14 @@ Connect, select "Direct", approve listing of the NFT.
 ## Seller
 
 ### Accept a Direct Listing Offer
-If you would like to accept an offer for a directlistings. Navigate to the My Listings page and then to the My Listings Panel. Select the NFT you would like to accept an offer on. Connect your wallet and an "accept" button will appear. Click "accept" to accept the offer from the offering wallet address.
+If you would like to accept an offer for a direct listing. Navigate to the My Listings page and then to the My Listings Panel. Select the NFT you would like to accept an offer on. Connect your wallet and an "accept" button will appear. Click "accept" to accept the offer from the offering wallet address.
 
 <p align="center" width="100%">
     <img width="80%" src="images/acceptanoffer.gif">
 </p>
 
 ### Cancel Direct Listing
-To cancel a direct listing first a wallet must be connect and secondly a cancel transaction must be approved. Only listings created by the wallet address that owns the NFT will be displayed.
+To cancel a direct listing: first a wallet must be connected and secondly a cancel transaction must be approved. Only listings created by the wallet address that owns the NFT will be displayed.
 
 > Click "cancel" on the NFT listing you would like to cancel. Connect wallet & approve cancel transaction.
 
@@ -292,16 +292,16 @@ To cancel a direct listing first a wallet must be connect and secondly a cancel 
 ## Buyer
 ### Submit an Offer on Direct Listing 
 
-> ⚠️ Once an offer is made it can not be cancelled.
+> ⚠️ Once an offer is made it cannot be cancelled.
 > All offers are for the entire sales period of the NFT. For example, if there are 6 days left on sale, then offer duration will be 6 days.
 
-If you would like to offer a price lower than the listed price, input the desired offer amount and click "Make Offer". You will need to approve two transactions. The frist transaction will approve the WETH spending limit. This limit matches the amount of the proposed offer. Once the spend limit is approved, the offer transaction must be approved to complete the offer. All offers will be be populated in the "Offers" or "i want that" section of the NFT details panel.
+If you would like to offer a price lower than the listed price, input the desired offer amount and click "Make Offer". You will need to approve two transactions. The first transaction will approve the WETH spending limit. This limit matches the amount of the proposed offer. Once the spend limit is approved, the offer transaction must be approved to complete the offer. All offers will be be populated in the "Offers" or "i want that" section of the NFT details panel.
 
 <p align="center" width="100%">
     <img width="80%" src="images/firsttimeoffer.gif">
 </p>
 
-If you have previously approved a spend limit greater than or equal to the offer amount for the marget bm contract, then only one transaction is required to make the offer.
+If you have previously approved a spend limit greater than or equal to the offer amount for the market gm contract, then only one transaction is required to make the offer.
 
 <p align="center" width="100%">
     <img width="80%" src="images/spendapprovedoffer.gif">
@@ -347,7 +347,7 @@ After bids are received for an auction the listing details page will display the
 ## Bid on Auctioned NFT
 > Winning bid can be placed within 60 seconds of the auction closing.
 
-To bid on an auction NFT click on the NFT beings auctioned from the Available Listings panel on the Market gm ☕️ home page. You will be directed to a detail view of the listing page. Review the listing details. Near the bottom of the listing detail panel there is a section titled "i want that". Click the connect button to connect to the marketplace contract and reveal two purchasing options. The first option is to buyout the NFT. The buyout price is in the listing destils. The second option is to place a bid on the NFT. If you are the first person to bid, your bid price must meet the reserve price (minimum bid amount). If there are other bids, they will be listed under the "i want that" title and your bid must be 5% higher than the highest bid. The bid duration is equal to the time left until auction has ended.
+To bid on an auction NFT click on the NFT beings auctioned from the Available Listings panel on the Market gm ☕️ home page. You will be directed to a detail view of the listing page. Review the listing details. Near the bottom of the listing detail panel there is a section titled "i want that". Click the connect button to connect to the marketplace contract and reveal two purchasing options. The first option is to buyout the NFT. The buyout price is in the listing details. The second option is to place a bid on the NFT. If you are the first person to bid, your bid price must meet the reserve price (minimum bid amount). If there are other bids, they will be listed under the "i want that" title and your bid must be 5% higher than the highest bid. The bid duration is equal to the time left until auction has ended.
 
 > Reminder, if you are the winning bid you must close the auction at the end of the sale duration to complete the transaction and transfer of the NFT into you wallet.
 
@@ -391,18 +391,20 @@ In this example, you will click on the Close Auction button below the bid for 0.
 </p>
 
 ## Buyout auction
-If you would prefer to buyout the auction, you can do so by clicking the "Buyout" button. First search the NFT collection of interest, locate the NFT that is available for auction. Click on the "Place Bid" button. You will be navigated to the listings detail page. Review the details of the NFT and the buyout price displayed in the detail view. Navigate to the "i want that" section, then connect your wallet. Click "Buyout" to initiate the buy fuction to buyout the auction.
+If you would prefer to buyout the auction, you can do so by clicking the "Buyout" button. First search the NFT collection of interest, locate the NFT that is available for auction. Click on the "Place Bid" button. You will be navigated to the listings detail page. Review the details of the NFT and the buyout price displayed in the detail view. Navigate to the "i want that" section, then connect your wallet. Click "Buyout" to initiate the buy function to buyout the auction.
+
+⚠️ Both the buyer and seller must close the auction in the buyout scenario.
 
 <p align="center" width="100%">
     <img width="80%" src="images/buyoutAuction.gif">
 </p>
 
 # Metadata Structure
-It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards) with three additional items: file, filetype, and liscense url.
+It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards) with three additional items: file, filetype, MIME type, and license url.
 
-The file and filetype will simplify the marketplace sort function when listing non-image based NFTs. It enables to the ability for future file type rendering as well.
+The file, filetype, and [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) will simplify the marketplace sort function when listing non-image based NFTs. It enables the ability for future file type rendering as well.
 
-The liscense url is designed to take a step in supporting the proposed [Ricardian Royalty Standard](https://ricardian.factoria.app/#/)
+The license url is designed to take a step in supporting the proposed [Ricardian Royalty Standard](https://ricardian.factoria.app/#/)
 
 ```json
 {
@@ -412,7 +414,8 @@ The liscense url is designed to take a step in supporting the proposed [Ricardia
     "image": "ipfs://qwe.../00001.png",
     "external_url": "https://yourdomain.com/1",
     "file": "https://<CID>.ipfs.nftstorage.link/04321.doc",
-    "filetype": "png",
+    "filetype": "doc",
+    "mime": { [file_cid]: "application/msword" },
     "license_url": "https://<CID>.ipfs.nftstorage.link/04321.txt",
     "attributes": [
         {
@@ -440,7 +443,7 @@ The limitations are commented in server.js and are as follows:
 * Alchemy API does not currently support `getFloorPrice` on the goerli testnet api.
 * Alchemy API does not currently support `reingestContract` on the goerli testnet api.
 
-These limitations also prevent a total supply for a collection from beings retrived. If the collection exceeds 100, the collection items will be displayed as `+100` in the "Collection View" panel on the home page and enough pages will be calculated for a collectin of 10,000 NFTs.
+These limitations also prevent the total supply for a collection from being retrieved. If the collection exceeds 100, the collection items will be displayed as `+100` in the "Collection View" panel on the home page and enough pages will be calculated for a collection of 10,000 NFTs.
 
 ## goerli Test Collections
 > More test collections will be created to test various rendering scenarios.
@@ -549,7 +552,7 @@ party.add('user', {
 ```
 
 #### Using Your Own Marketplace Contracts
-There are total seven locations in which the goerli & mainnet contract addresses are explicitly used.
+There are a total of 5 locations in which the goerli & mainnet contract addresses are explicitly used.
 
 1. server.js
 2. mbox.json
@@ -583,7 +586,7 @@ The gbox.json file supports the connection to the goerli-network.
 ```
 
 #### Update the listingCard partials
-The listingCard partials contain a copy iframe button. Navigate to your thirdWed dashboard and copy the iframe code and paste it into this section. The default configuration is with written with a listing ID of `0`. This must be updated to `<%=listings.id%>` to autolink the correct IPFS website.
+The listingCard partials contain a copy iframe button. Navigate to your thirdWed dashboard and copy the iframe code and paste it into this section. The default configuration is with written with a listing ID of `0`. This must be updated to `<%=listings.id%>` to automatically link the correct IPFS website.
 
 Below is the example for the Market gm configuration.
 
