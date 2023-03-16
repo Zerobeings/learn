@@ -367,18 +367,18 @@ When an auction is created the default auction duration is 7 days. Any bid submi
 > At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 
 ### Seller
-When the seller is ready to close the auction, the seller wallet address must navigate to the My Listings page. Navigate to NFT being auctioned under the My Listings panel and click "Close Auction" located under the NFT being auctioned. In this example, test #4 is the NFT with the "Close Auction" option.
+When the seller is ready to close the auction, the seller wallet address must navigate to the My Listings page. Navigate to NFT being auctioned under the My Listings panel and click "Close Auction" located under the NFT being auctioned. In this example, test #4 is the NFT with the "Close Auction" option. When the seller closes the auction the winning bid amount is transferred to the seller's wallet.
 
 <p align="center" width="100%">
     <img width="80%" src="images/sellercloseauction.png">
 </p>
 
-> ⚠️ It is recomended to take record of the highest bidders address prior to closing the auction.
+> ⚠️ It is recommended to take record of the highest bidders address prior to closing the auction.
 
 Once the close auction function is initiated. You will be asked to connect your wallet and then submit the transaction to close the auction. After the auction is closed the NFT will no longer be available on your listings panel. 
 
 ### Buyer
-At the close of the auction a Close Auction button will appear below you bids. If you held the winning bid, you click the Close Auction button under the winning bid in the My Bids Panel. All bids will be displayed in the My Bids panel. If you are in a bidding war for an NFT, all bids placed for that NFT will be listed here.
+At the close of the auction a Close Auction button will appear below you bids. If you held the winning bid, you click the Close Auction button under the winning bid in the My Bids Panel. All bids will be displayed in the My Bids panel. If you are in a bidding war for an NFT, all bids placed for that NFT will be listed here. When the buyer with the winning bid closes the auction, the NFT is transferred to the wallet address of the winning bid.
 
 <p align="center" width="100%">
     <img width="80%" src="images/myBidspanelCloseAuction.png">
