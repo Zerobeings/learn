@@ -391,9 +391,9 @@ In this example, you will click on the Close Auction button below the bid for 0.
 </p>
 
 ## Buyout auction
-If you would prefer to buyout the auction, you can do so by clicking the "Buyout" button. First search the NFT collection of interest, locate the NFT that is available for auction. Click on the "Place Bid" button. You will be navigated to the listings detail page. Review the details of the NFT and the buyout price displayed in the detail view. Navigate to the "i want that" section, then connect your wallet. Click "Buyout" to initiate the buy function to buyout the auction.
+If you would prefer to buyout the auction, you can do so by clicking the "Buyout" button. First search the NFT collection of interest, locate the NFT that is available for auction. Click on the "Place Bid" button. You will be navigated to the listings detail page. Review the details of the NFT and the buyout price displayed in the detail view. Navigate to the "i want that" section, then connect your wallet. Click "Buyout" to initiate the buy function to buyout the auction. The auction is automatically closed for the buyer during the buyout.
 
-⚠️ Both the buyer and seller must close the auction in the buyout scenario.
+⚠️ The seller must close the auction in the buyout scenario.
 
 <p align="center" width="100%">
     <img width="80%" src="images/buyoutAuction.gif">
