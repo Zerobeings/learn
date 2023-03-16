@@ -23,7 +23,7 @@ Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell,
 >
 > * Twitter: [https://twitter.com/Zero_beings](https://twitter.com/Zero_beings)
 > * Discord: [https://discord.gg/rZMzVCx96W](https://discord.gg/rZMzVCx96W)
-> * Medidum: [https://zerobeings.medium.com/](https://zerobeings.medium.com/)
+> * Medium: [https://zerobeings.medium.com/](https://zerobeings.medium.com/)
 >
 
 # Overview
