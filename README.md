@@ -2,11 +2,13 @@
     <img width="80%" src="images/zerobeings_logo_m.png">
 </p>
 
-# 🚧 Market gm ☕️ is currently in testing phase 🚧
-## Market gm ☕️ - An NFT marketplace 
+# Market gm ☕️ - An NFT marketplace
+
+## Introduction
+
+Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell, and auction NFTs inside and outside the marketplace. This flexibility is achieved through the thirdWeb marketplace contract ([contract audit report](https://gateway.ipfscdn.io/ipfs/QmNgNaLwzgMxcx9r6qDvJmTFam6xxUxX7Vp8E99oRt7i74/)). 
 
 > 0.5% platform fee & [EIP-2981](https://eips.ethereum.org/EIPS/eip-2981) royalties honored, filetype flexibility, auto-generated IPFS site, and fully customizable.
-
 
 1. **[Overview](#overview):** A tour of the marketplace.
 2. **[Mobile Devices](#mobile-devices):** How to use Market gm as a progressive web application.
@@ -16,6 +18,13 @@
 6. **[Marketplace Repo](#marketplace-repo):** Overview of the marketplace source code.
 7. **[More Info](#more-info):** FAQs and source documentation.
 
+## News & Community
+
+>
+> * Twitter: [https://twitter.com/Zero_beings](https://twitter.com/Zero_beings)
+> * Discord: [https://discord.gg/rZMzVCx96W](https://discord.gg/rZMzVCx96W)
+> * Medidum: [https://zerobeings.medium.com/](https://zerobeings.medium.com/)
+>
 
 # Overview
 
