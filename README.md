@@ -339,9 +339,13 @@ If you would like to purchase the NFT at the listed price, click the "Buy" butto
 >* At the end of the auction, no more bids can be placed.
 >* At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller.
 
-⚠️ Take caution when creating an auction as the buyer and seller must close the auction. As a seller, it would be prudent to save the address of the winning bid to attempt reaching out to wallet owner.
+<p align="center" width="100%">
+    <img width="80%" src="images/auctionsOverview.png">
+</p>
 
-To initiate an auction two transactions must occur. The first transaction transfers the NFT being put for auction to escrow in the marketplace contract. The second transaction passes the NFT to be auctioned and the auction parameters. The auction form requires the NFT collection address, NFT token ID, the Sale Price in ETH (buyout price), and the reserve price (minimum initial bid).
+To initiate an auction for a new collection two transactions must occur. The first transaction approves the marketplace contract access to the NFT collection in your wallet. The second transaction transfers the NFT to be auctioned and the auction parameters to the marketplace contract. The auction form requires the NFT collection address, NFT token ID, the Sale Price in ETH (buyout price), and the reserve price (minimum initial bid).
+
+If a collection has already been approved for marketplace access, then only one transaction is required. This transaction transfers the NFT to be auctioned and the auction parameters to the marketplace contract.
 
 <p align="center" width="100%">
     <img width="80%" src="images/createauction.gif">
@@ -356,9 +360,9 @@ After bids are received for an auction the listing details page will display the
 ## Bid on Auctioned NFT
 > Winning bid can be placed within 60 seconds of the auction closing.
 
-To bid on an auction NFT click on the NFT beings auctioned from the Available Listings panel on the Market gm ☕️ home page. You will be directed to a detail view of the listing page. Review the listing details. Near the bottom of the listing detail panel there is a section titled "i want that". Click the connect button to connect to the marketplace contract and reveal two purchasing options. The first option is to buyout the NFT. The buyout price is in the listing details. The second option is to place a bid on the NFT. If you are the first person to bid, your bid price must meet the reserve price (minimum bid amount). If there are other bids, they will be listed under the "i want that" title and your bid must be 5% higher than the highest bid. The bid duration is equal to the time left until auction has ended.
+To bid on an auction NFT, click on the NFT being auctioned from the Available Listings panel on the Market gm ☕️ home page. You will be directed to a detailed view of the listing page. Review the listing details. Near the bottom of the listing details panel there is a section titled "i want that". Click the connect button to connect to the marketplace contract and reveal two purchasing options. The first option is to buyout the NFT auction. The buyout price is in the listing details. The second option is to place a bid on the NFT. If you are the first person to bid, your bid price must meet the reserve price (minimum bid amount). If there are other bids, they will be listed under the "i want that" title and your bid must be 5% higher than the highest bid. The bid duration is equal to the time left until auction has ended.
 
-> Reminder, if you are the winning bid you must close the auction at the end of the sale duration to complete the transaction and transfer of the NFT into you wallet.
+> Reminder, if you are the winning bid you must close the auction at the end of the sale duration to complete the transaction and transfer of the NFT into your wallet. If you are the seller, you will need to close the auction to transfer the funds for the sale to your wallet.
 
 <p align="center" width="100%">
     <img width="80%" src="images/submittingbid.gif">
@@ -371,42 +375,45 @@ After you have placed a bid on an NFT a My Bids panel will be generated on the M
 </p>
 
 ## Close Auction
-When an auction is created the default auction duration is 7 days. Any bid submitted will expire at the end of the auction.
+When an auction is created the default auction duration is 7 days. At the end of 7 days the auction will expire and the `closeAuction` actions can be performed on the Auctions page.
 
-> At the end of the auction, the ```closeAuction``` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
+> At the end of the auction, the `closeAuction` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
+> The Auctions page can take a long time to load, please be patient.
 
 ### Seller
-When the seller is ready to close the auction, the seller wallet address must navigate to the My Listings page. Navigate to NFT being auctioned under the My Listings panel and click "Close Auction" located under the NFT being auctioned. In this example, test #4 is the NFT with the "Close Auction" option. When the seller closes the auction the winning bid amount is transferred to the seller's wallet.
+When the seller is ready to close the auction, the seller wallet address must navigate to the Auctions page. Navigate to NFT being auctioned and click "Close Auction" located under the NFT being auctioned. When the seller closes the auction the winning bid amount is transferred to the seller's wallet.
 
 <p align="center" width="100%">
     <img width="80%" src="images/sellercloseauction.png">
 </p>
 
-> ⚠️ It is recommended to take record of the highest bidders address prior to closing the auction.
+> ⚠️ It is recommended to take record of the token ID and date in which an auction will expire.
 
-Once the close auction function is initiated. You will be asked to connect your wallet and then submit the transaction to close the auction. After the auction is closed the NFT will no longer be available on your listings panel. 
+Once the close auction function is initiated. You will be asked to connect your wallet and then submit the transaction to close the auction.
 
 ### Buyer
-At the close of the auction a Close Auction button will appear below you bids. If you held the winning bid, you click the Close Auction button under the winning bid in the My Bids Panel. All bids will be displayed in the My Bids panel. If you are in a bidding war for an NFT, all bids placed for that NFT will be listed here. When the buyer with the winning bid closes the auction, the NFT is transferred to the wallet address of the winning bid.
+At the expiration of the auction your bids will display "Auction Ended" during the listing deactivation process. After the auction expires, navigate to the Auctions page to determine if you held the winning bid. If you held the winning bid, the NFT will appear in the auctions to close panel! When the buyer with the winning bid closes the auction, the NFT is transferred to the wallet address of the winning bid.
+
+> ⚠️ It is recommended to take record of the token ID and date in which an auction will expire.
 
 <p align="center" width="100%">
     <img width="80%" src="images/myBidspanelCloseAuction.png">
 </p>
 
-In this example, you will click on the Close Auction button below the bid for 0.003 GOR.
-
-<p align="center" width="100%">
-    <img width="33%" src="images/closeauctionimg.png">
-</p>
-
 ## Buyout auction
-If you would prefer to buyout the auction, you can do so by clicking the "Buyout" button. First search the NFT collection of interest, locate the NFT that is available for auction. Click on the "Place Bid" button. You will be navigated to the listings detail page. Review the details of the NFT and the buyout price displayed in the detail view. Navigate to the "i want that" section, then connect your wallet. Click "Buyout" to initiate the buy function to buyout the auction. The auction is automatically closed for the buyer during the buyout.
 
-⚠️ The seller must close the auction in the buyout scenario.
+### Buyer
+If you would prefer to buyout the auction, you can do so by clicking the "Buyout" button. First search the NFT collection of interest, locate the NFT that is available for auction. Click on the "Place Bid" button. You will be navigated to the listings detail page. Review the details of the NFT and the buyout price displayed in the detailed view. Navigate to the "i want that" section, then connect your wallet. Click "Buyout" to initiate the buy function to buyout the auction. The auction is automatically closed for the buyer during the buyout.
 
 <p align="center" width="100%">
     <img width="80%" src="images/buyoutAuction.gif">
 </p>
+
+
+### Seller
+> ⚠️ The seller still must close the auction in the buyout scenario.
+
+If a buyout condition has been met, navigate to the Auctions page. Locate the NFT that has reached the buyout condition and click the "Close Auction" button.
 
 # Metadata Structure
 It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards).
@@ -492,7 +499,9 @@ If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ether
 3. Navigate to the project directory `cd zerb-nft-marketplace`.
 4. Install dependencies with `npm install`.
 5. Change `.env.example` to `.env` and add your environment variables.
-6. Run `node server` (🚨 not recommended by Wallet Connect) or set up a [localtunnel](https://theboroer.github.io/localtunnel-www/) (recommended).
+6. Change mbox.example.json and gbox.example.json to mbox.json and gbox.json
+7. Remove mbox.json and gbox.json from .gitignore for private repositories
+8. Run `node server` (🚨 not recommended by Wallet Connect) or set up a [localtunnel](https://theboroer.github.io/localtunnel-www/) (recommended).
 
 ### Making it your Own
 1. Change the NFT gating contract and user name.
