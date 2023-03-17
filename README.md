@@ -396,10 +396,6 @@ At the expiration of the auction your bids will display "Auction Ended" during t
 
 > ⚠️ It is recommended to take record of the token ID and date in which an auction will expire.
 
-<p align="center" width="100%">
-    <img width="80%" src="images/myBidspanelCloseAuction.png">
-</p>
-
 ## Buyout auction
 
 ### Buyer
