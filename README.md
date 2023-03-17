@@ -409,7 +409,7 @@ If you would prefer to buyout the auction, you can do so by clicking the "Buyout
 ### Seller
 > ⚠️ The seller still must close the auction in the buyout scenario.
 
-If a buyout condition has been met, navigate to the Auctions page. Locate the NFT that has reached the buyout condition and click the "Close Auction" button.
+If a buyout condition has been met, navigate to the Auctions page. Locate the NFT that has reached the buyout condition and click the "Close Auction" button. The funds from the sale will then be transferred to your wallet.
 
 # Metadata Structure
 It is recommended to follow the metadata structure standard developed by [opensea](https://docs.opensea.io/docs/metadata-standards).
