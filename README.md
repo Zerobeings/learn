@@ -2,8 +2,6 @@
     <img width="80%" src="images/zerobeings_logo_m.png">
 </p>
 
-Powered by:
-
 <p align="center" width="100%" vertical-align="middle" display="inline-block">
     <img width="10%" src="images/factoria.png" href="https://open.factoria.app/">
     <img width="10%" src="images/privatepartyIcon.png" href="https://privateparty.dev/">
