@@ -3,16 +3,16 @@
 </p>
 
 # Powered By:
-<table>
+<table border-collapse="collapse" border="none">
   <tr>
-    <td align="center" vertical-align= "middle" border="none">
-      <img width="10%" src="images/factoria.png" href="https://open.factoria.app/">
-      <img width="10%" src="images/privatepartyIcon.png" href="https://privateparty.dev/">
-      <img width="10%" src="images/thirdweb.png" href="https://thirdweb.com/">
-      <img width="10%" src="images/alchemy.png" href="https://www.alchemy.com/">
-      <img width="10%" src="images/nodejs.png" href="https://nodejs.org/en">
-      <img width="10%" src="images/expressjs.png" href=https://expressjs.com/">
-      <img width="10%" src="images/web3js.png" href="https://web3js.readthedocs.io/en/v1.8.2/">
+    <td align="center" vertical-align="middle">
+      <img width="10%" src="images/factoria.png">
+      <img width="10%" src="images/privatepartyIcon.png">
+      <img width="10%" src="images/thirdweb.png">
+      <img width="10%" src="images/alchemy.png">
+      <img width="10%" src="images/nodejs.png">
+      <img width="10%" src="images/expressjs.png">
+      <img width="10%" src="images/web3js.png">
     </td>
   </tr>
 </table>
