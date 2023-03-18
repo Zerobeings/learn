@@ -2,20 +2,17 @@
     <img width="80%" src="images/zerobeings_logo_m.png">
 </p>
 
-# Powered By:
-<table border-collapse="collapse" border="none">
-  <tr>
-    <td align="center" vertical-align="middle">
-      <img width="10%" src="images/factoria.png">
-      <img width="10%" src="images/privatepartyIcon.png">
-      <img width="10%" src="images/thirdweb.png">
-      <img width="10%" src="images/alchemy.png">
-      <img width="10%" src="images/nodejs.png">
-      <img width="10%" src="images/expressjs.png">
-      <img width="10%" src="images/web3js.png">
-    </td>
-  </tr>
-</table>
+# Powered By
+
+<p align="center" vertical-align="middle">
+  <img width="10%" src="images/factoria.png">
+  <img width="10%" src="images/privatepartyIcon.png">
+  <img width="10%" src="images/thirdweb.png">
+  <img width="10%" src="images/alchemy.png">
+  <img width="10%" src="images/nodejs.png">
+  <img width="10%" src="images/expressjs.png">
+  <img width="10%" src="images/web3js.png">
+</p>
 
 # Market gm ☕️ - An NFT marketplace
 
