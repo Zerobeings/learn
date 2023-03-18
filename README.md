@@ -37,11 +37,10 @@ Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell,
 >   
 > "Speak fren and enter." - Gandalf 🧙🏼‍♂️
 >   
-> Mint a Zero Being here [mint.zerobeings.xyz](https://mint.zerobeings.xyz)
+> Mint a Zero Being [mint.zerobeings.xyz](https://mint.zerobeings.xyz) for the full gm ☕️ experience or login as a guest to access Market gm ☕️ only.
 >   
 
-Market gm is an NFT gated marketplace. The connecting wallet must have a balance of at least one Zero Being NFT.
-Wallet authorization is accomplished with [PrivateParty](https://privateparty.dev).
+Market gm is an NFT gated marketplace. Wallet authorization is accomplished with [PrivateParty](https://privateparty.dev).
 
 > Private Party is a dead simple blockchain auth framework created by [skogard](https://twitter.com/skogard)
 
@@ -52,7 +51,7 @@ Wallet authorization is accomplished with [PrivateParty](https://privateparty.de
 To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login with your preferred wallet.
 
 <p align="center" width="100%">
-    <img width="33%" src="images/login.png">
+    <img width="66%" src="images/login.png">
 </p>
 
 After logging into Zerb gm ☕️, open the menu on the left.
