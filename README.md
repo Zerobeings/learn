@@ -393,14 +393,14 @@ When the seller is ready to close the auction, the seller wallet address must na
     <img width="80%" src="images/sellercloseauction.png">
 </p>
 
-> ⚠️ It is recommended to take record of the token ID and date in which an auction will expire.
+> ⚠️ It is recommended to take record of the listing ID, collection address, token ID, and date in which an auction will expire. If the seller does not close the auction within 7 days, the seller will need to manually close the auction through etherscan. To do this the seller must pass the listing ID and their wallet address.
 
 Once the close auction function is initiated. You will be asked to connect your wallet and then submit the transaction to close the auction.
 
 ### Buyer
 At the expiration of the auction your bids will display "Auction Ended" during the listing deactivation process. After the auction expires, navigate to the Auctions page to determine if you held the winning bid. If you held the winning bid, the NFT will appear in the auctions to close panel! When the buyer with the winning bid closes the auction, the NFT is transferred to the wallet address of the winning bid.
 
-> ⚠️ It is recommended to take record of the token ID and date in which an auction will expire.
+> ⚠️ It is recommended to take record of the listing ID, collection address, token ID, and date in which an auction will expire. If the buyer does not close the auction within 7 days, the buyer will need to manually close the auction through etherscan. To do this the buyer must pass the listing ID and their wallet address.
 
 ## Buyout auction
 
@@ -633,6 +633,9 @@ If you would like to take a deep dive into the tools used to build this marketpl
 
 * What is the platform fee for a sale on the marketplace?
     We charge a platform fee of 0.5% for each sale.
+
+* Can any collection be searched on the marketplace?
+    Yes, any collection can be search by entering the collections address in the search bar.
 
 ## Reference Documents
 * Skogard Productions [PrivateParty](https://privateparty.dev)
