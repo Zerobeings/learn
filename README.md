@@ -5,7 +5,7 @@
 # Powered By:
 <table>
   <tr>
-    <td align="center">
+    <td align="center" vertical-align= "middle" border="none">
       <img width="10%" src="images/factoria.png" href="https://open.factoria.app/">
       <img width="10%" src="images/privatepartyIcon.png" href="https://privateparty.dev/">
       <img width="10%" src="images/thirdweb.png" href="https://thirdweb.com/">
