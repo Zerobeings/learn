@@ -4,14 +4,8 @@
 
 # Powered By
 
-<p align="center" vertical-align="middle" width="100%">
-  <img width="50px" height="50px" src="images/factoria.png">
-  <img width="50px" height="50px" src="images/privatepartyIcon.png">
-  <img width="50px" height="80px" src="images/thirdweb.png">
-  <img width="50px" height="60px" src="images/alchemy.png">
-  <img width="50px" height="50px" src="images/nodejs.png">
-  <img width="50px" height="100px" src="images/expressjs.png">
-  <img width="50px" height="50px" src="images/web3js.png">
+<p align="center" width="100%">
+  <img width="80%" src="images/poweredby.png">
 </p>
 
 # Market gm ☕️ - An NFT marketplace
