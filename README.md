@@ -4,7 +4,7 @@
 
 Powered by:
 
-<p align="center" width="100%">
+<p align="center" width="100%" vertical-align="middle">
     <img width="10%" src="images/factoria.png">
     <img width="10%" src="images/privatepartyIcon.png">
     <img width="10%" src="images/thirdweb.png">
