@@ -38,7 +38,9 @@ Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell,
 > "Speak fren and enter." - Gandalf 🧙🏼‍♂️
 >   
 > Mint a Zero Being [mint.zerobeings.xyz](https://mint.zerobeings.xyz) for the full gm ☕️ experience or login as a guest to access Market gm ☕️ only.
->   
+> 
+> You can also experience all of Zerb gm with a tinydinos NFT or a FreshFrogsNFT!!!
+>  
 
 Market gm is an NFT gated marketplace. Wallet authorization is accomplished with [PrivateParty](https://privateparty.dev).
 
@@ -51,7 +53,7 @@ Market gm is an NFT gated marketplace. Wallet authorization is accomplished with
 To access Market gm ☕️ head over to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) and login with your preferred wallet.
 
 <p align="center" width="100%">
-    <img width="66%" src="images/login.png">
+    <img width="80%" src="images/login.gif">
 </p>
 
 After logging into Zerb gm ☕️, open the menu on the left.
