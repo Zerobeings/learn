@@ -12,7 +12,7 @@
 
 ## Introduction
 
-Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell, and auction NFTs inside and outside the marketplace. This flexibility is achieved through the thirdWeb marketplace contract ([contract audit report](https://gateway.ipfscdn.io/ipfs/QmNgNaLwzgMxcx9r6qDvJmTFam6xxUxX7Vp8E99oRt7i74/)). 
+Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell, and auction NFTs inside and outside the marketplace. This flexibility is achieved through the thirdweb marketplace contract ([contract audit report](https://gateway.ipfscdn.io/ipfs/QmNgNaLwzgMxcx9r6qDvJmTFam6xxUxX7Vp8E99oRt7i74/)). 
 
 > 0.5% platform fee & [EIP-2981](https://eips.ethereum.org/EIPS/eip-2981) royalties honored, filetype flexibility, auto-generated IPFS site, and fully customizable.
 
@@ -256,7 +256,7 @@ Now the webapp will have a link from the phone home screen. This gives a similar
 The guide will demonstrate all the functions utilized through the Market gm ☕️ user interface. There are additional functions that can be explored by reviewing the testnet smart [contract](https://goerli.etherscan.io/address/0xC65CE759f006928451343874538A328dFcbAD325#code). The details are outlined in their respective sections.
 
 ## Create Direct Listing
-> Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
+> Description from the [thirdweb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 >
 >Direct listings are low commitment, high-frequency listings; people constantly list and de-list their NFTs based on market trends. So, the listed NFTs and offer amounts are not escrowed in the Marketplace to keep the seller's NFTs and the buyer's currency liquid.
 >
@@ -331,7 +331,7 @@ If you would like to purchase the NFT at the listed price, click the "Buy" butto
 </p>
 
 ## Create Auction
-> Description from the [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
+> Description from the [thirdweb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 >
 >Auction listings are high commitment, low-frequency listings. The seller and bidders respect the auction window, and recognize that their NFTs / bid amounts will be illiquid for the auction duration, and expect a guaranteed payout at auction closing — the auctioned items for the bidder, and the winning bid amount for the seller.
 >
@@ -384,7 +384,7 @@ After you have placed a bid on an NFT a My Bids panel will be generated on the M
 ## Close Auction
 When an auction is created the default auction duration is 7 days. At the end of 7 days the auction will expire and the `closeAuction` actions can be performed on the Auctions page.
 
-> At the end of the auction, the `closeAuction` function needs to be called twice; once for the buyer and once for the seller. [thirdWeb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
+> At the end of the auction, the `closeAuction` function needs to be called twice; once for the buyer and once for the seller. [thirdweb portal](https://portal.thirdweb.com/pre-built-contracts/marketplace)
 > The Auctions page can take a long time to load, please be patient.
 
 ### Seller
@@ -642,8 +642,8 @@ If you would like to take a deep dive into the tools used to build this marketpl
 * Skogard Productions [PrivateParty](https://privateparty.dev)
 * Skogard Productions [factoria](https://docs.factoria.app/#/)
 * Alchemy NFT [API](https://docs.alchemy.com/reference/nft-api-quickstart) 
-* Thirdweb marketplace contract technical [documents](https://portal.thirdweb.com/contracts/design/Marketplace#currency-transfers)
-* Thirdweb typescript documentation [typescript](https://portal.thirdweb.com/typescript/sdk.marketplace)
+* thirdweb marketplace contract technical [documents](https://portal.thirdweb.com/contracts/design/Marketplace#currency-transfers)
+* thirdweb typescript documentation [typescript](https://portal.thirdweb.com/typescript/sdk.marketplace)
 * Rarible [API](https://multichain-api.rarible.org/v0.1/tag/item-controller#operation/getItemRoyaltiesById)
 
 ## Additional Resources
