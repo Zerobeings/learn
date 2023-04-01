@@ -215,43 +215,6 @@ The My Portfolio panel displays all the NFTs owned by the connected wallet. Each
 
 If the NFT is clicked on a detailed view of the NFT will be displayed, similar to the detailed view from the Detailed NFT View.
 
-# Mobile Devices
-
-> Zerb gm ☕️ is set up to function as a progressive web application (A2HS). Zerb gm ☕️ is the gateway to Market gm ☕️. 
-
-The manifest.webmanifest is deployed as shown below. Adjust these parameters when customizing the marketplace with your NFT collection branding and color scheme. This configuration will allow the webapp to be full screen when launched from the phone icon link giving the user a phone app like experience.
-
-```html
-{
-    "background_color": "black",
-    "description": "Zerb gm ☕️",
-    "display": "fullscreen",
-    "icons": [
-      {
-        "src": "icon/zero-icon.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }
-    ],
-    "name": "Zerb gm ☕️",
-    "short_name": "Zerb gm ☕️",
-    "start_url": "/login"
-  }
-```
-## A2HS
-To create the webapp link on phone's home screen go to [gm.zerobeings.xyz](https://gm.zerobeings.xyz) or your custom domain using the phone's native browser application.
-
-<p align="center" width="100%">
-    <img width="100%" src="images/pwaA2HS.png">
-</p>
-
-## User Experience
-Now the webapp will have a link from the phone home screen. This gives a similar experience to a native application. Users can log in with their preferred mobile wallet. This is essentially a read-only experience. If you would like a mobile read and write experience, please use the web3 browser located in your preferred wallet application.
-
-<p align="center" width="100%">
-    <img width="75%" src="images/afterA2HS.png">
-</p>
-
 # Guide
 The guide will demonstrate all the functions utilized through the Market gm ☕️ user interface. There are additional functions that can be explored by reviewing the testnet smart [contract](https://goerli.etherscan.io/address/0xC65CE759f006928451343874538A328dFcbAD325#code). The details are outlined in their respective sections.
 
@@ -486,16 +449,6 @@ Follow the guide below to get started on your own NFT marketplace today! Otherwi
 * Infura API Key
 
 ### Installation
-> 🚨 Wallet Connect recommends only running the modal on https. Tools like [localtunnel](https://theboroer.github.io/localtunnel-www/) can be used to accomplish this.
->
-> Recently Wallet Connect began the process of sunsetting the Web3Modal V1.0. However, you can still use this modal by upgrading the WalletConnect ethereum-provider to v2.0. This was done for Market gm.
-
-```
-For Web3Modal v1.0 integrations
-We recommend that you replace your existing integration with the latest version of Web3Modal, for which you can find more docs here.
-
-If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ethereum-provider to v2.0 then you can update to the latest version available on NPM which you can find here.
-```
 
 1. Fork the project.
 2. Clone the project.
@@ -503,8 +456,8 @@ If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ether
 4. Install dependencies with `npm install`.
 5. Change `.env.example` to `.env` and add your environment variables.
 6. Change `mbox.example.json` and `gbox.example.json` to `mbox.json` and `gbox.json`
-7. Remove `mbox.json` and `gbox.json` from `.gitignore` for private repositories
-8. Run `node server` (🚨 not recommended by Wallet Connect) or set up a [localtunnel](https://theboroer.github.io/localtunnel-www/) (recommended).
+7. Remove `mbox.json` and `gbox.json` from `.gitignore`
+8. Run `nodemon`
 
 ### Making it your Own
 1. Change the NFT gating contract and user name.
@@ -513,14 +466,6 @@ If you still want to use Web3Modal v1.0 but just upgrade the WalletConnect ether
 4. Update the marketplace contract address.
 5. Update the `mbox.json` and `gbox.json` files.
 6. Update `session.zerb.account` to new user reference throughout repository.
-7. Update the walletconnect parameter on the login page:
-
-```javascript
-const party = new Privateparty({
-    walletconnect: "<infura api key>" //for mobile
-    })
-```
-
 8. Customize!
 
 #### Change the NFT Gate
@@ -600,13 +545,13 @@ You will need to add your contract address and [projectId](https://cloud.walletc
 
 The mbox.json file supports the connection to the mainnet.
 ```json
-{"contract":"<MarketContract>","network":"main","projectId":"<projectID from WalletConnect Cloud>"}
+{"contract":"<MarketContract>","network":"main"}
 ```
 
 The gbox.json file supports the connection to the goerli-network.
 
 ```json
-{"contract":"<MarketContract>","network":"goerli","projectId":"<projectID from WalletConnect Cloud>"}
+{"contract":"<MarketContract>","network":"goerli"}
 ```
 
 #### Update the listingCard partials
