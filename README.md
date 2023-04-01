@@ -17,12 +17,11 @@ Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell,
 > 0.5% platform fee & [EIP-2981](https://eips.ethereum.org/EIPS/eip-2981) royalties honored, filetype flexibility, auto-generated IPFS site, and fully customizable.
 
 1. **[Overview](#overview):** A tour of the marketplace.
-2. **[Mobile Devices](#mobile-devices):** How to use Market gm as a progressive web application.
-3. **[Guide](#guide):** How to create & cancel listings, create & close auctions, create an offer and Buy.
-4. **[Metadata Structure](#metadata-structure):** Additional meta data feature for rendering non-image filetypes.
-5. **[goerli-market](#goerli-market)**: Overview of the goerli-market.
-6. **[Marketplace Repo](#marketplace-repo):** Overview of the marketplace source code.
-7. **[More Info](#more-info):** FAQs and source documentation.
+2. **[Guide](#guide):** How to create & cancel listings, create & close auctions, create an offer and Buy.
+3. **[Metadata Structure](#metadata-structure):** Additional meta data feature for rendering non-image filetypes.
+4. **[goerli-market](#goerli-market)**: Overview of the goerli-market.
+5. **[Marketplace Repo](#marketplace-repo):** Overview of the marketplace source code.
+6. **[More Info](#more-info):** FAQs and source documentation.
 
 ## News & Community
 
