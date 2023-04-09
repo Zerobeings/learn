@@ -535,7 +535,7 @@ There are a total of 5 locations in which the goerli & mainnet contract addresse
 // contracts are referenced in three locations in mbox.json for mainnet and gbox.json for goerli,
 // the listingsCard and mybids for mainnet and goerli-listingsCard & goerli-mybids in the IPFS site link,
 // in the const listed below, and finally the marketfooter files.
-const gMarkectContract = '<your goerli contract address>'; //goerli marketplace contract. Deploy from thirdweb dashboard.
+const gMarketContract = '<your goerli contract address>'; //goerli marketplace contract. Deploy from thirdweb dashboard.
 const mainnetMarketContract = '<your mainnet contract address>'; //ETH mainnet marketplace contract. Deploy from thirdweb dashboard
 ```
 
@@ -568,6 +568,179 @@ frameborder="0"></iframe>
 
 # More Info
 If you would like to take a deep dive into the tools used to build this marketplace, review the reference documents. The additional resources section is a list of tools to help you launch and manage your NFT collections. Enjoy!
+
+## How to...
+This section highlights unique aspects of the Market gm ☕️ design.
+### How to create codebase NFTs - it’s time to evolve!
+
+#### What if your crypto wallet became your repository?
+
+ERC1155 token types allow for a method to build a codebase collection. Each codebase can be created as a group of tokens within the collection. This enables developers to sell code snippets, software packages, templates, and other things that have yet to be imagined.
+
+To do this a marketplace must be designed to handle the metadata for codebase tokens. Market gm ☕️ is uniquely designed to handle links to the codebase NFTs and their respective license stored on IPFS. With some minor additions to your metadata you can deploy software editions of limited quantity through an ERC1155 contract. In this example, I will be using the thirdweb’s ERC1155 Drop Contract.
+
+#### Example of a codebase NFT
+
+Below is an example of the codebase NFT collection card on Market gm ☕.
+
+<p align="center" width="100%">
+    <img width="33%" src="images/codebaseCollectionCard.png">
+</p>
+
+This codebase NFT is used to filter auctions that need to be closed on a thirdweb marketplace contract. The typical auction useflow is shown below. The buyer and seller must remember to close the auction at the end of the auction period, but this can be difficult to manage manually.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/auctionsOverview.png">
+</p>
+
+To solve this problem I’ve created a filtering tool in javascript that finds the auctions the buyer or seller need to close.
+
+#### Accessing the codebase and license
+
+This codebase NFT metadata contains the link to the codebase and license.
+
+<p align="center" width="100%">
+    <img width="66%" src="images/codebaseCollectionCardplusdescriptions.png">
+</p>
+
+When you click on the flie icon, you will be taken to the IPFS page that contains the javascript file for this filter [code](https://bafybeibymtvvmsx4u5ygk5so7tumscioylkpanrthzdwhgbcqxqxsmghoa.ipfs.nftstorage.link/myAuctionsToClose.js).
+
+When you click on the certificate icon, you will be taken to the IPFS page that contains the text file of the [license](https://bafybeibymtvvmsx4u5ygk5so7tumscioylkpanrthzdwhgbcqxqxsmghoa.ipfs.nftstorage.link/LICENSE.txt)
+
+
+#### Creating a codebase NFT
+
+Below is a proposed method of creating a codebase NFT collection with the thirdweb ERC1155 contract.
+
+1. Create the cover for your software package. Below is the image for this example NFT codebase.
+
+<p align="center" width="100%">
+    <img width="60%" src="images/myAuctionsToClose.png">
+</p>
+
+2. Prepare a license text file. I’ve chosen to use the CC0 1.0 Universal as the license for this NFT codebase.
+
+3. Place the image, code, and license file in a single file to easily manage the upload to [NFT storage](https://nft.storage/).
+
+4. Drag and drop your group of files into the [NFT UP](https://nft.storage/docs/how-to/nftup/) application for NFT Storage.
+
+<p align="center" width="100%">
+    <img width="60%" src="images/NFTuploadCodebase.gif">
+</p>
+
+5. Make a copy of the CID, IPFS URL and GatewayURL.
+
+<p align="center" width="100%">
+    <img width="60%" src="images/nftupCID.png">
+</p>
+
+6. Prepare your metadata with the CID, IPFS URL, and Gateway url. It is recommended to follow the guidelines from [OpenSea](https://docs.opensea.io/docs/metadata-standards) with these additional items: file, filetype, mime, license, and license_url.
+
+Below is an example of how to prepare your metadata to properly display the link to the file and the license on Merket gm ☕️.
+
+```json
+{
+    "name": "My Auctions to Close",
+    "description": "This codebase provides the ability to identify auctions an address needs to close when using a thirdweb marketplace contract version 2.0.0.",
+    "image": "ipfs://bafybeibymtvvmsx4u5ygk5so7tumscioylkpanrthzdwhgbcqxqxsmghoa/myAuctionsToClose.png",
+    "file": "https://bafybeibymtvvmsx4u5ygk5so7tumscioylkpanrthzdwhgbcqxqxsmghoa.ipfs.nftstorage.link/myAuctionsToClose.js",
+    "filetype": "javascript",
+    "mime": {
+        "bafybeibymtvvmsx4u5ygk5so7tumscioylkpanrthzdwhgbcqxqxsmghoa": "application/javascript"
+    },
+    "license": "CC0 1.0 Universal",
+    "license_url": "https://bafybeibymtvvmsx4u5ygk5so7tumscioylkpanrthzdwhgbcqxqxsmghoa.ipfs.nftstorage.link/LICENSE.txt",
+    "attributes": [
+        {
+            "trait_type": "Language",
+            "value": "javascript"
+        },
+        {
+            "trait_type": "Sdk",
+            "value": "thirdweb"
+        },
+        {
+            "trait_type": "Compatible Contract",
+            "value": "thirdweb marketplace"
+        },
+        {
+            "trait_type": "Network",
+            "value": "goerli"
+        },
+        {
+            "trait_type": "Author",
+            "value": "h0ward.eth"
+        }
+    ]
+}
+```
+
+Now we are ready to deploy our ERC1155 contract on the thirdweb dashboard.
+
+#### Deploy the ERC1155 Contract
+
+> Please note that version 4.0.7 was the latest version at the time this article was published.
+
+1. Follow this link to the ERC1155 Edition Drop contract: [https://thirdweb.com/thirdweb.eth/DropERC1155/4.0.7](https://thirdweb.com/thirdweb.eth/DropERC1155/4.0.7).
+
+<p align="center" width="100%">
+    <img width="80%" src="images/thirdwebERC1155dashboard.png">
+</p>
+
+
+2. Click Deploy Now.
+
+3. Create a contract metadata image (this is different from your codebase NFT), name, symbol and contract description.
+
+4. Populate the fields and then deploy. An example of the fields are shown in the image below.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/deployingERC1155.png">
+</p>
+
+5. Once Deployed click on “NFTs” under the extension section
+
+<p align="center" width="100%">
+    <img width="80%" src="images/postERC1155deploy.png">
+</p>
+
+6. The NFTs view should look something like this. We are going to focus on the Batch Upload button. The reason we are using the Batch Upload instead of the Single Upload is to pass our custom JSON file.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/NFTsExtensionView.png">
+</p>
+
+7. Drag and drop your metadata into the upload section.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/uploadjson.gif">
+</p>
+
+After the creation of the NFT is complete your NFTs view will show the newly created NFT.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/ERC1155codebaseCollection.png">
+</p>
+
+You may notice that the total supply is 0. In the next step we are going to increase the total supply.
+
+8. Click the arrow located on the right of the token you just created. This will allow you to create the claim phase conditions.
+  * Create a claim phase name.
+  * Set the supply for this claim phase. In this example I will be treating this number as the total supply for the number of codebase NFTs.
+  * Set the number of NFTs a wallet can mint.
+  * If you wish to release additional copies later, you can create another claim phase.
+
+>
+> Note: For codebase NFTs it seems ideal to create a new ERC1155 contract for every new codebase. Otherwise when that contract address is queried, all tokens released on that contract will be displayed. This could lead to difficulties searching for specific tokens and general collection clutter.
+>
+
+9. Once claim conditions are set you are ready to launch your minting site. You can build one with a template from thirdweb or use the auto generated minting site located in the embed section of the dashboard.
+
+10. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos, FreshFrogsNFT or Zero Beings, log in as a guest and go to the “My listings page” to view your portfolio. You will now see your ERC1155 codebase NFT. 
+  * Click on the file to access the javascript file. You can use this link in a script tag or copy and paste into a javascript file on your website!
+  * Click on the certificate icon to access the codebase license. You can reference this link for your codebase license!
+
+🎉 Now you can create, sell, auction, and access codebase NFTs. What will you build to grow the NFT universe?
 
 ## FAQs
 * Can any collection be listed on the marketplace?
