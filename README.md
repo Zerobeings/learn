@@ -399,7 +399,7 @@ File, filetype, MIME type, and license url.
     "external_url": "https://yourdomain.com/1",
     "file": "https://<CID>.ipfs.nftstorage.link/04321.doc",
     "filetype": "doc",
-    "mime": { [file_cid]: "application/msword" },
+    "mime": { <CID>: "application/msword" },
     "license_url": "https://<CID>.ipfs.nftstorage.link/04321.txt",
     "attributes": [
         {
