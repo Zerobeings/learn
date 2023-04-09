@@ -684,7 +684,7 @@ Now we are ready to deploy our ERC1155 contract on the thirdweb dashboard.
 1. Follow this link to the ERC1155 Edition Drop contract: [https://thirdweb.com/thirdweb.eth/DropERC1155/4.0.7](https://thirdweb.com/thirdweb.eth/DropERC1155/4.0.7).
 
 <p align="center" width="100%">
-    <img width="80%" src="images/thirdwebERC1155dashboard.png">
+    <img width="80%" src="images/thirwebERC1155dashboard.png">
 </p>
 
 
