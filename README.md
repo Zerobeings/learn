@@ -736,7 +736,7 @@ You may notice that the total supply is 0. In the next step we are going to incr
 
 9. Once claim conditions are set you are ready to launch your minting site. You can build one with a template from thirdweb or use the auto generated minting site located in the embed section of the dashboard.
 
-10. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos, FreshFrogsNFT or Zero Beings, log in as a guest and go to the “My listings page” to view your portfolio. You will now see your ERC1155 codebase NFT. 
+10. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos, FreshFrogsNFT or Zero Beings, log in as a guest and go to the “My Listings" page to view your portfolio. You will now see your ERC1155 codebase NFT. 
   * Click on the file to access the javascript file. You can use this link in a script tag or copy and paste into a javascript file on your website!
   * Click on the certificate icon to access the codebase license. You can reference this link for your codebase license!
 
