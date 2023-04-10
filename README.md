@@ -734,11 +734,25 @@ You may notice that the total supply is 0. In the next step we are going to incr
 > Note: For codebase NFTs it seems ideal to create a new ERC1155 contract for every new codebase. Otherwise when that contract address is queried, all tokens released on that contract will be displayed. This could lead to difficulties searching for specific tokens and general collection clutter.
 >
 
+<p align="center" width="100%">
+    <img width="80%" src="images/setclaimcondition.gif">
+</p>
+
 9. Once claim conditions are set you are ready to launch your minting site. You can build one with a template from thirdweb or use the auto generated minting site located in the embed section of the dashboard.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/mintingERC1155.gif">
+</p>
 
 10. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos, FreshFrogsNFT or Zero Beings, log in as a guest and go to the “My Listings" page to view your portfolio. You will now see your ERC1155 codebase NFT. 
   * Click on the file to access the javascript file. You can use this link in a script tag or copy and paste into a javascript file on your website!
   * Click on the certificate icon to access the codebase license. You can reference this link for your codebase license!
+
+<p align="center" width="100%">
+    <img width="80%" src="images/codebaseNFTresult.gif">
+</p>
+
+You can mint this example at the thirdweb auto generated [website](https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc1155.html?contract=0x557803A3f398EF2563683eA83D3d1fD110d6cCEC&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&tokenId=0&theme=dark&primaryColor=purple).
 
 🎉 Now you can create, sell, auction, and access codebase NFTs. What will you build to grow the NFT universe?
 
