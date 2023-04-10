@@ -636,7 +636,7 @@ Below is a proposed method of creating a codebase NFT collection with the thirdw
 
 6. Prepare your metadata with the CID, IPFS URL, and Gateway url. It is recommended to follow the guidelines from [OpenSea](https://docs.opensea.io/docs/metadata-standards) with these additional items: file, filetype, mime, license, and license_url.
 
-Below is an example of how to prepare your metadata to properly display the link to the file and the license on Merket gm ☕️.
+Below is an example of how to prepare your metadata to properly display the link to the file and the license on Market gm ☕️.
 
 ```json
 {
