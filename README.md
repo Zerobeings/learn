@@ -756,6 +756,314 @@ You can mint this example at the thirdweb auto generated [website](https://ipfs.
 
 🎉 Now you can create, sell, auction, and access codebase NFTs. What will you build to grow the NFT universe?
 
+### How to create television NFTs - it’s time to evolve!
+
+#### What if your crypto wallet became your television library?
+
+ERC1155 token types allow for a method to build a television series collection. Each series can be created as a group of tokens (episodes) within an ERC 1155 contract. This enables producers to sell individual episodes with certain claim/mint conditions. This conditions could be correlated to a weekly release of episodes, early access, subscription based models, and other models yet to be conceived.
+
+To do this a marketplace must be designed to handle the metadata for television tokens. Market gm ☕️ is uniquely designed to handle links to television NFTs and their respective distribution license stored on IPFS. With some minor additions to your metadata you can deploy television series and episodes of limited quantity through an ERC1155 contract. In this example, I will be using the thirdweb’s ERC1155 Drop Contract.
+
+#### Example of a Television NFT
+
+Below is an example of the television NFT collection card on Market gm ☕.
+
+<p align="center" width="100%">
+    <img width="33%" src="images/TVcollectionCard.png">
+</p>
+
+#### Accessing the episode and distribution license
+
+This television NFT metadata contains the link to the episode and distribution license.
+
+<p align="center" width="100%">
+    <img width="33%" src="images/TVcollectionCardwithDescription.png">
+</p>
+
+When you click on the flie icon, you will be taken to the IPFS page that contains the the episode stored on IPFS https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/1.mp4
+
+When you click on the certificate icon, you will be taken to the IPFS page that contains the distribution license. https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/LICENSE.txt
+
+
+#### Creating a television NFT
+
+Below is a proposed method of creating a television NFT collection with the thirdweb ERC1155 contract.
+
+1. Create the your episodes for the television series.
+2. Prepare a distribution license text file. I’ve chosen to use the CC0 1.0 Universal as the license for this television NFT.
+3. Place the episodes and distribution license file in a single file to easily manage the upload to NFT storage (https://nft.storage/) .
+4. Drag and drop your group of files into the NFT UP application for NFT Storage (https://nft.storage/docs/how-to/nftup/).
+
+<p align="center" width="100%">
+    <img width="80%" src="images/televisioned.gif">
+</p>
+
+
+5. Make a copy of the CID, IPFS URL and GatewayURL.
+
+<p align="center" width="100%">
+    <img width="33%" src="images/televisionedIPFS.png">
+</p>
+
+6. Prepare your metadata with the CID, IPFS URL, and Gateway url. It is recommended to follow the guidelines from OpenSea with these additional items: file, filetype, mime, license, and license_url.
+
+Below is an example of how to prepare your metadata to properly display the link to the file and the license. Additionally, you can perform a Batch Upload to add each episode to the season all at once. Alternatively, you can use the Batch Upload to add an individual episode. You must use the Batch Upload to pass the custom JSON file.
+
+```json
+[
+    {
+        "id": "1",
+        "name": "Joffee Season 1: Episode 1",
+        "description": "Joffee web3 television season 1",
+        "image": "ipfs://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa/1.mp4",
+        "file": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/1.mp4",
+        "filetype": "mp4",
+        "mime": {
+            "bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa": "video/mp4"
+        },
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/LICENSE.txt",
+        "attributes": [
+            {
+                "trait_type": "Episode",
+                "value": 1
+            },
+            {
+                "trait_type": "Hero",
+                "value": "Dr. Latte"
+            },
+            {
+                "trait_type": "Title",
+                "value": "Understanding the science of Coffee."
+            },
+            {
+                "trait_type": "Runtime",
+                "value": "0:13"
+            },
+            {
+                "trait_type": "Authors",
+                "value": "Curly Fries & h0ward.eth"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Joffee Season 1: Episode 2",
+        "description": "Joffee web3 television season 1",
+        "image": "ipfs://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa/2.mp4",
+        "file": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/2.mp4",
+        "filetype": "mp4",
+        "mime": {
+            "bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa": "video/mp4"
+        },
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/LICENSE.txt",
+        "attributes": [
+            {
+                "trait_type": "Episode",
+                "value": 2
+            },
+            {
+                "trait_type": "Hero",
+                "value": "Henry Two Ohh"
+            },
+            {
+                "trait_type": "Title",
+                "value": "The Overlooked Hero of Coffee."
+            },
+            {
+                "trait_type": "Runtime",
+                "value": "0:11"
+            },
+            {
+                "trait_type": "Authors",
+                "value": "Curly Fries & h0ward.eth"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Joffee Season 1: Episode 3",
+        "description": "Joffee web3 television season 1",
+        "image": "ipfs://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa/3.mp4",
+        "file": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/3.mp4",
+        "filetype": "mp4",
+        "mime": {
+            "bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa": "video/mp4"
+        },
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/LICENSE.txt",
+        "attributes": [
+            {
+                "trait_type": "Episode",
+                "value": 3
+            },
+            {
+                "trait_type": "Hero",
+                "value": "Joffee Bean"
+            },
+            {
+                "trait_type": "Title",
+                "value": "A Deep Dive into the Star of the Drink."
+            },
+            {
+                "trait_type": "Runtime",
+                "value": "0:08"
+            },
+            {
+                "trait_type": "Authors",
+                "value": "Curly Fries & h0ward.eth"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Joffee Season 1: Episode 4",
+        "description": "Joffee web3 television season 1",
+        "image": "ipfs://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa/4.mp4",
+        "file": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/4.mp4",
+        "filetype": "mp4",
+        "mime": {
+            "bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa": "video/mp4"
+        },
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/LICENSE.txt",
+        "attributes": [
+            {
+                "trait_type": "Episode",
+                "value": 4
+            },
+            {
+                "trait_type": "Hero",
+                "value": "Molly Money"
+            },
+            {
+                "trait_type": "Title",
+                "value": "Great Coffee For Less."
+            },
+            {
+                "trait_type": "Runtime",
+                "value": "0:09"
+            },
+            {
+                "trait_type": "Authors",
+                "value": "Curly Fries & h0ward.eth"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Joffee Season 1: Episode 5",
+        "description": "Joffee web3 television season 1",
+        "image": "ipfs://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa/5.mp4",
+        "file": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/5.mp4",
+        "filetype": "mp4",
+        "mime": {
+            "bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa": "video/mp4"
+        },
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/LICENSE.txt",
+        "attributes": [
+            {
+                "trait_type": "Episode",
+                "value": 5
+            },
+            {
+                "trait_type": "Hero",
+                "value": "Stuart"
+            },
+            {
+                "trait_type": "Title",
+                "value": "Best Equipment for Your Latte."
+            },
+            {
+                "trait_type": "Runtime",
+                "value": "0:05"
+            },
+            {
+                "trait_type": "Authors",
+                "value": "Curly Fries & h0ward.eth"
+            }
+        ]
+    }
+]
+```
+
+Now we are ready to deploy our ERC1155 contract on the thirdweb dashboard.
+
+#### Deploy the ERC1155 Contract
+
+Please note that version 4.0.8 was the latest version at the time this article was published.
+
+1. Follow this link to the ERC1155 Edition Drop contract: https://thirdweb.com/thirdweb.eth/DropERC1155/4.0.8
+2. Click Deploy Now.
+3. Create a contract metadata image (this is different from your television NFT), name, symbol and contract description.
+4. Populate the fields and then deploy. An example of the fields are shown in the image below.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/CreatingJoffeeContract.png">
+</p>
+
+5. Once Deployed click on “NFTs” under the extension section
+
+<p align="center" width="100%">
+    <img width="80%" src="images/TelevisionedDashboard.png">
+</p>
+
+6. The NFTs view should look something like this. We are going to focus on the Batch Upload button. The reason we are using the Batch Upload instead of the Single Upload is to pass our custom JSON file.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/televisionedTokenView.png">
+</p>
+
+7. Drag and drop your metadata into the upload section.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/TVjsonupload.gif">
+</p>
+
+After the creation of the NFT is complete your NFTs view will show the newly created NFTs. The image appears to be broken, but will display properly in the Market gm ☕️.
+
+> Market gm ☕️automatically will import your image set in Open Sea. Otherwise will use the image of the first NFT from the collection to be displayed in the Collection Info panel.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/TVindividualView.png">
+</p>
+
+You may notice that the total supply is 0. In the next step we are going to increase the total supply.
+
+9. Click the arrow located on the right of the token you just created. This will allow you to create the claim phase conditions.
+* Create a claim phase name.
+* Set the supply for this claim phase. In this example I will be treating this number as the total supply for the number of television episodes.
+* Set the number of NFTs a wallet can mint.
+* If you wish to release additional copies later, you can create another claim phase. 
+
+> For television NFTs it seems ideal to create a new ERC1155 contract for every new season. Otherwise when that contract address is queried, all tokens released on that contract will be displayed. This could lead to difficulties searching for specific tokens and general collection clutter.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/tvclaimconditions.gif">
+</p>
+
+10. Once claim conditions are set you are ready to launch your minting site. You can build one with a template from thirdweb or use the auto generated minting site located in the embed section of the dashboard.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/TVminting.gif">
+</p>
+
+11. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos, FreshFrogsNFT or Zero Beings, log in as a guest and go to the “My listings page” to view your portfolio. You will now see your ERC1155 television NFT. 
+
+<p align="center" width="100%">
+    <img width="80%" src="images/tvNFTcollection.gif">
+</p>
+
+12. Click on the file to access the episode file.
+
+13. Click on the certificate icon to access the distribution license.
+
+🎉 Now you can create, sell, auction, and access television NFTs.
+
+What will you produce?
+
 ## FAQs
 * Can any collection be listed on the marketplace?
     Yes, the marketplace contract is setup to allow sale of any NFT collection.
