@@ -445,8 +445,6 @@ Follow the guide below to get started on your own NFT marketplace today! Otherwi
 ### Prerequisites
 * [NodeJs](https://nodejs.org/en/download/)
 * Alchemy API Key & RPC
-* Wallet Connect Project ID
-* Infura API Key
 
 ### Installation
 
@@ -541,7 +539,7 @@ const mainnetMarketContract = '<your mainnet contract address>'; //ETH mainnet m
 ```
 
 #### Updating mbox.json and gbox.json files
-You will need to add your contract address and [projectId](https://cloud.walletconnect.com/sign-up) to the mbox.json and gbox.json files to establish a wallet connection.
+You will need to add your contract address to the mbox.json and gbox.json files.
 
 The mbox.json file supports the connection to the mainnet.
 ```json
