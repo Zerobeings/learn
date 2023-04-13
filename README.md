@@ -432,8 +432,9 @@ These limitations also prevent the total supply for a collection from being retr
 ## goerli Test Collections
 > More test collections will be created to test various rendering scenarios.
 
-* Image based Collection (goerli) Test_Warp. Mint a Test_Warp [here](https://open.factoria.app/mint/#0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e)
-* Video based Collection (goerli) Joffee Coffee. Mint a Joffee Coffee [here](https://open.factoria.app/mint/#0xbf152f707666CFEF93fCE022753b1995A5955c5C)
+* Image based Collection (goerli) - Test_Warp. Mint a Test_Warp [here](https://open.factoria.app/mint/#0x9870Da00643AeA2BE9dF89d87efeD0A2fdb5479e)
+* Codebase NFT Collection (goerli) - My Auctions to Close. Mint a Codebase NFT [here](https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc1155.html?contract=0x557803A3f398EF2563683eA83D3d1fD110d6cCEC&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&tokenId=0&theme=dark&primaryColor=purple)
+* Television NFT Collection (goerli) - Joffee Coffee. Mint an episode [here](https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc1155.html?contract=0x97f2318bFadEC027d24A28759123889Dc11e41DB&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&tokenId=1&theme=dark&primaryColor=orange)
 
 # Marketplace Repo
 This marketplace repository can be found at the Zero Beings [github](https://github.com/Zerobeings/zerb-nft-marketplace).
