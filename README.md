@@ -777,7 +777,7 @@ Below is an example of the television NFT collection card on Market gm ☕.
 This television NFT metadata contains the link to the episode and distribution license.
 
 <p align="center" width="100%">
-    <img width="33%" src="images/TVcollectionCardwithDescription.png">
+    <img width="66%" src="images/TVcollectionCardwithDescription.png">
 </p>
 
 When you click on the flie icon, you will be taken to the IPFS page that contains the the episode stored on IPFS https://bafybeif4sikaplxga454vsdb7wdzory4vaudisbhdnwsmg3n4smlbpttsa.ipfs.nftstorage.link/1.mp4
@@ -802,7 +802,7 @@ Below is a proposed method of creating a television NFT collection with the thir
 5. Make a copy of the CID, IPFS URL and GatewayURL.
 
 <p align="center" width="100%">
-    <img width="33%" src="images/televisionedIPFS.png">
+    <img width="75%" src="images/televisionedIPFS.png">
 </p>
 
 6. Prepare your metadata with the CID, IPFS URL, and Gateway url. It is recommended to follow the guidelines from OpenSea with these additional items: file, filetype, mime, license, and license_url.
@@ -1059,6 +1059,8 @@ You may notice that the total supply is 0. In the next step we are going to incr
 12. Click on the file to access the episode file.
 
 13. Click on the certificate icon to access the distribution license.
+
+You can mint this example at the thirdweb auto generated [website](https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc1155.html?contract=0x97f2318bFadEC027d24A28759123889Dc11e41DB&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&tokenId=1&theme=dark&primaryColor=orange).
 
 🎉 Now you can create, sell, auction, and access television NFTs.
 
