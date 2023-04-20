@@ -524,8 +524,10 @@ There are a total of 5 locations in which the goerli & mainnet contract addresse
 1. server.js
 2. mbox.json
 3. gbox.json
-4. listingsCard.ejs (IPFS Link)
-5. goerli-listingsCard.ejs (IPFS Link)
+4. mylistingsCard.ejs (IPFS Link)
+5. goerli-mylistingsCard.ejs (IPFS Link)
+6. footerMarket.ejs
+7. goerli-footerMarket.ejs
 
 #### Update server.js
 
