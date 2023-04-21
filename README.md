@@ -1069,9 +1069,9 @@ What will you produce?
 
 #### How to create location based NFTs - it's time to evolve!
 
-Market gm ☕️ is designed to display location based NFTs! With some simple additions to your metadata Market gm can render your location based NFT. 
+Market gm ☕️ is designed to display location based NFTs! With some simple additions to your metadata Market gm ☕️ can render your location based NFT. 
 
-Below is an example of the Warp Crystal Collection. After you have found some warp crystals in the minting maze you can view your crystals on google maps! To access your location based NFTs, navigate to the "loctok" page, and your google map will be generated with the location of your crystals. 
+Below is an example of the Warp Crystal collection. After you have found some crystals in the minting maze you can view your crystals on google maps! To access your location based NFTs, navigate to the "loctok" page, and your google map will be generated with the location of your crystals. 
 
 You can also click on the Warp Crystal to see the detail view in Market gm ☕️. In Market gm ☕️ any NFT formatted with the centerpoint, contentstring, and attribute trait_type "Loc". Please follow the example below for proper generation of your NFTs location.
 
@@ -1084,7 +1084,7 @@ These are the required metadata additions for location based NFTs
 2. contentstring: the content string is the html for your NFT popup
 3. attributes: the attributes must contain the "Loc" trait with full 11 character [google plus code](https://plus.codes/).
 
-> ⚠️ The plus codes map only displays the shortened version of the plus code. You need the entire 11 character plus code to properly locate your NFT.
+> ⚠️ The plus codes map only displays the shortened version of the plus code. You will need the entire 11 character plus code to properly locate your NFT.
 
 <p align="center" width="100%">
     <img width="80%" src="images/pluscodeexample.png">
