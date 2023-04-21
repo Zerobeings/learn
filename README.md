@@ -1067,6 +1067,76 @@ You can mint this example at the thirdweb auto generated [website](https://ipfs.
 
 What will you produce?
 
+#### How to create location based NFTs - it's time to evolve!
+
+Market gm ☕️ is designed to display location based NFTs! With some simple additions to your metadata Market gm can render your location based NFT. 
+
+Below is an example of the Warp Crystal Collection. After you have found some warp crystals in the minting maze you can view your crystals on google maps! To access your location based NFTs, navigate to the "loctok" page, and your google map will be generated with the location of your crystals. 
+
+You can also click on the Warp Crystal to see the detail view in Market gm ☕️. In Market gm ☕️ any NFT formatted with the centerpoint, contentstring, and attribute trait_type "Loc". Please follow the example below for proper generation of your NFTs location.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/loctok.gif">
+</p>
+
+These are the required metadata additions for location based NFTs
+1. centerpoint: the centerpoint sets the center position of the map and must contain the full 11 character [google plus code](https://plus.codes/)
+2. contentstring: the content string is the html for your NFT popup
+3. attributes: the attributes must contain the "Loc" trait with full 11 character [google plus code](https://plus.codes/).
+
+> ⚠️ The plus codes map only displays the shortened version of the plus code. You need the entire 11 character plus code to properly locate your NFT.
+
+<p align="center" width="100%">
+    <img width="80%" src="images/pluscodeexample.png">
+</p>
+
+##### Creating the contentstring
+The simplest method of creating your content string is to write your desired html string following the [google infowindows guideline](https://developers.google.com/maps/documentation/javascript/infowindows), and the convert that into a JSON string with javascript.
+
+```javascript
+
+var contentstring =
+                    '<div id="content" style="color: black;">' +
+                    '<div id="siteNotice" style="color: black;">' +
+                    "</div>" +
+                    '<h1 id="firstHeading" class="firstHeading">Warp Crystal</h1>' +
+                    '<div id="bodyContent" style="color: black;">' +
+                    "<p><b>Congratulations</b> 🎉, you found this Warp Crystal in the minting maze!</p>" +
+                    "Location based NFT features will be coming soon to Market gm ☕️" +
+                    "</div>" +
+                    "</div>";
+
+JSON.stringify(contentstring)
+
+```
+After you have generated your contentstring, you are ready to create your metadata file! Your metadata must follow this format to render properly on Market gm ☕️.
+
+> The "centerpoint" and "Loc" values do not need to be the same, but it could problematic if the NFT is far from the centerpoint. Market gm ☕️
+> uses a zoom = 11. The centerpoint is important when displaying multiple NFTs on a single map. It is ideal to set your centerpoint at the center of the cluster of your location data.
+
+```json
+{
+    "id": "1",
+    "name": "Loctok #1",
+    "description": "Location Based NFT",
+    "image": "ipfs://bafybeighw4kzeqbtupjouql3rev7vlc2tit6bt55ubxvbl3235dqzdh53u/1.png",
+    "centerpoint": "87G8Q2JV+FV",
+    "contentstring": "<div id=\"content\" style=\"color: black;\"><div id=\"siteNotice\" style=\"color: black;\"></div><h1 id=\"firstHeading\" class=\"firstHeading\">Warp Crystal</h1><div id=\"bodyContent\" style=\"color: black;\"><p><b>Congratulations</b> 🎉, you found this Warp Crystal in the minting maze!</p>Location based NFT features will be coming soon to Market gm ☕️</div></div>",
+    "attributes": [
+        {
+            "trait_type": "Loc",
+            "value": "87G8Q2JV+FV" 
+        },
+        {
+            "trait_type": "Authors",
+            "value": "Curly Fries & h0ward.eth"
+        }
+    ]
+}
+```
+
+How will you use location based NFTs!?
+
 ## FAQs
 * Can any collection be listed on the marketplace?
     Yes, the marketplace contract is setup to allow sale of any NFT collection.
