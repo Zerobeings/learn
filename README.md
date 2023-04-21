@@ -1109,6 +1109,8 @@ var contentstring =
 console.log(JSON.stringify(contentstring))
 
 ```
+##### Loctok metadata
+
 After you have generated your contentstring, copy and paste that in a place for later use. You are now ready to create your metadata file! Your metadata must follow this format to render properly on Market gm ☕️.
 
 > The "centerpoint" and "Loc" values do not need to be the same, but it could problematic if the NFT is far from the centerpoint. Market gm ☕️
