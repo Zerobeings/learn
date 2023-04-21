@@ -1106,10 +1106,10 @@ var contentstring =
                     "</div>" +
                     "</div>";
 
-JSON.stringify(contentstring)
+console.log(JSON.stringify(contentstring))
 
 ```
-After you have generated your contentstring, you are ready to create your metadata file! Your metadata must follow this format to render properly on Market gm ☕️.
+After you have generated your contentstring, copy and paste that in a place for later use. You are now ready to create your metadata file! Your metadata must follow this format to render properly on Market gm ☕️.
 
 > The "centerpoint" and "Loc" values do not need to be the same, but it could problematic if the NFT is far from the centerpoint. Market gm ☕️
 > uses a zoom = 11. The centerpoint is important when displaying multiple NFTs on a single map. It is ideal to set your centerpoint at the center of the cluster of your location data.
