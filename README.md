@@ -1067,7 +1067,7 @@ You can mint this example at the thirdweb auto generated [website](https://ipfs.
 
 What will you produce?
 
-#### How to create location based NFTs - it's time to evolve!
+### How to create location based NFTs - it's time to evolve!
 
 Market gm ☕️ is designed to display location based NFTs! With some simple additions to your metadata Market gm ☕️ can render your location based NFT. 
 
@@ -1090,17 +1090,19 @@ These are the required metadata additions for location based NFTs
     <img width="80%" src="images/pluscodeexample.png">
 </p>
 
-##### Creating the contentstring
+#### Creating the contentstring
 The simplest method of creating your content string is to write your desired html string following the [google infowindows guideline](https://developers.google.com/maps/documentation/javascript/infowindows), and the convert that into a JSON string with javascript.
+
+> 🚨 You must use the CSS classes from the Zero Beings website. These can be found in the zerb-nft-marketplace repo. No in-line styling or scripting is allowed. The goal is to maintain a safe environment for everyone. All location based NFTs are run through a DOM purification process to prevent cross-site scripting. It is critical that you test your location based NFTs on the goerli testnet and confirm functionality on market gm ☕️ prior to deploying on the mainnet.
 
 ```javascript
 
 var contentstring =
-                    '<div id="content" style="color: black;">' +
-                    '<div id="siteNotice" style="color: black;">' +
+                    '<div id="content" class="color-black">' +
+                    '<div id="siteNotice" class="color-black">' +
                     "</div>" +
                     '<h1 id="firstHeading" class="firstHeading">Warp Crystal</h1>' +
-                    '<div id="bodyContent" style="color: black;">' +
+                    '<div id="bodyContent" class="color-black">' +
                     "<p><b>Congratulations</b> 🎉, you found this Warp Crystal in the minting maze!</p>" +
                     "Location based NFT features will be coming soon to Market gm ☕️" +
                     "</div>" +
@@ -1109,7 +1111,7 @@ var contentstring =
 console.log(JSON.stringify(contentstring))
 
 ```
-##### Loctok metadata
+#### Loctok metadata
 
 After you have generated your contentstring, copy and paste that in a place for later use. You are now ready to create your metadata file! Your metadata must follow this format to render properly on Market gm ☕️.
 
