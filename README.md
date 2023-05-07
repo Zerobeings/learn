@@ -1093,7 +1093,7 @@ These are the required metadata additions for location based NFTs
 #### Creating the contentstring
 The simplest method of creating your content string is to write your desired html string following the [google infowindows guideline](https://developers.google.com/maps/documentation/javascript/infowindows), and the convert that into a JSON string with javascript.
 
-> 🚨 You must use the CSS classes from the Zero Beings website. These can be found in the zerb-nft-marketplace repo. No in-line styling or scripting is allowed. The goal is to maintain a safe environment for everyone. All location based NFTs are run through a DOM purification process to prevent cross-site scripting. It is critical that you test your location based NFTs on the goerli testnet and confirm functionality on market gm ☕️ prior to deploying on the mainnet.
+> 🚨 You must use the CSS classes from the Zero Beings website. These can be found in the [zerb-nft-marketplace repo](https://github.com/Zerobeings/zerb-nft-marketplace). No in-line styling or scripting is allowed. The goal is to maintain a safe environment for everyone. All location based NFTs are run through a DOM purification process to prevent cross-site scripting. It is critical that you test your location based NFTs on the goerli testnet and confirm functionality on market gm ☕️ prior to deploying on the mainnet.
 
 ```javascript
 
