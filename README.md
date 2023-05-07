@@ -1123,7 +1123,7 @@ After you have generated your contentstring, copy and paste that in a place for 
     "description": "Location Based NFT",
     "image": "ipfs://bafybeighw4kzeqbtupjouql3rev7vlc2tit6bt55ubxvbl3235dqzdh53u/1.png",
     "centerpoint": "87G8Q2JV+FV",
-    "contentstring": "<div id=\"content\" style=\"color: black;\"><div id=\"siteNotice\" style=\"color: black;\"></div><h1 id=\"firstHeading\" class=\"firstHeading\">Warp Crystal</h1><div id=\"bodyContent\" style=\"color: black;\"><p><b>Congratulations</b> 🎉, you found this Warp Crystal in the minting maze!</p>Location based NFT features will be coming soon to Market gm ☕️</div></div>",
+    "contentstring": "<div id=\"content\" class=\"color-black\"><div id=\"siteNotice\" class=\"color-black\"></div><h1 id=\"firstHeading\" class=\"firstHeading\">Warp Crystal</h1><div id=\"bodyContent\" class=\"color-black\"><p><b>Congratulations</b> 🎉, you found this Warp Crystal in the minting maze!</p>Location based NFT features will be coming soon to Market gm ☕️</div></div>",
     "attributes": [
         {
             "trait_type": "Loc",
