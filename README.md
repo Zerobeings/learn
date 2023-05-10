@@ -72,7 +72,7 @@ goerli-market will load the goerli marketplace for testing collection launches a
 
 > Filetypes currently supported are as follows: .png, .svg, .jpg, .jpeg, .gif, .wav, .mp3, .ogg, .mp4, .webm, .doc, .docx, .pdf, and .txt.
 
-After clicking on the preferred market (goerli or mainnet) the market view will display the following. The market is automatically rendered with the Zero Beings NFT collection.
+After clicking on the preferred market (sepolia, goerli, or mainnet) the market view will display the following. The mainnet market is automatically rendered with the Zero Beings NFT collection.
 
 > [factoria](https://docs.factoria.app/#/),  created by [skogard](https://twitter.com/skogard), is a simple cost effective tool to launch your NFT collection.
 
@@ -437,8 +437,18 @@ These limitations also prevent the total supply for a collection from being retr
 * Codebase NFT Collection (goerli) - My Auctions to Close. Mint a Codebase NFT [here](https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc1155.html?contract=0x557803A3f398EF2563683eA83D3d1fD110d6cCEC&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&tokenId=0&theme=dark&primaryColor=purple)
 * Television NFT Collection (goerli) - Joffee Coffee. Mint an episode [here](https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc1155.html?contract=0x97f2318bFadEC027d24A28759123889Dc11e41DB&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&tokenId=1&theme=dark&primaryColor=orange)
 
+# sepolia-market
+The sepolia-market aspect of the website has some limitations as compared to the mainnet pages.
+The limitations are commented in server.js and are as follows:
+
+* Alchemy API does not currently support `summarizeNFTAttributes` on the sepolia testnet api.
+* Alchemy API does not currently support `getFloorPrice` on the sepolia testnet api.
+* Alchemy API does not currently support `reingestContract` on the sepolia testnet api.
+
+These limitations also prevent the total supply for a collection from being retrieved. If the collection exceeds 100, the collection items will be displayed as `+100` in the "Collection View" panel on the home page and enough pages will be calculated for a collection of 10,000 NFTs.
+
 # Marketplace Repo
-This marketplace repository can be found at the Zero Beings [github](https://github.com/Zerobeings/zerb-nft-marketplace).
+A template marketplace repository can be found at the Zero Beings [github](https://github.com/Zerobeings/zerb-nft-marketplace). This gives you access to almost all Zero Beings marketplace functionality and is a great way to kickstart your project.
 
 ## Repo Quickstart
 Follow the guide below to get started on your own NFT marketplace today! Otherwise you can [mint](mint.zerobeings.xyz) a Zero Being and start using [Market gm ☕️](gm.zerobeings.xyz) today!
@@ -454,17 +464,18 @@ Follow the guide below to get started on your own NFT marketplace today! Otherwi
 3. Navigate to the project directory `cd zerb-nft-marketplace`.
 4. Install dependencies with `npm install`.
 5. Change `.env.example` to `.env` and add your environment variables.
-6. Change `mbox.example.json` and `gbox.example.json` to `mbox.json` and `gbox.json`
-7. Remove `mbox.json` and `gbox.json` from `.gitignore`
+6. Change `mbox.example.json`, `gbox.example.json`, `sbox.example.json` to `mbox.json`, `gbox.json`, `sbox.json`
+7. Remove `mbox.json`, `gbox.json` and`sbox.json` from `.gitignore`
 8. Run `nodemon`
 
 ### Making it your Own
 1. Change the NFT gating contract and user name.
 2. Deploy your own thirdweb goerli marketplace [contract](https://thirdweb.com/dashboard/contracts). 
-3. Deploy your own thirdweb mainnet marketplace [contract](https://thirdweb.com/dashboard/contracts).
-4. Update the marketplace contract address.
-5. Update the `mbox.json` and `gbox.json` files.
-6. Update `session.zerb.account` to new user reference throughout repository.
+3. Deploy your own thirdweb sepolia marketplace [contract](https://thirdweb.com/dashboard/contracts). 
+4. Deploy your own thirdweb mainnet marketplace [contract](https://thirdweb.com/dashboard/contracts).
+5. Update the marketplace contract addresses.
+6. Update the `mbox.json` and `gbox.json` files.
+7. Update `session.zerb.account` to new user reference throughout repository.
 8. Customize!
 
 #### Change the NFT Gate
@@ -520,15 +531,18 @@ party.add('user', {
 ```
 
 #### Using Your Own Marketplace Contracts
-There are a total of 5 locations in which the goerli & mainnet contract addresses are explicitly used.
+There are a total of 5 locations in which the goerli, sepolia, mainnet contract addresses are explicitly used.
 
 1. server.js
 2. mbox.json
 3. gbox.json
-4. mylistingsCard.ejs (IPFS Link)
-5. goerli-mylistingsCard.ejs (IPFS Link)
-6. footerMarket.ejs
-7. goerli-footerMarket.ejs
+4. sbox.json
+5. mylistingsCard.ejs (IPFS Link)
+6. sepolia-myListingsCard.ejs (IPFS Link)
+7. goerli-mylistingsCard.ejs (IPFS Link)
+8. footerMarket.ejs
+9. goerli-footerMarket.ejs
+10. sepolia-footerMarket.ejs
 
 #### Update server.js
 
@@ -538,6 +552,7 @@ There are a total of 5 locations in which the goerli & mainnet contract addresse
 // the listingsCard and mybids for mainnet and goerli-listingsCard & goerli-mybids in the IPFS site link,
 // in the const listed below, and finally the marketfooter files.
 const gMarketContract = '<your goerli contract address>'; //goerli marketplace contract. Deploy from thirdweb dashboard.
+const sepMarketContract = '<your sepolia contract address>'; //goerli marketplace contract. Deploy from thirdweb dashboard.
 const mainnetMarketContract = '<your mainnet contract address>'; //ETH mainnet marketplace contract. Deploy from thirdweb dashboard
 ```
 
@@ -553,6 +568,11 @@ The gbox.json file supports the connection to the goerli-network.
 
 ```json
 {"contract":"<MarketContract>","network":"goerli"}
+```
+The sbox.json file supports the connection to the sepolia-network.
+
+```json
+{"contract":"<MarketContract>","network":"sepolia"}
 ```
 
 #### Update the listingCard partials
