@@ -20,8 +20,9 @@ Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell,
 2. **[Guide](#guide):** How to create & cancel listings, create & close auctions, create an offer and Buy.
 3. **[Metadata Structure](#metadata-structure):** Additional meta data feature for rendering non-image filetypes.
 4. **[goerli-market](#goerli-market)**: Overview of the goerli-market.
-5. **[Marketplace Repo](#marketplace-repo):** Overview of the marketplace source code.
-6. **[More Info](#more-info):** FAQs and source documentation.
+5. **[sepolia-market](#sepolia-market)**: Overview of the sepolia-market.
+6. **[Marketplace Repo](#marketplace-repo):** Overview of the marketplace source code.
+7. **[More Info](#more-info):** FAQs and source documentation.
 
 ## News & Community
 
@@ -38,7 +39,7 @@ Market gm ☕️ is a new NFT marketplace that allows you to buy, directly sell,
 >   
 > Mint a Zero Being [mint.zerobeings.xyz](https://mint.zerobeings.xyz) for the full gm ☕️ experience or login as a guest to access Market gm ☕️ only.
 > 
-> You can also experience all of Zerb gm with a tinydinos NFT or a FreshFrogsNFT!!!
+> You can also experience all of Zerb gm with a tinydinos NFT!!!
 >  
 
 Market gm is an NFT gated marketplace. Wallet authorization is accomplished with [PrivateParty](https://privateparty.dev).
@@ -745,7 +746,7 @@ You may notice that the total supply is 0. In the next step we are going to incr
     <img width="80%" src="images/mintingERC1155.gif">
 </p>
 
-10. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos, FreshFrogsNFT or Zero Beings, log in as a guest and go to the “My Listings" page to view your portfolio. You will now see your ERC1155 codebase NFT. 
+10. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos or Zero Beings, log in as a guest and go to the “My Listings" page to view your portfolio. You will now see your ERC1155 codebase NFT. 
   * Click on the file to access the javascript file. You can use this link in a script tag or copy and paste into a javascript file on your website!
   * Click on the certificate icon to access the codebase license. You can reference this link for your codebase license!
 
@@ -1054,7 +1055,7 @@ You may notice that the total supply is 0. In the next step we are going to incr
     <img width="80%" src="images/TVminting.gif">
 </p>
 
-10. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos, FreshFrogsNFT or Zero Beings, log in as a guest and go to the “My listings page” to view your portfolio. You will now see your ERC1155 television NFT. 
+10. Once you have minted the NFT go to Market gm ☕️. If you don’t have a tiny dinos or Zero Beings, log in as a guest and go to the “My listings page” to view your portfolio. You will now see your ERC1155 television NFT. 
 
 <p align="center" width="100%">
     <img width="80%" src="images/tvNFTcollection.gif">
