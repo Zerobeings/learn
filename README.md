@@ -455,7 +455,7 @@ Follow the guide below to get started on your own NFT marketplace today! Otherwi
 
 ### Prerequisites
 * [NodeJs](https://nodejs.org/en/download/)
-* Alchemy API Key & RPC
+* [Alchemy API Key & RPC](https://dashboard.alchemy.com/)
 
 ### Installation
 
@@ -1197,7 +1197,7 @@ How will you use location based NFTs!?
 ## Data Structures
 Below is a summary of the data structures fetched to build market gm.
 
-### Alchemy 
+### Alchemy NFT API V2
 nfts Data Structure
 
 ```
